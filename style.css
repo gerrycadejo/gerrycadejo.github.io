@@ -1,0 +1,22 @@
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.photos-modal {
+margin: 0 auto;
+height: inherit;
+width: 320px;
+}
