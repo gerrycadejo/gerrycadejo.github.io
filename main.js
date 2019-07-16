@@ -318,8 +318,8 @@ function initMap() {
 }
 // Calling the functions
 
-  initMap();
-getLocation();
+
+
 
 
 
@@ -329,12 +329,14 @@ getLocation();
 function getLocation() {
   if (navigator.geolocation) {
     console.log('yes it is available')
+    navigator.geolocation.watchPosition(function () {}, function () {}, {});
     navigator.geolocation.watchPosition(showPosition);
-  } else {
+  } else function errorLoc()  {
+    console.log('are you a spy? cause the geolocation failed')
     alert("Sorry the geolocation failed\nPlease refresh the page!");
   }
 }
-
+getLocation();
 // this calls the user's location and grasps the closest markers
 
 function showPosition(position) {
