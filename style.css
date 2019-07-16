@@ -1,22 +1,65 @@
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: 'Bitter', serif;
-  font-size: 20px;
-  font-weight: bold;
+html, body {
   text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Gugi', cursive;
+  height: 100%;
 }
 
-p {
+
+.btn {
   font-family: 'Open Sans', sans-serif;
-
+  font-weight: bold;
+  background-color: #fc64fc;
+  border-color: transparent;
+  border-radius: 7  px;
 }
 
-.photos-modal {
-margin: 0 auto;
-height: inherit;
-width: 320px;
+.btn-primary {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #ff00ff;
+}
+
+.container-fluid  {
+  background-color: #fcfc64;
+  height: 90%;
+}
+
+
+.centro {
+  height: 90%;
+}
+
+.navbar {
+  height: 10%;
+  background-color: #efefef;
+  width:inherit;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 2;
+  position: relative;
+}
+
+/*
+.navbar-collapse {
+  padding: 4%;
+  background-color: #fb3232;
+  border-radius: 20px;
+  margin-right: 60%;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.bg-light {
+  background-color: #fcfc64 !important;
+}*/
+
+
+
+.navbar-toggler-icon {
+  background-image: url('beer.png') !important;
 }
