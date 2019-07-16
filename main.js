@@ -319,8 +319,7 @@ function initMap() {
 // Calling the functions
 
   initMap();
-  getLocation();
-
+getLocation();
 
 
 
