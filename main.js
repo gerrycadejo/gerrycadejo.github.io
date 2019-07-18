@@ -288,6 +288,7 @@ if (directionsDisplay != null){
   directions: result  ,
   suppressMarkers: true,
   polylineOptions: line,
+  preserveViewport: true,
   });
   console.log('no country for old lines');
   destinationMarker(markerpos, destiMarker);
@@ -307,9 +308,11 @@ function destinationMarker(response, destiMarker){
         position: response.end_location,
         icon: image,
         zIndex: 50,
-        //animation: google.maps.Animation.DROP,
+        animation: google.maps.Animation.DROP,
       });
       destiMarker.setMap(map);
+      map.panTo(destiMarker.position);
+      map.setZoom(17);
     }
 
 
