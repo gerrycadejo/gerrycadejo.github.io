@@ -24,9 +24,9 @@ margin-top: 10px;
 
 .navbar-collapse {
   background-color: #ffffff;
- webkit-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
--moz-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
-box-shadow: -5px 3px 7px -2px rgba(212,205,212,1);
+ webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+-moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
 border-radius: 15px;
 max-width: 200px;
 margin-top: 2%;
@@ -45,14 +45,14 @@ li a {
 }
 
 .navbar-toggler-icon {
-  background-image: url(logoprice.png) !important;
+  background-image: url(butger2.png) !important;
   border: 4px solid #fff;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   border-radius: 10px;
-  -webkit-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
-  -moz-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
-  box-shadow: -5px 3px 7px -2px rgba(212,205,212,1);
+  -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
@@ -81,9 +81,9 @@ flex: auto;
 background: #ffffff;
 padding: 3px;
 border-radius: 12px;
--webkit-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
--moz-box-shadow: -4px 0px 7px -2px rgba(212,205,212,1);
-box-shadow: -5px 3px 7px -2px rgba(212,205,212,1);
+-webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+-moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
 margin-left: 6.5%;
 margin-right: 25%;
 margin-top: 1.6%;
@@ -101,7 +101,7 @@ max-width: 250px;
   .greendot {
     width: 0.6rem;
     height: 0.7rem;
-    background-color: #1abc9c;
+    background-color: #34495e;
     border-radius: 0.2rem;
     display: inline-block;
   }
@@ -117,7 +117,7 @@ max-width: 250px;
   max-width: 350px;
   overflow-y: auto;
   border-radius: 22px;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  box-shadow: 0 2px 12px 0 rgba(88,88,88,.2);
 }
 
 .selected-pin-top {
@@ -126,7 +126,7 @@ max-width: 250px;
     width: 80%;
     margin: 0 auto;
     padding-bottom: 0px;
-    border-bottom: 4px solid #1abc9ce0;
+    border-bottom: 4px solid #34495e;
 }
 
 .selected-pin-text {

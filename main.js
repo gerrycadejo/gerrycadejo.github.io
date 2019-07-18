@@ -17,277 +17,135 @@ var lineSymbol = {
 
 function initMap() {
   var styles = [
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ebe3cd"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#000000"
+    {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#004358"
+              }
+          ]
       },
       {
-        "lightness": 25
+          "featureType": "landscape",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              }
+          ]
       },
       {
-        "weight": 0.5
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              }
+          ]
+      },
       {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "elementType": "geometry.stroke",
-    "stylers": [
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#c0392b"
+              },{
+                "visibility": "off"
+            }
+          ]
+      },
       {
-        "color": "#c9b2a6"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "geometry.stroke",
-    "stylers": [
+          "featureType": "road.arterial",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              },
+              {
+                  "lightness": -20
+              }
+          ]
+      },
       {
-        "color": "#dcd2be"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels",
-    "stylers": [
+          "featureType": "road.local",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              },
+              {
+                  "lightness": -17
+              }
+          ]
+      },
       {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels.text.fill",
-    "stylers": [
+          "elementType": "labels.text.stroke",
+          "stylers": [
+              {
+                  "color": "#ffffff"
+              },
+              {
+                  "visibility": "on"
+              },
+              {
+                  "weight": 0.9
+              }
+          ]
+      },
       {
-        "color": "#ae9e90"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural",
-    "elementType": "geometry",
-    "stylers": [
+          "elementType": "labels.text.fill",
+          "stylers": [
+              {
+                  "visibility": "on"
+              },
+              {
+                  "color": "#ffffff"
+              }
+          ]
+      },
       {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
+          "featureType": "poi",
+          "elementType": "labels",
+          "stylers": [
+              {
+                  "visibility": "simplified"
+              }
+          ]
+      },
       {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text",
-    "stylers": [
+          "elementType": "labels.icon",
+          "stylers": [
+              {
+                  "visibility": "off"
+              }
+          ]
+      },
       {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.fill",
-    "stylers": [
+          "featureType": "transit",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              },
+              {
+                  "lightness": -10
+              }
+          ]
+      },
+      {},
       {
-        "color": "#93817c"
+          "featureType": "administrative",
+          "elementType": "geometry",
+          "stylers": [
+              {
+                  "color": "#1f8a70"
+              },
+              {
+                  "weight": 0.7
+              }
+          ]
       }
-    ]
-  },
-  {
-    "featureType": "poi.business",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#a5b076"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#447530"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f5f1e6"
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#fdfcf8"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f8c967"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#e9bc62"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway.controlled_access",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e98d58"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway.controlled_access",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#db8555"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#806b63"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#8f7d77"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#ebe3cd"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "stylers": [
-      {
-        "color": "#00ff00"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#b9d3c2"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#92998d"
-      }
-    ]
-  }
 ];
 
   map = new google.maps.Map(document.getElementById('map'),
@@ -319,6 +177,7 @@ function initMap() {
 // Calling the functions
 
 
+  getLocation();
 
 
 
@@ -328,15 +187,13 @@ function initMap() {
 
 function getLocation() {
   if (navigator.geolocation) {
-    console.log('yes it is available')
-    navigator.geolocation.watchPosition(function () {}, function () {}, {});
+    console.log('geolocation available');
     navigator.geolocation.watchPosition(showPosition);
-  } else function errorLoc()  {
-    console.log('are you a spy? cause the geolocation failed')
+  } else {
     alert("Sorry the geolocation failed\nPlease refresh the page!");
   }
 }
-getLocation();
+
 // this calls the user's location and grasps the closest markers
 
 function showPosition(position) {
@@ -349,6 +206,7 @@ function showPosition(position) {
   var myMarker = new google.maps.Marker({
     map: map,
     position: pos,});
+
 
   var destinationAddress = markers.reduce(function (prev, curr) {
   var cpos = google.maps.geometry.spherical.computeDistanceBetween(myMarker.position, curr.position);
@@ -412,15 +270,18 @@ function renderRoute(ori, desti, name) {
         repeat: '10px'
             }],
     });
-    limitRenderer(response, walkingPathLine)
-    destinationMarker(myRoute);
+    limitRenderer(response, walkingPathLine, myRoute);
     }
     });
 }
 
-function limitRenderer(result, line){
+function limitRenderer(result, line, markerpos){
 if (directionsDisplay != null){
   console.log('there is already a line')
+  directionsDisplay.setMap(null);
+  directionsDisplay = null;
+  destiMarker = null;
+  limitRenderer(result, line, markerpos);
 } else {
   directionsDisplay = new google.maps.DirectionsRenderer({
   map: map,
@@ -429,21 +290,19 @@ if (directionsDisplay != null){
   polylineOptions: line,
   });
   console.log('no country for old lines');
+  destinationMarker(markerpos, destiMarker);
 }
 }
 
 // creates the bar's marker
-function destinationMarker(response){
+function destinationMarker(response, destiMarker){
   var image = {
     url:'marca4.png',
     scaledSize: new google.maps.Size(50,55),
     origin: new google.maps.Point(0,0),
     anchor: new google.maps.Point(22,22)
     }
-
-
-
-   destiMarker = new google.maps.Marker({
+    destiMarker = new google.maps.Marker({
         map: map,
         position: response.end_location,
         icon: image,
@@ -451,13 +310,12 @@ function destinationMarker(response){
         animation: google.maps.Animation.DROP,
       });
       destiMarker.setMap(map);
-
-}
+    }
 
 
 // This fills the div at the bottom left with the distance.
 function distanceLeft(origin1, destinationA) {
-  var service = new google.maps.DistanceMatrixService;
+    var service = new google.maps.DistanceMatrixService;
     service.getDistanceMatrix({
         origins: [origin1],
         destinations: [destinationA],
@@ -471,10 +329,32 @@ function distanceLeft(origin1, destinationA) {
      else {
      var distance = response.rows[0].elements[0].distance;
      var displayDistance = document.getElementById("right-panel");
-     displayDistance.innerHTML = "<p>Being " + distance.value + '</strong> meters away from the  favorite story of your future grandkids</p>';
      console.log(distance);
      }
+
+
+     var firstText = distance.value;
+     var hundredText = distance.value - distance.value + 100;
+     var fiftyText = distance.value - distance.value + 50;
+     var tenText = distance.value - distance.value + 10;
+     if (distance.value === firstText) {
+       displayDistance.innerHTML = "<p>Being <strong> " + distance.value + '</strong> meters away from the  favorite story of your future grandkids</p>';
+     } if (distance.value === hundredText) {
+       displayDistance.innerHTML = "<p> Being <strong> " + distance.value + '</strong> meters away from new text 100 mts</p>';
+     } if (distance.value === fiftyText) {
+       displayDistance.innerHTML = "<p> This is " + distance.value + 'the fifty text modafoca</p>';
+     } if (distance.value === tenText) {
+       document.getElementById('right-panel').style.height = "400px";
+       document.getElementById('right-panel').style['border'] = "6px solid #1abc9c";
+       displayDistance.innerHTML = "<h2> congratulations! </h2> <br> <br> <p> You have reached your destination! Cheers mate! </p>";
+       navigator.geolocation.clearWatch(id);
+     }
+     console.log('yeah it happened');
+     console.log(tenText);
+
      });
+
+
 }
 
 
@@ -494,20 +374,20 @@ function locationMarker(user){
         smallCircle = new google.maps.Circle({
            center: user,
            radius: 5,
-           strokeColor: "#1abc9c",
+           strokeColor: "#ecf0f1",
            strokeOpacity: 1,
            strokeWeight: 1,
-           fillColor: "#1abc9c",
+           fillColor: "#ecf0f1",
            fillOpacity: 0.5
         });
 
         circle = new google.maps.Circle({
            center: user,
            radius: 20,
-           strokeColor: "#1abc9c",
+           strokeColor: "#ecf0f1",
            strokeOpacity: 1,
            strokeWeight: 1,
-           fillColor: "#1abc9c",
+           fillColor: "#ecf0f1",
            fillOpacity: 0.5
         });
 
