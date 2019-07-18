@@ -307,7 +307,7 @@ function destinationMarker(response, destiMarker){
         position: response.end_location,
         icon: image,
         zIndex: 50,
-        animation: google.maps.Animation.DROP,
+        //animation: google.maps.Animation.DROP,
       });
       destiMarker.setMap(map);
     }
