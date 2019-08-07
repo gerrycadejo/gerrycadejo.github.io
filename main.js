@@ -357,7 +357,7 @@ function distanceLeft(origin1, destinationA) {
      var fiftyText = distance.value - distance.value + 50;
      var tenText = distance.value - distance.value + 15;
      if (distance.value > firstText) {
-       displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away</strong>#TimeToShine</p>';
+       displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away</strong> #TimeToShine</p>';
        document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
        document.getElementById("textfeed").className = "selected-pin-text"
        document.getElementById("feedback").className = "selected-pin";
