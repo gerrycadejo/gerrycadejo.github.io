@@ -2,7 +2,7 @@ html, body {
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  font-family: 'Gugi', cursive;
+  font-family: 'Sancreek', cursive;
   height: 100%;
 }
 
@@ -16,29 +16,49 @@ html, body {
 }
 
 .btn-primary {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Sancreek', cursive;
   font-weight: bold;
   background-color: #ff00ff;
 }
 
 .container-fluid  {
   background-color: #fcfc64;
-  height: 90%;
+  height: 100%;
 }
 
+#label-beer img {
+  height: 94%;
+  width: 86%;
+}
+
+h1 {
+  font-family: 'Sancreek', cursive;
+}
+
+.top {
+  height: 25%
+}
 
 .centro {
-  height: 90%;
+  height: 40%;
+}
+
+.bottom {
+  height: 25%;
+}
+
+.bottom img {
+  width: 35%;
 }
 
 .navbar {
-  height: 10%;
-  background-color: #efefef;
+  height: 0%;
+  background-color: transparent !important;
   width:inherit;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   z-index: 2;
-  position: relative;
+  position: fixed;
 }
 
 /*
@@ -58,8 +78,92 @@ html, body {
   background-color: #fcfc64 !important;
 }*/
 
+.navbar {
+    height: 9vh;
+    width: 100%;
+    z-index: 30;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'Sancreek', cursive;
+}
 
+li a {
+  color: black;
+}
 
 .navbar-toggler-icon {
-  background-image: url('beer.png') !important;
+  background-image: url(butger2.png) !important;
+  border: 0px solid #fff;
+  width: 37px;
+  height: 37px;
+  border-radius: 5px;
+  -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
+}
+
+.navbar-collapse {
+ background-color: #ffffff;
+ -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+ -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+ box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
+ border-radius: 6px;
+ width: 180px;
+ max-width: 171px;
+ margin-top: 14%;
+ align-items: center;
+ text-align: center;
+ position: fixed;
+}
+
+.navbar-brand {
+  display:none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    outline: none;
+    outline-color: #ffffff00;
+    outline-width: thin;
+}
+
+
+.cuack {
+  border-bottom: 1px solid #1abc9c26;
+}
+
+#landingback {
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    outline: 0;
+}
+
+.modal-content h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 0.8rem;
 }

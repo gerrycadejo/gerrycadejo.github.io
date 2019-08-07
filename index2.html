@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="2style.css">
-  <link href="https://fonts.googleapis.com/css?family=Gugi|Open+Sans:600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sancreek&display=swap" rel="stylesheet">
   <title>Priceless Bars</title>
 </head>
 <body>
-  <nav class="navbar  ">
+  <nav class="navbar  " id="navegar">
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon" id="logo"></span>
    </button>
@@ -23,21 +23,54 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item cuack">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">We Believe</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1">Disabled</a>
+        <a class="nav-link" href="#" tabindex="-1">Contact</a>
       </li>
     </ul>
 
    </div>
   </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">We Believe</h5>
+      </div>
+      <div class="modal-body">
+        Great stories start with one beer. <br><br>
+        This one beer can either be really expensive or plain cheap.
+        Regardless of its price, one beer has the potential to trigger
+        a memorable night. <br> <br> Personally, I like to take the price factor
+        out of my priceless stories. I prefer having cheap beer and
+        great stories than the other way around. <br> <br>
+        This site is for people like me (students), beer enthusiasts
+        or anyone who's against overpaying for a cold one. <br><br>
+        This site is made so we can all enjoy the experience of
+        toasting at a priceless bar.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Loading Page -->
+  <div id="loadingPage" class="container-fluid">
+  <h3> LOADING</h3>
+  <p id="take2">"One beer and I ended up relaxing at the beach,for the rest of the weekend 500 miles away where I lived"- Jonas</p>
+  <div class="lds-facebook"> <div></div><div></div><div></div></div>
+  </div>
+
+  <!-- MAP-->
   <input type="image" src="center3.png" id="center-button" />
   <div class="container-fluid" id="map">
   </div>
-  <div class="selected-pin">
-  <div class="selected-pin-top"><h5><strong>🍻 IMAGINE...</strong></h5> <br></div>
-  <div class="selected-pin-text" > <span id="right-panel"> </span></div>
+  <div class="selected-pin" id="feedback">
+  <div class="selected-pin-top" id="congratulations"><h5><strong>🍻 IMAGINE...</strong></h5> <br></div>
+  <div class="selected-pin-text"  id="textfeed"> <span id="right-panel"> </span></div>
   </div>
 
 

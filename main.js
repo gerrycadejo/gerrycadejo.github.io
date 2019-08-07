@@ -1,20 +1,25 @@
 let map;
 let circle;
 let directionsDisplay;
-let destiMarker;
+let diablo;
 let smallCircle;
 let markers = [];
+let image;
+let diablo2;
+let image2;
 let locations =
   [{title: 'Barezzito', location: {lat:14.5955048,lng: -90.4962555}},
   {title: "Axel's grill AB", location: {lat: 14.5858135,lng: -90.489115}},
   {title: "Rägsved's Pub", location: {lat:14.5846358, lng: -90.4867873}},
   {title: "Prueba", location: {lat: 14.596931, lng: -90.492354}},
   {title: "Orby Bar & Kok", location: {lat:14.5896505 ,lng: -90.4905362}}];
-var lineSymbol = {
-     path: 'M 0,-1 0,1',
-     strokeOpacity: 1,
-     scale: 4  };
 
+let myTexts = [
+  'Priceless means singing your favorite song along with strangers. - Nico',
+  'Priceless means laughing whenever you see the pics that happened that evening. - Lisa',
+  'Priceless means taking the chance to create a new beginning. - Diego',
+  'Priceless means  leaving the world outside and just keep chatting. - Julia'
+];
 function initMap() {
   var styles = [
     {
@@ -151,13 +156,14 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'),
    {
     center: {lat: 14.628434, lng: -90.522713},
-    zoom: 13,
+    zoom: 17,
     styles: styles,
     mapTypeControl: false ,
     disableDefaultUI: true,
     rotateControl: true,
     gestureHandling: "auto",
    });
+
 
   for ( var i = 0; i < locations.length; i++) {
    var position = locations[i].location;
@@ -186,6 +192,9 @@ function initMap() {
 // GEOLOCATION
 
 function getLocation() {
+  var loadingText = document.getElementById('take2');
+  var text = myTexts[Math.floor(Math.random() * myTexts.length )];
+  loadingText.innerHTML = text;
   if (navigator.geolocation) {
     console.log('geolocation available');
     navigator.geolocation.watchPosition(showPosition);
@@ -224,6 +233,7 @@ function showPosition(position) {
   var longitude = pos.lng;
   console.log(latitude);
   centerControl(latitude, longitude);
+
 }
 
 
@@ -249,8 +259,13 @@ function renderRoute(ori, desti, name) {
   },
   function (response, status) {
   if (status === google.maps.DirectionsStatus.OK) {
-
+    document.getElementById('loadingPage').style.display = "none";
+    document.getElementById('map').style.display = "block";
+    document.getElementById('feedback').style.zIndex = "20";
+    document.getElementById('center-button').style.zIndex = "20";
+    document.getElementById('navegar').style.zIndex = "20";
     document.getElementById('replace-me').innerText = name;
+
     var myRoute = response.routes[0].legs[0];
     console.log(myRoute);
 
@@ -270,48 +285,51 @@ function renderRoute(ori, desti, name) {
         repeat: '10px'
             }],
     });
-    limitRenderer(response, walkingPathLine, myRoute);
+    var pospos = myRoute.end_location;
+    limitRenderer(response, walkingPathLine, pospos);
     }
     });
 }
 
-function limitRenderer(result, line, markerpos){
+function limitRenderer(result, line, myroute){
 if (directionsDisplay != null){
   console.log('there is already a line')
   directionsDisplay.setMap(null);
   directionsDisplay = null;
-  destiMarker = null;
-  limitRenderer(result, line, markerpos);
+  limitRenderer(result, line, myroute);
 } else {
   directionsDisplay = new google.maps.DirectionsRenderer({
   map: map,
   directions: result  ,
   suppressMarkers: true,
-  polylineOptions: line,
   preserveViewport: true,
+  polylineOptions: line,
   });
   console.log('no country for old lines');
-  destinationMarker(markerpos, destiMarker);
 }
 }
 
 // creates the bar's marker
-function destinationMarker(response, destiMarker){
-  var image = {
-    url:'marca4.png',
-    scaledSize: new google.maps.Size(50,55),
-    origin: new google.maps.Point(0,0),
-    anchor: new google.maps.Point(22,22)
-    }
-    destiMarker = new google.maps.Marker({
+function destinationMarker(destiAddress){
+  if (diablo && diablo.setPosition){
+    diablo.setPosition(destiAddress);
+  } else {
+      image = {
+     url:'marca4.png',
+     scaledSize: new google.maps.Size(50,55),
+     origin: new google.maps.Point(0,0),
+     anchor: new google.maps.Point(22,22)
+     }
+        diablo = new google.maps.Marker({
         map: map,
-        position: response.end_location,
+        position: destiAddress,
         icon: image,
         zIndex: 50,
-        //animation: google.maps.Animation.DROP,
       });
-      destiMarker.setMap(map);
     }
+}
+
+
 
 
 // This fills the div at the bottom left with the distance.
@@ -334,20 +352,38 @@ function distanceLeft(origin1, destinationA) {
      }
 
 
-     var firstText = distance.value;
-     var hundredText = distance.value - distance.value + 100;
+     var firstText = 120;
+     var hundredText = distance.value - distance.value + 120;
      var fiftyText = distance.value - distance.value + 50;
-     var tenText = distance.value - distance.value + 10;
-     if (distance.value === firstText) {
-       displayDistance.innerHTML = "<p>Being <strong> " + distance.value + '</strong> meters away from the  favorite story of your future grandkids</p>';
-     } if (distance.value === hundredText) {
-       displayDistance.innerHTML = "<p> Being <strong> " + distance.value + '</strong> meters away from new text 100 mts</p>';
-     } if (distance.value === fiftyText) {
-       displayDistance.innerHTML = "<p> This is " + distance.value + 'the fifty text modafoca</p>';
-     } if (distance.value === tenText) {
-       document.getElementById('right-panel').style.height = "400px";
-       document.getElementById('right-panel').style['border'] = "6px solid #1abc9c";
-       displayDistance.innerHTML = "<h2> congratulations! </h2> <br> <br> <p> You have reached your destination! Cheers mate! </p>";
+     var tenText = distance.value - distance.value + 15;
+     if (distance.value > firstText) {
+       displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away</strong></p>';
+       document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
+       document.getElementById("textfeed").className = "selected-pin-text"
+       document.getElementById("feedback").className = "selected-pin";
+       document.getElementById("feedback").style.WebkitTransition = "all 2s";
+       document.getElementById("feedback").style.transition = "all 2s";
+     } if (distance.value <= hundredText) {
+       displayDistance.innerHTML = "<p> That <strong> " + distance.value + ' mts away </strong> where you are, your next vacay might start today. See how it rhymes? Prepare for the tan lines!  </p>';
+       document.getElementById('congratulations').innerHTML = "<h5> 🍻 Imagine... </h5>";
+       document.getElementById("feedback").className = "selected-pin";
+       document.getElementById("textfeed").className = "selected-pin-text"
+       document.getElementById("feedback").style.WebkitTransition = "all 2s";
+       document.getElementById("feedback").style.transition = "all 2s";
+     } if (distance.value <= fiftyText) {
+       displayDistance.innerHTML = "<p> That <strong> " + distance.value + " mts away </strong>you will run into a friend, who is with a friend who is not your type of friend, still you give it a go and turns out that your friend's friend is actually funny, turns out that your friend's friend might be good for a date. </p>";
+       document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
+       document.getElementById("textfeed").className = "selected-pin-text"
+       document.getElementById("feedback").className = "selected-pin";
+       document.getElementById("feedback").style.WebkitTransition = "all 2s";
+       document.getElementById("feedback").style.transition = "all 2s";
+     } if (distance.value <= tenText) {
+       document.getElementById("feedback").className = "feedback-class";
+       document.getElementById('congratulations').innerHTML = "<h2> You've made it! </h2>";
+       document.getElementById("feedback").style.WebkitTransition = "all 2s";
+       document.getElementById("feedback").style.transition = "all 2s";
+       document.getElementById("textfeed").className = "selected-pin-text moremargin"
+       displayDistance.innerHTML = "<p> Let us toast for great conversations, for the people we will follow the next day, for sweet endings and bumpy beginnings, for being wisely stupid and widely wild. <br><br>Let us toast for the priceless moments that rise ahead of us.</p> <img src='toast.gif'> <br> <br> <a class='btn btn-primary mini' href='index.html' role='button' id='home-button'>HOME</a>";
        navigator.geolocation.clearWatch(id);
      }
      console.log('yeah it happened');
@@ -369,6 +405,7 @@ function locationMarker(user){
         circle.setCenter(user);
         smallCircle.setCenter(user);
         map.panTo(user);
+        map.setZoom(17);
 
       } else {
 
