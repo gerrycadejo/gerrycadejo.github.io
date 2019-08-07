@@ -32,8 +32,8 @@ html, body {
 }
 
 #label-beer img {
-  height: 60%;
-  width: 60%;
+  height: 30%;
+  width: 30%;
 }
 
 h1 {
@@ -50,11 +50,11 @@ h1 {
 
 .bottom {
   height: 50%;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .bottom img {
-  width: 35%;
+  width: 30%;
 }
 
 .navbar {
