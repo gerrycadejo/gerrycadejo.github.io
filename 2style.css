@@ -122,11 +122,12 @@ pointer-events: auto;
     margin: 2px;
     border-radius: 10px;
     display: inline;
+    font-size: 0.8rem;
   }
 
   .greendot {
-    width: 0.6rem;
-    height: 0.7rem;
+    width: 0.3rem;
+    height: 0.3rem;
     background-color: #34495e;
     border-radius: 0.2rem;
     display: inline-block;
@@ -278,6 +279,7 @@ background-color: transparent;
 .modal-body {
  font-family: 'Open Sans', sans-serif;
  font-size: 0.8rem;
+ padding: 10px 19px;
 }
 
 

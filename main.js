@@ -357,7 +357,7 @@ function distanceLeft(origin1, destinationA) {
      var fiftyText = distance.value - distance.value + 50;
      var tenText = distance.value - distance.value + 15;
      if (distance.value > firstText) {
-       displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away</strong></p>';
+       displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away #TimeToShine</strong></p>';
        document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
        document.getElementById("textfeed").className = "selected-pin-text"
        document.getElementById("feedback").className = "selected-pin";
@@ -371,7 +371,7 @@ function distanceLeft(origin1, destinationA) {
        document.getElementById("feedback").style.WebkitTransition = "all 2s";
        document.getElementById("feedback").style.transition = "all 2s";
      } if (distance.value <= fiftyText) {
-       displayDistance.innerHTML = "<p> That <strong> " + distance.value + " mts away </strong>you will run into a friend, who is with a friend who is not your type of friend, still you give it a go and turns out that your friend's friend is actually funny, turns out that your friend's friend might be good for a date. </p>";
+       displayDistance.innerHTML = "<p> That <strong> " + distance.value + " mts away </strong>you will run into a friend, who's with a friend that is not your type of friend, but hey, who can say no to having a new really hot friend?. </p>";
        document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
        document.getElementById("textfeed").className = "selected-pin-text"
        document.getElementById("feedback").className = "selected-pin";
