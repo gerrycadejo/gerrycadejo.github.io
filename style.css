@@ -33,7 +33,7 @@ html, body {
 
 #label-beer img {
   height: 94%;
-  width: 86%;
+  width: 75%;
 }
 
 h1 {
@@ -45,11 +45,11 @@ h1 {
 }
 
 .centro {
-  height: 40%;
+  height: 25%;
 }
 
 .bottom {
-  height: 25%;
+  height: 50%;
 }
 
 .bottom img {
