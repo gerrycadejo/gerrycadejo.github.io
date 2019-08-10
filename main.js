@@ -7,12 +7,11 @@ let markers = [];
 let image;
 let diablo2;
 let image2;
-let locations =
-  [{title: 'Barezzito', location: {lat:14.5955048,lng: -90.4962555}},
-  {title: "Axel's grill AB", location: {lat: 14.5858135,lng: -90.489115}},
-  {title: "Rägsved's Pub", location: {lat:14.5846358, lng: -90.4867873}},
-  {title: "Prueba", location: {lat: 14.596931, lng: -90.492354}},
-  {title: "Orby Bar & Kok", location: {lat:14.5896505 ,lng: -90.4905362}}];
+let locations =[
+{title: 'Carmen', location: {lat:59.315695,lng: 18.076237}},
+{title: "Axel's grill", location: {lat: 59.2616754,lng: 18.0126894}},
+{title: "Ragsved's Pub", location: {lat:59.260261, lng: 18.025663}},
+{title: "Orby Bar & Kok", location: {lat:59.274388 ,lng: 18.022592}}]
 
 let myTexts = [
   'Priceless means singing your favorite song along with strangers. - Nico',
@@ -155,7 +154,7 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'),
    {
-    center: {lat: 14.628434, lng: -90.522713},
+    center: {lat: 59.334591, lng: 18.063240},
     zoom: 17,
     styles: styles,
     mapTypeControl: false ,
