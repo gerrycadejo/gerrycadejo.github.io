@@ -124,6 +124,9 @@ li a {
  text-align: center;
  position: fixed;
 }
+.navbar-light .navbar-toggler {
+  border-color: rgb(52, 73, 94);
+}
 
 .navbar-brand {
   display:none;
