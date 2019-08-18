@@ -6,6 +6,13 @@ html, body {
   height: 100%;
 }
 
+#desktop {
+  display: none;
+}
+
+#rotate {
+  display: none;
+}
 #landingback {
   background-image: url('BACKGROUND.png');
   background-size: cover;
@@ -32,8 +39,11 @@ html, body {
 }
 
 #label-beer img {
-  height: 72%;
-  width: 72%;
+  min-height: 220px;
+  max-height: 240px;
+  width: 76%;
+  min-width: 250px;
+  max-width: 287px;
 }
 
 h1 {
@@ -55,6 +65,7 @@ h1 {
 
 .bottom img {
   width: 28%;
+  max-width: 125px;
 }
 
 .navbar {
@@ -172,4 +183,62 @@ li a {
  font-family: 'Open Sans', sans-serif;
  font-size: 0.8rem;
  padding: 10px 19px;
+}
+
+/***************MEDIA QUERIES****************/
+/* large devices */
+@media only screen and (min-width: 768px) {
+  #landingback {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  #desktop {
+    display: block;
+  }
+
+  #desk-head {
+    font-size: 2.2rem;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 20%;
+    padding-right: 5%;
+  }
+
+  #desk-text {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+  }
+}
+/****** Phones in horizontal mode*******/
+@media only screen and (max-height: 541px) {
+  #landingback {
+    display: none;
+  }
+  #desktop {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #rotate {
+    display: block;
+  }
+  #rot-head {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 20%;
+    padding-right: 5%;
+  }
+  #rot-text {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+  }
 }

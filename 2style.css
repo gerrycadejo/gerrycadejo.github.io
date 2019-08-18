@@ -6,6 +6,10 @@ font-family: 'Sancreek', cursive;
 height: 100%;
 }
 
+#rotate {
+  display: none;
+}
+
 #loadingPage {
   height: 100%;
   display: block;
@@ -199,7 +203,7 @@ margin-bottom: 0.5rem;
   font-size: 0.7rem;
   font-family: 'Open Sans', sans-serif;
   line-height: 1rem;
-  padding: 9px 8px
+  padding: 9px 7px
 }
 
 .selected-pin-text img {
@@ -281,6 +285,51 @@ background-color: transparent;
  font-size: 0.8rem;
  padding: 10px 19px;
 }
+
+/***** MEDIA QUERIES *****/
+/****** Phones in horizontal mode*******/
+@media only screen and (max-height: 541px) {
+  #map {
+    display: none;
+  }
+
+  #congratulations {
+    display: none;
+  }
+  #feedback {
+    display: none;
+  }
+
+  #center-button {
+    display: none;
+  }
+  #desktop {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #rotate {
+    display: block;
+    height: 100vh;
+    background-color: #fcfc64;
+  }
+  #rot-head {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 20%;
+    padding-right: 5%;
+  }
+  #rot-text {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+  }
+}
+
 
 
 /*-LOADEEEERRRR--*/

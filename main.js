@@ -9,15 +9,77 @@ let diablo2;
 let image2;
 let locations =[
 {title: 'Carmen', location: {lat:59.315695,lng: 18.076237}},
-{title: "Axel's grill", location: {lat: 59.2616754,lng: 18.0126894}},
+{title: "Axel's grill", location: {lat: 59.262681,lng: 18.014726}},
 {title: "Ragsved's Pub", location: {lat:59.260261, lng: 18.025663}},
-{title: "Orby Bar & Kok", location: {lat:59.274388 ,lng: 18.022592}}]
+{title: "Orby Bar & Kok", location: {lat:59.274388 ,lng: 18.022592}},
+{title: "Medusa Bar", location: {lat:59.322408 , lng: 18.072654}},
+{title:"Dovas", location:{lat:59.317914 , lng:18.053168}},
+{title:"GS Lion Bar", location:{lat:59.322320 , lng:18.07517}},
+{title:"Hellstroms", location:{lat:59.314505 , lng:18.066717}},
+{title:"Kellys", location:{lat:59.314467 , lng:18.074553}},
+{title:"Soder Retrobar", location:{lat:59.316602 , lng:18.042084}},
+{title:"Teodoras", location:{lat:59.335776 , lng:18.033414}},
+{title:"Retro Bar", location:{lat:59.331641 , lng:18.031215}},
+{title:"Bron", location:{lat:59.337935 , lng:18.035642}},
+{title:"Niva", location:{lat:59.332486 , lng:18.028553}},
+{title:"Bar 08", location:{lat:59.331656 , lng:18.028627}},
+{title:"Hirschenkeller I", location:{lat: 59.315920 , lng:18.072322}},
+{title:"Hirschenkeller II", location:{lat:59.316459 , lng:18.042286}},
+{title:"Hirschenkeller III", location:{lat:59.331568 , lng:18.031204}},
+{title:"Hirschenkeller IV", location:{lat:59.341001 , lng:18.058060}},
+{title:"Baras Backe", location:{lat:59.316534 , lng:18.072297}},
+{title:"Baras Imperium", location:{lat:59.315527 , lng:18.070552}},
+{title:"Baras Stalle", location:{lat:59.313361 , lng:18.070569}},
+{title:"Bara enkelt", location:{lat:59.312308 , lng:18.079175}},
+{title:"Bara 2.Noll", location:{lat:59.314848 , lng:18.076494}},
+{title:"Far & Son I", location:{lat:59.307654 , lng:18.077195}},
+{title:"Far & Son II", location:{lat:59.313311 , lng:18.056942}},
+{title:"Crazy Horse", location:{lat:59.338632 , lng:18.060998}},
+{title:"Neverland Pub", location:{lat:59.314858 , lng:18.071015}},
+{title:"Balthazar", location:{lat:59.316597 , lng:18.072803}},
+{title:"Wollmar", location:{lat:59.316894 , lng:18.062453}},
+{title:"PSB Bar", location:{lat:59.254064 , lng:18.108496}},
+{title:"No Name Bar", location:{lat:59.314923 , lng:18.078064}},
+{title:"Green Hunter", location:{lat:59.313436 , lng:18.073618}},
+{title:"Retrobar II", location:{lat: 59.316456 , lng:18.041803}},
+{title:"Pub Anchor", location:{lat:59.341277 , lng: 18.058499}},
+{title:"Bar 08", location:{lat:59.341130 , lng:18.058709}},
+{title:"The Crib", location:{lat:59.340636 , lng:18.058450}},
+{title:"International Bar", location:{lat:59.335611 , lng:18.071023}},
+{title:"Johannes Bar", location:{lat: 59.264029, lng:18.040571}},
+{title:"N-See Bar", location:{lat:59.341958 , lng:18.060256}},
+{title:"Gullmarssons Krog", location:{lat:59.298305 , lng:18.079756}},
+{title:"Olstugan", location:{lat:59.298068 , lng:18.079336}},
+{title:"Arstabo", location:{lat:59.297242 , lng:18.051599}},
+{title:"Martas Krog", location:{lat:59.299347 , lng:18.034052}},
+{title:"Stage Bar", location:{lat:59.316932 , lng:18.032795}},
+{title:"Three Friends", location:{lat:59.301496 , lng:18.012091}},
+{title:"Mbargo", location:{lat:59.315594 , lng:18.030288}},
+{title:"Pub Diset", location:{lat:59.305542 , lng:17.988619}},
+{title:"The Swan", location:{lat:59.300690 , lng:18.014559}},
+{title:"Zinkens Krog", location:{lat:59.316844 , lng:18.050419}},
+{title:"Krukan", location:{lat:59.317144 , lng:18.055360}},
+{title:"Kloster", location:{lat:59.318030 , lng:18.054437}},
+{title:"Hjartats Bar", location:{lat:59.318946 , lng:18.065386}},
+{title:"Sodra Hornan", location:{lat:59.313729 , lng:18.064787}},
+{title:"Bar Etable", location:{lat:59.338942 , lng:18.061552}},
+{title:"The Doors", location:{lat:59.344792 , lng:18.059327}},
+{title:"Elfgarden", location:{lat:59.278154 , lng:18.006077}},
+{title:"Pappagallo", location:{lat:59.262097 , lng:18.020236}},
+{title:"HoneyHoney", location:{lat:59.314695 , lng:18.076351}},
+{title:"Central Bar", location:{lat:59.314666 , lng:18.076056}},
+{title:"The Flying Dog", location:{lat:59.314633 , lng:18.075810}},
+{title:"Soderkallare", location:{lat:59.315069 , lng:18.075703}},
+{title:"Lokes Bar", location:{lat:59.313779 , lng:18.090530}},
+{title:"Prego Kolgrill", location:{lat:59.270262 , lng:18.048412}},
+{title:"Backstreet Pub", location:{lat:59.294797 , lng:18.073770}}
+]
 
 let myTexts = [
   'Priceless means singing your favorite song along with strangers. - Nico',
-  'Priceless means laughing whenever you see the pics that happened that evening. - Lisa',
+  'Priceless means laughing whenever you remember what happened that evening. - Lisa',
   'Priceless means taking the chance to create a new beginning. - Diego',
-  'Priceless means  leaving the world outside and just keep chatting. - Julia'
+  'Priceless means leaving the world and its problems behind and just keep chatting. - Julia'
 ];
 function initMap() {
   var styles = [
@@ -348,14 +410,23 @@ function distanceLeft(origin1, destinationA) {
      var distance = response.rows[0].elements[0].distance;
      var displayDistance = document.getElementById("right-panel");
      console.log(distance);
+     timerText()
+     displayDistance.innerHTML = "<p>Follow the yellow brick road!";
+     document.getElementById('congratulations').innerHTML = "<h5>🍻Let the stories begin!</h5>";
+
      }
 
-
-     var firstText = 120;
-     var hundredText = distance.value - distance.value + 120;
-     var fiftyText = distance.value - distance.value + 50;
-     var tenText = distance.value - distance.value + 15;
-     if (distance.value > firstText) {
+     // This would make the brick road text to appear 4 seconds every time, before showing distance value
+     function timerText() {
+       setTimeout(introtext, 2600);
+     }
+     // Gets triggered by the timer
+     function introtext(){
+     var firstText = 500;
+     var hundredText = 250;
+     var fiftyText = 100;
+     var tenText = 15;
+     if (distance.value >= firstText) {
        displayDistance.innerHTML = "<p>that the guy who knows a girl, who works where you want to work and is willing to talk to you is just <strong>" + distance.value + ' mts away</strong> #TimeToShine</p>';
        document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
        document.getElementById("textfeed").className = "selected-pin-text"
@@ -370,7 +441,7 @@ function distanceLeft(origin1, destinationA) {
        document.getElementById("feedback").style.WebkitTransition = "all 2s";
        document.getElementById("feedback").style.transition = "all 2s";
      } if (distance.value <= fiftyText) {
-       displayDistance.innerHTML = "<p> That <strong> " + distance.value + " mts away </strong>you will run into a friend, who's with a friend that is not your type of friend, but hey, who can say no to having a new really hot friend?. </p>";
+       displayDistance.innerHTML = "<p> That <strong> " + distance.value + " mts away </strong>you will run into a friend, who's with a friend that is not your type of friend, but damn that friend is hot and honestly, it hurts nobody to have one more really hot friend</p>";
        document.getElementById('congratulations').innerHTML = "<h5>🍻 Imagine... </h5>";
        document.getElementById("textfeed").className = "selected-pin-text"
        document.getElementById("feedback").className = "selected-pin";
@@ -387,7 +458,7 @@ function distanceLeft(origin1, destinationA) {
      }
      console.log('yeah it happened');
      console.log(tenText);
-
+     }
      });
 
 
@@ -466,6 +537,7 @@ function rotatePic(){
   var imgElement = document.getElementById('logo');
   imgElement.style.transform = (imgElement.style.transform === img2)? img1 : img2;
 }
+
 
 // load map
 google.maps.event.addDomListener(window, "load", initMap);
