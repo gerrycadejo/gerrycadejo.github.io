@@ -8,12 +8,16 @@ html, body {
   height: 100%;
   text-align: center;
   color: black;
-  background-color: #ecf0f1;
+  background-color: #fbfbfb;
 
 }
 .row {
-  background-image:url('intro_1.gif');
+  height: 100vh;
+}
+
+#text-wrapper {
+  background-image:url('introvid_1.gif');
   background-position: center;
   background-size: auto;
-  height: 100vh;
+  height: 50%;
 }
