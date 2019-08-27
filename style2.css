@@ -1,6 +1,3 @@
-/*font-family: 'Righteous', cursive;
-font-family: 'Open Sans', sans-serif;*/
-
 html, body {
   margin: 0 auto;
   padding: 0 auto;
@@ -14,94 +11,32 @@ html, body {
 
 }
 
-/* VIdeo CSS */
-.row {
-  height: 95vh;
+
+.one {
+  background-color: #686de0;
+  height: 33.33vh;
+  border: 3px solid #fff;
+  border-radius: 10px;
 }
 
-#text-wrapper {
-  background-image:url('introvid_1.gif');
-  background-position: center;
-  background-size: auto;
-  height: 50%;
+.two {
+  background-color: #ff7979;
+  height: 33.33vh;
+  border: 3px solid #fff;
+  border-radius: 10px;
+
 }
 
-#page1 {
-  display: block;
-}
+.three {
+  background-color: #f9ca24;
+  height: 33.33vh;
+  border: 3px solid #fff;
+  border-radius: 10px;
 
-
-/* landing page, aka #page1 */
-
-#page1 {
-  display: none;
-}
-
-#page1 h1 {
-  font-family: 'Righteous', cursive;
-  font-weight: 800;
-  font-size: 2.0rem;
-}
-
-#page1 p {
-  display: block;
-}
-
-#page1 .pd-text {
-  font-size: 0.7rem;
-  font-weight: lighter;
-}
-
-.underlined {
-  font-size: 1rem !important;
-  background-color: #e056fd;
-  font-weight: bolder !important;
-}
-
-/* scrool n roll */
-#page1 img {
-  position: fixed;
-  bottom: 5%;
-  left: 49%;
-  width: 2%;
-  height: 2%;
 }
 
 
-/* */
-
-@media (max-width: 768px) {
-  #page1 h1, p {
-    text-align: center;
-  }
-
-
-  #page1 .pd-text {
-    font-size: 0.6rem;
-  }
-
-  #page1 .underlined {
-    font-size: 1rem;
-    margin: 0 auto;
-    font-weight: bolder !important;
-
-  }
-
-  #page1 h1 {
-    font-size: 1.5rem;
-  }
-
-  #page1 img {
-    position: fixed;
-    bottom: 5%;
-    left: 48%;
-    width: 6%;
-    height: 3%;
-  }
-}
-
-/* navbar*/
-
+/* burger menu*/
 /* The sidebar menu */
 .sidebar {
   height: 100vh; /* 100% Full-height */
@@ -151,8 +86,10 @@ html, body {
   padding: 10px 15px;
   border: none;
   left: 3%;
+  z-index: 1;
   position: fixed;
   border-radius: 50px;
+  margin-top: 1%;
 }
 
 .openbtn:hover {
@@ -162,7 +99,7 @@ html, body {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #page1 {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  padding: 0px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
