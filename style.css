@@ -9,12 +9,14 @@ html, body {
   text-align: center;
   color: black;
   background-color: #ffffff;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
 }
 
 /* VIdeo CSS */
 .row {
-  height: 100vh;
+  height: 95vh;
 }
 
 #text-wrapper {
@@ -102,7 +104,7 @@ html, body {
 
 /* The sidebar menu */
 .sidebar {
-  height: 100%; /* 100% Full-height */
+  height: 100vh; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -118,10 +120,11 @@ html, body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1rem;
   color: #fff;
   display: block;
   transition: 0.3s;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
