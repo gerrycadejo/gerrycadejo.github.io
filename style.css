@@ -125,7 +125,7 @@ html, body {
   display: block;
   transition: 0.3s;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /* When you mouse over the navigation links, change their color */
