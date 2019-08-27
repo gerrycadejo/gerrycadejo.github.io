@@ -120,11 +120,12 @@ html, body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #fff;
   display: block;
   transition: 0.3s;
   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 /* When you mouse over the navigation links, change their color */
