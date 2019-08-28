@@ -158,7 +158,8 @@ html, body {
 }
 .gerry {
   vertical-align: middle;
-    margin-top: 10%;
+  position: relative;
+  top: 40%;
     margin-bottom: 4%;
     border-style: none;
     width: 80%;
