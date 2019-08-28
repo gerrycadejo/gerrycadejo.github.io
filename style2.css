@@ -148,6 +148,14 @@ html, body {
   background-color: #efefef;
   }
 
+  .two-1 {
+  height: 90vh;
+  background-color: #fff;
+  margin-bottom: 2.5vh;
+  border-radius: 50px;
+  margin-top: 5vh;
+  }
+
   .three {
   height:90vh;
   background-color: #fff;
@@ -193,11 +201,10 @@ padding: 0px 34px;
 }
 
 .position {
-  font-size: 0.8rem;
+  font-size: 1rem;
   position: relative;
   top: 20%;
   border-radius: 7px;
-  background-color: #ffffff;
   margin: 0 auto;
   width: 60%;
   height: 9%;
@@ -251,5 +258,15 @@ padding: 0px 34px;
   margin-top: 0;
   margin-bottom: 1rem;
   top: 20%;
-  left: 10vh;
+  left: 15vh;
+}
+
+.caption-2 {
+  position: relative;
+  top: 20vh;
+  margin-top: 0;
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0px 68px;
 }
