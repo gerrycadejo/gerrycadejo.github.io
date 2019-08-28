@@ -125,25 +125,25 @@ html, body {
   }
 
   .one {
-  height: 98vh;
+  height: 90vh;
   background-color: #fff;
-  margin-bottom: 1vh;
+  margin-bottom: 2.5vh;
   border-radius: 50px;
-  margin-top: 1vh;
+  margin-top: 5vh;
   }
 
   .two {
-  height: 98vh;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+  height: 90vh;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
   border-radius: 50px;
   background-color: #efefef;
   }
 
   .three {
-  height:98vh;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+  height:90vh;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
   border-radius: 50px;
 
   }
@@ -161,7 +161,7 @@ html, body {
     margin-top: 20%;
     margin-bottom: 4%;
     border-style: none;
-    width: 90%;
+    width: 80%;
     border-radius: 20px;
     -webkit-box-shadow: 0px 10px 12px 0px rgba(153,148,153,1);
     -moz-box-shadow: 0px 10px 12px 0px rgba(153,148,153,1);
