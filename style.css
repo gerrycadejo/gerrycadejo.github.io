@@ -74,7 +74,11 @@ html, body {
   #page1 h1, p {
     text-align: center;
   }
-
+  .openbtn {
+    margin-top: 0%;
+   left: 3.4%;
+   transform: scale(0.7);
+  }
 
   #page1 .pd-text {
     font-size: 0.6rem;

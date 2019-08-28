@@ -173,12 +173,12 @@ html, body {
   font-family: 'Righteous', cursive;
   font-size: 1.2rem;
   position: relative;
-  top: 6vh;
+  top: 5.5vh;
 }
 .gerry {
   vertical-align: middle;
   position: relative;
-  margin-top: 12%;
+  margin-top: 10%;
     margin-bottom: 4%;
     border-style: none;
     width: 75%;
@@ -189,7 +189,7 @@ html, body {
 
 .caption {
   margin-top: 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 margin-bottom: 1rem;
 width: 100%;
 padding: 0px 55px;
