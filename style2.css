@@ -132,6 +132,14 @@ html, body {
   margin-top: 5vh;
   }
 
+  .one-1 {
+    height: 90vh;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+    border-radius: 50px;
+    background-color: #efefef;
+  }
+
   .two {
   height: 90vh;
   margin-bottom: 2.5vh;
@@ -142,6 +150,7 @@ html, body {
 
   .three {
   height:90vh;
+  background-color: #fff;
   margin-bottom: 2.5vh;
   margin-top: 2.5vh;
   border-radius: 50px;
@@ -204,6 +213,43 @@ padding: 0px 34px;
 
 .triangle {
   vertical-align: middle;
-  margin-top: 35%;
+  margin-top: 20vh;
   position: inherit;
+  width: 70%;
+}
+
+.title-3 {
+  font-family: 'Righteous', cursive;
+  font-size: 1.2rem;
+  top: 15%;
+  position: relative;
+}
+
+.caption-1 {
+  position: relative;
+  top: 18%;
+  margin-top: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0px 34px;
+}
+
+.dates {
+  position: relative;
+  top: 11vh;
+  margin-top: 0;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0px 34px;
+}
+
+.brands-list {
+  position: relative;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  top: 20%;
+  left: 10vh;
 }
