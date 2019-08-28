@@ -172,11 +172,13 @@ html, body {
 .title {
   font-family: 'Righteous', cursive;
   font-size: 1.2rem;
+  position: relative;
+  top: 6vh;
 }
 .gerry {
   vertical-align: middle;
   position: relative;
-  margin-top: 5%;
+  margin-top: 12%;
     margin-bottom: 4%;
     border-style: none;
     width: 75%;
@@ -190,7 +192,7 @@ html, body {
   font-size: 0.8rem;
 margin-bottom: 1rem;
 width: 100%;
-padding: 0px 34px;
+padding: 0px 55px;
 }
 
 .title-1 {
