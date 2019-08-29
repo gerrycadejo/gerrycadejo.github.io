@@ -316,7 +316,7 @@ padding: 0px 55px;
     position: relative;
     display: block;
     margin-top: 1vh;
-    font-size: 0.4rem;
+    font-size: 0.7rem;
 }
 
 .thumbnail-1 {
@@ -325,4 +325,28 @@ padding: 0px 55px;
   position: inherit;
   width: 40%;
   border-radius: 10px;
+}
+
+.caption-5 {
+  padding: 0px 50px;
+  font-size: 0.8rem;
+  position: relative;
+  top: 15vh;
+}
+
+.btn {
+  position: relative;
+top: 20vh;
+margin: 0 auto;
+left: 9vh;
+font-size: 0.7rem;
+font-weight: bolder;
+}
+
+.icon {
+  width: 6%;
+  position: relative;
+  margin: 0px 2%;
+  top: 32vh;
+  right: 7vh;
 }
