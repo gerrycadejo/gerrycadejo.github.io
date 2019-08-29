@@ -336,17 +336,20 @@ padding: 0px 55px;
 
 .btn {
   position: relative;
-top: 20vh;
-margin: 0 auto;
-left: 9vh;
-font-size: 0.7rem;
-font-weight: bolder;
+  text-align: center;
+  top: 20vh;
+  margin: 0 auto;
+  font-size: 0.7rem;
+  font-weight: bolder;
 }
 
 .icon {
   width: 6%;
   position: relative;
   margin: 0px 2%;
-  top: 32vh;
-  right: 7vh;
+}
+
+.footer {
+  position: relative;
+  top: 25vh;
 }
