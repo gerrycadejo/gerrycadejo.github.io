@@ -14,13 +14,14 @@ introduction();
 function openNav() {
   document.getElementById("mySidebar").style.width = "40vh";
   document.getElementById("page1").style.marginLeft = "250px";
-  document.getElementById("triangle").style.display="none";
+  document.getElementById('burger').style.display = "none";
+
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("page1").style.marginLeft = "0";
-  document.getElementById("triangle").style.display="block";
+  document.getElementById('burger').style.display = "block";
 
 }

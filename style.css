@@ -71,7 +71,7 @@ html, body {
   }
   .openbtn {
     margin-top: 0%;
-   left: 3.4%;
+   left: 6%;
    transform: scale(0.7);
    position:fixed;
    z-index: 1;
@@ -108,7 +108,7 @@ html, body {
 
   .last-title {
     position:relative;
-    top: 20vh;
+    top: 25vh;
   }
   .end-text {
     display: block;
@@ -117,7 +117,7 @@ html, body {
     line-height: 1.5rem;
     word-spacing: -1px;
     position:relative;
-    top: 22vh;
+    top: 27vh;
   }
 
   .section {
@@ -129,12 +129,12 @@ html, body {
     width: 6%;
     position: relative;
     margin: 0px 2%;
-    top: 26vh;
+    top: 35vh;
     border-radius: 4px;
   }
   .hire-me {
     position: relative;
-    top: 24vh;
+    top: 32vh;
   }
 }
 
@@ -188,7 +188,7 @@ html, body {
   color: white;
   padding: 10px 15px;
   border: none;
-  left: 3%;
+  left: 6%;
   position: fixed;
   border-radius: 8px;
 }
