@@ -16,7 +16,7 @@ html, body {
 
 /* VIdeo CSS */
 .row {
-  height: 95vh;
+  height: 100vh;
 }
 
 #text-wrapper {
@@ -28,14 +28,15 @@ html, body {
 
 #page1 {
   display: block;
+  height: 100vh;
+  overflow-y: scroll;
+
 }
 
 
 /* landing page, aka #page1 */
 
-#page1 {
-  display: none;
-}
+
 
 #page1 h1 {
   font-family: 'Righteous', cursive;
@@ -43,7 +44,7 @@ html, body {
   font-size: 2.0rem;
 }
 
-#page1 p {
+#subtitle {
   display: block;
 }
 
@@ -59,13 +60,7 @@ html, body {
 }
 
 /* scrool n roll */
-#page1 img {
-  position: fixed;
-  bottom: 5%;
-  left: 49%;
-  width: 2%;
-  height: 2%;
-}
+
 
 
 /* */
@@ -78,6 +73,8 @@ html, body {
     margin-top: 0%;
    left: 3.4%;
    transform: scale(0.7);
+   position:fixed;
+   z-index: 1;
   }
 
   #page1 .pd-text {
@@ -95,16 +92,53 @@ html, body {
     font-size: 1.5rem;
   }
 
-  #page1 img {
-    position: fixed;
-    bottom: 5%;
-    left: 48%;
+  .story {
+    display: block;
+    font-size: 1rem;
+    padding: 0% 4%;
+    line-height: 2.5rem;
+    word-spacing: -1px;
+  }
+
+  .work {
+    background-color: #f6e58d;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .last-title {
+    position:relative;
+    top: 20vh;
+  }
+  .end-text {
+    display: block;
+    font-size: 1rem;
+    padding: 0% 4%;
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    position:relative;
+    top: 22vh;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .icon {
     width: 6%;
-    height: 3%;
+    position: relative;
+    margin: 0px 2%;
+    top: 26vh;
+    border-radius: 4px;
+  }
+  .hire-me {
+    position: relative;
+    top: 24vh;
   }
 }
 
-/* navbar*/
+/* navbar*-------------------------------------------------/
 
 /* The sidebar menu */
 .sidebar {
@@ -114,7 +148,7 @@ html, body {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #e056fd; /* Black*/
+  background-color: #535c68; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -150,17 +184,17 @@ html, body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #e056fd;
+  background-color: #535c68;
   color: white;
   padding: 10px 15px;
   border: none;
   left: 3%;
   position: fixed;
-  border-radius: 50px;
+  border-radius: 8px;
 }
 
 .openbtn:hover {
-  background-color: #e056fd;
+  background-color: #535c68;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
