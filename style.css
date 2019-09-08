@@ -146,9 +146,14 @@ footer {
   .hire-me {
     position: relative;
     top: 32vh;
-    width: 28%;
+    width: 170px;
     font-weight: bold;
     background-color: #ff7979 !important;
+  }
+
+  .made {
+    font-size: 0.7rem;
+    font-weight: bolder;
   }
 }
 
@@ -161,7 +166,7 @@ footer {
   body {
     overflow-x: hidden;
   }
-  
+
   .openbtn {
     margin-top: 0%;
    left: 6%;
