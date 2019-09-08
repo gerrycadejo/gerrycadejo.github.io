@@ -226,16 +226,16 @@ footer {
   }
 
   .icon {
-    width: 3%;
+    width: 2%;
     position: relative;
-    margin: 0px 2%;
+    margin: 0px 1%;
     top: 45vh;
     border-radius: 4px;
   }
   .hire-me {
     position: relative;
     text-transform: uppercase;
-    width: 200px;
+    width: 180px;
     top: 32vh;
     font-weight: bold;
     background-color: #ff7979 !important;
