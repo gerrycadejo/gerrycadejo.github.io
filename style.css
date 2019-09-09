@@ -68,6 +68,15 @@ footer {
     height: 3%;
 }
 
+.img-mod {
+  margin: 0 auto;
+  padding: 2%;
+  width: 40vh;
+}
+
+.clickable {
+  cursor:pointer;
+}
 /* scrool n roll */
 
 

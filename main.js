@@ -4,6 +4,9 @@ function intro() {
 }
 intro();
 */
+
+
+
 function introduction() {
   document.getElementById('intro').style.display = "none";
   document.getElementById('page1').style.display = "block";
@@ -25,3 +28,7 @@ function closeNav() {
   document.getElementById('burger').style.display = "block";
 
 }
+
+setTimeout(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+}, 500);
