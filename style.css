@@ -226,6 +226,10 @@ footer {
     margin-bottom: 4%;
     border-radius: 30px
   }
+  .clickable {
+    cursor:pointer;
+  }
+
 }
 
 
