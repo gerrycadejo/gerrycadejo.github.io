@@ -228,6 +228,9 @@ footer {
   }
   .clickable {
     cursor:pointer;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
   }
 
 }
