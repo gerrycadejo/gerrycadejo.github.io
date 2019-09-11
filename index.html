@@ -385,6 +385,7 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
 
 			target.bind( 'mouseleave', remove_tooltip );
 			tooltip.bind( 'click', remove_tooltip );
+      tooltip.on("scroll",remove_tooltip);
 		});
 	});
 
