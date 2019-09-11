@@ -28,7 +28,3 @@ function closeNav() {
   document.getElementById('burger').style.display = "block";
 
 }
-
-setTimeout(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-}, 500);

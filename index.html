@@ -47,7 +47,7 @@
     I used to write plays when I was in high school.
     I remember writing for hours, reading it out loud, editing, laughing
     and then fantasizing about the opening show. Even though, me and my plays got butchered everytime by the
-    school <a href="#" data-toggle="tooltip"  class="clickable" title="Damn you Pablo!">critique</a>,
+    school <a href="#"  rel="tooltip"  class="clickable" title="Damn you Pablo!">critique</a>,
     it was really fun and in a way, these were my
     firsts tries as a writer.<br>
     </p>
@@ -55,7 +55,7 @@
     Back then, all I was certain of was that I liked going stupid and me
     and my highschool sweetheart were gonna stay together forever.
     I was 17 at the time, the world was mine and failure was not even on my
-    <a href="#" class="clickable" data-toggle="tooltip" title="Nor did my first breakup">radar.</a>
+    <a href="#" class="clickable"  rel="tooltip" title="Nor did my first breakup">radar.</a>
   </p>
     <p class=" text-justify story">
     I was all about the fancy job titles, academic achievements and serious adults matters.
@@ -77,7 +77,7 @@
       I decided to go to med school.
       Partly because I grew up watching George Clooney as a doctor, but
       mainly cause I believed that only then I could change the
-      <a href="#" data-toggle="tooltip"  class="clickable" title="Someone ordered cliché?">world.</a>
+      <a href="#"  rel="tooltip"  class="clickable" title="Someone ordered cliché?">world.</a>
       <br>
       </p>
     <p class=" text-justify story">
@@ -121,7 +121,7 @@
   <p class=" text-justify story">
     Especially, I liked the fact that it allowed me to be my fullest version
     of myself. Everything I've lived before, the things that I've cared
-    for, the shows that I've<button href="#" data-toggle="tooltip"  class="clickable" title="Especially Friends S9"> watched</button>, it all helped me become a better
+    for, the shows that I've<a href="#"  rel="tooltip"  class="clickable" title="Especially Friends S9"> watched</a>, it all helped me become a better
     professional, to take my peculiarity and from it, connect
     with the world.
   </p>
@@ -178,7 +178,7 @@
 <!-- End of modal -->
 <p class="text-justify story">
   I can't blame them, where I come from not only would you find ads
-  everywhere, but 90% of them might <a href="#" data-toggle="tooltip"  class="clickable" title="They won't. Sorry for lying.">kill you</a> if you stare for too long. Most of these, are packed with lame puns and flashy colors,
+  everywhere, but 90% of them might <a href="#"  rel="tooltip"  class="clickable" title="They won't. Sorry for lying.">kill you</a> if you stare for too long. Most of these, are packed with lame puns and flashy colors,
   like how hard could it be to create them?</p>
 <p class="text-justify story">
 The problem is, they are neglecting the process and even worst they're missing
@@ -269,9 +269,9 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
 <p class=" text-justify story">
   Hyper it's the most recent chapter of my life and I'm still working on the plot.
   Looking back, I'm  very grateful for the journey that brought me here
-  and all of its invaluable <a href="#" data-toggle="tooltip"  class="clickable" title="Kebab Pizza can't be unseen">lessons</a>.
+  and all of its invaluable <a href="#"  rel="tooltip"  class="clickable" title="Kebab Pizza can't be unseen">lessons</a>.
   Even though I have not learned how
-  to foreseen the <a href="#" data-toggle="tooltip"  class="clickable" title="Oh... But I will!">future</a>, I can easily see myself
+  to foreseen the <a href="#"  rel="tooltip"  class="clickable" title="Oh... But I will!">future</a>, I can easily see myself
   immersed in ideas and finding solutions with a 10k HD smile on my face.
   </p>
 <p class="text-justify story">
@@ -303,8 +303,93 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
   <script src="https://unpkg.com/popper.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+<script>
+
+	/*
+		TOOLTIP
+	*/
+
+	$( function()
+	{
+		var targets = $( '[rel~=tooltip]' ),
+			target	= false,
+			tooltip = false,
+			title	= false;
+
+		targets.bind( 'mouseenter', function()
+		{
+			target	= $( this );
+			tip		= target.attr( 'title' );
+			tooltip	= $( '<div id="tooltip"></div>' );
+
+			if( !tip || tip == '' )
+				return false;
+
+			target.removeAttr( 'title' );
+			tooltip.css( 'opacity', 0 )
+				   .html( tip )
+				   .appendTo( 'body' );
+
+			var init_tooltip = function()
+			{
+				if( $( window ).width() < tooltip.outerWidth() * 1.5 )
+					tooltip.css( 'max-width', $( window ).width() / 2 );
+				else
+					tooltip.css( 'max-width', 340 );
+
+				var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
+					pos_top	 = target.offset().top - tooltip.outerHeight() - 20;
+
+				if( pos_left < 0 )
+				{
+					pos_left = target.offset().left + target.outerWidth() / 2 - 20;
+					tooltip.addClass( 'left' );
+				}
+				else
+					tooltip.removeClass( 'left' );
+
+				if( pos_left + tooltip.outerWidth() > $( window ).width() )
+				{
+					pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
+					tooltip.addClass( 'right' );
+				}
+				else
+					tooltip.removeClass( 'right' );
+
+				if( pos_top < 0 )
+				{
+					var pos_top	 = target.offset().top + target.outerHeight();
+					tooltip.addClass( 'top' );
+				}
+				else
+					tooltip.removeClass( 'top' );
+
+				tooltip.css( { left: pos_left, top: pos_top } )
+					   .animate( { top: '+=10', opacity: 1 }, 50 );
+			};
+
+			init_tooltip();
+			$( window ).resize( init_tooltip );
+
+			var remove_tooltip = function()
+			{
+				tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
+				{
+					$( this ).remove();
+				});
+
+				target.attr( 'title', tip );
+			};
+
+			target.bind( 'mouseleave', remove_tooltip );
+			tooltip.bind( 'click', remove_tooltip );
+		});
+	});
+
+</script>
+
 
 </body>
 </html>
