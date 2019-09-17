@@ -7,20 +7,12 @@
   <title>Gerardo Gomez</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <!-- first page intro -->
-
-  <div class="container-fluid" id="intro">
-  <div class="row align-items-center">
-    <div class="col col-md-4"> </div>
-    <div class="col-12 col-md-4" id="text-wrapper">
-    </div>
-    <div class="col col-md-4"></div>
-  </div>
-</div>
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -63,21 +55,21 @@
     trade the academic life for free-spirited experiences and have
     "telling stories" as one of my main skills.
   </p>
-  <p class="text-justify story">
+  <p class="text-justify story one">
     I couldn't have possibly guessed that a day like today I would call myself
     a creative and do serious adult kind of work without losing my
-    own stupid touch. For example <span class="work">Apple TV Bites. </span>
+    own stupid touch. For example <a href="ica.html" style="color:black;"><span class="work" id="header">Apple TV Bites. </span></a>
   </p>
 </div>
 
-    <div class="col-12 section">
+    <div class="col-12 section" id="part2">
     <h1> 2 </h1>
     <p class="text-justify story">
       Eventually, it was time to make a decision and after giving it no thought and discussing it with everyone,
       I decided to go to med school.
       Partly because I grew up watching George Clooney as a doctor, but
       mainly cause I believed that only then I could change the
-      <a href="#"  rel="tooltip"  class="clickable" title="Someone ordered cliché?">world.</a>
+      <a href="#" rel="tooltip"  class="clickable" title="Someone ordered cliché?">world.</a>
       <br>
       </p>
     <p class=" text-justify story">
@@ -110,7 +102,7 @@
       needs to be changed: exhibit A <span class="work">Nintendo Labo. </span>
     </p>
   </div> <!-- section -->
-  <div class="col-12 section">
+  <div class="col-12 section" id="part3">
   <h1> 3 </h1>
   <p class="text-justify story">
     Time passed and I finished my bachelor in Marketing.
@@ -153,7 +145,7 @@
     I felt with this project: <span class="work"> Coutts.</span>
   </p>
 </div> <!-- section -->
-<div class="col-12 section">
+<div class="col-12 section" id="part4">
 <h1> 4 </h1>
 <p class="text-justify story">
   It's always been hard to explain what I do to friends and family.
@@ -199,7 +191,7 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
 </div>
 <!-- End of modal -->
 </div> <!-- section -->
-<div class="col-12 section">
+<div class="col-12 section" id="part5">
 <h1> 5 </h1>
 <p class="text-justify story">
   My story would not be complete without telling you about my home
@@ -256,7 +248,7 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
   wellbeing of humankind, so with that in mind, I created this: <span class="work">Priceless bars.</span>
 </p>
 </div> <!-- section -->
-<div class="col-12 section">
+<div class="col-12 section" id="part6">
 <h1> 6 </h1>
 <p class="text-justify story">
   I arrived in Stockholm a year ago and Hyper Island is the reason behind it.
@@ -311,7 +303,7 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
 		TOOLTIP
 	*/
 
-	$( function()
+$( function()
 	{
 		var targets = $( '[rel~=tooltip]' ),
 			target	= false,
@@ -390,7 +382,10 @@ be part of their projects. For instance: <span class="work">Chamba Billboards.</
 	});
 
 </script>
-
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
+  </script>
 </body>
 </html>

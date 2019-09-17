@@ -9,7 +9,7 @@ html, body {
   text-align: center;
   color: black;
   background-color: #ffffff;
-  overflow-y: hidden;
+  overflow-y:visible;
   overflow-x: hidden;
 
 }
@@ -29,7 +29,7 @@ html, body {
 #page1 {
   display: block;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 
 }
@@ -191,14 +191,14 @@ footer {
     margin-bottom: -10px;
   }
   .clooney {
-    width: 275px;
+    width: 310px;
     border-radius: 20px;
     margin: 0 auto;
     padding: 4%;
   }
   .modclooney {
     border-radius: 0.6rem;
-    width: 275px;
+    width: 310px;
     margin: 0 auto;
   }
   .staffer {
@@ -211,8 +211,7 @@ footer {
     margin: 0 auto;
     padding: 2%;
   }
-  .chatmod{
-    width: 300px;
+  .chatmod {
     margin: 0 auto;
   }
   .letitle-1 {
