@@ -238,6 +238,10 @@ footer {
     border: transparent;
     outline: none;
   }
+  .sidebar .contactex {
+    font-size: 0.5rem !important;
+    padding-top: 0px;
+  }
 
 }
 

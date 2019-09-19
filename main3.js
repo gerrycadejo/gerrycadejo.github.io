@@ -72,6 +72,5 @@ $( function()
       var window = $("#page1");
 			target.bind( 'mouseleave', remove_tooltip );
 			tooltip.bind( 'click', remove_tooltip );
-      window.on("scroll",remove_tooltip);
 		});
 	});
