@@ -73,6 +73,17 @@ html, body {
   font-weight: bolder;
 }
 
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.sidebar .contactex {
+  font-size: 0.7rem;
+  padding-top: 0px;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;

@@ -44,7 +44,7 @@ html, body {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #e056fd; /* Black*/
+  background-color: #535c68; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -60,6 +60,17 @@ html, body {
   transition: 0.3s;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
+}
+
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.sidebar .contactex {
+  font-size: 0.7rem;
+  padding-top: 0px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -78,21 +89,22 @@ html, body {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #e056fd;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  left: 2%;
-  z-index: 1;
-  position: fixed;
-  border-radius: 50px;
-  margin-top: 1%;
+    font-size: 20px;
+    transform: scale(0.9);
+    z-index: 4;
+    cursor: pointer;
+    background-color: #535c68;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    left: 6% !important;
+    top: 2%;
+    position: fixed;
+    border-radius: 8px;
 }
 
 .openbtn:hover {
-  background-color: #e056fd;
+  background-color: #535c68;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -166,7 +178,10 @@ html, body {
 }
 
 
-/* Content mobile */
+/* Content mobile------------------
+-------------------------------------------------------
+------------------------------------------------------
+----------------------------------------------------- */
 @media screen and (max-width: 768px) {
 .title {
   font-family: 'Righteous', cursive;
@@ -352,9 +367,26 @@ padding: 0px 55px;
   position: relative;
   top: 30vh;
 }
+.openbtn {
+  font-size: 20px;
+  transform: scale(0.55);
+  z-index: 4;
+  cursor: pointer;
+  background-color: #535c68;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  left: 0% !important;
+  top: 1%;
+  position: fixed;
+  border-radius: 8px;
+}
 }
 
-/* DESKTOP AND TABLET */
+/* DESKTOP AND TABLET.------------------------------
+-----------------------------------------------------
+-----------------------------------------------------
+--------------------------------------------------- */
 .gerry {
   vertical-align: middle;
   position: relative;

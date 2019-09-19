@@ -49,6 +49,8 @@
 .list {
   padding: 1% 4% 1% 8%;
   text-align: justify;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .row {
@@ -62,7 +64,8 @@
   margin-bottom: 5%;
 }
 
-#title {
+.main-title {
+  font-family: 'Righteous', cursive;
   text-align: left;
   margin-top: 15%;
   font-size: 3.2rem;
@@ -93,6 +96,7 @@
   display: block;
   font-size: 1rem;
   padding: 1% 4% 1% 8%;
+  font-size: 1rem;
   line-height: 2rem;
   word-spacing: -1px;
 }
@@ -117,6 +121,18 @@
   margin-bottom: 10%;
 }
 .up-picture {
+  display: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 6%;
+  width: 55%;
+}
+.buru {
   display: none;
 }
 }
@@ -162,6 +178,10 @@
 .list {
   padding: 1% 15%;
   text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+
+
 }
 
 .row {
@@ -175,16 +195,17 @@
   margin-bottom: 5%;
 }
 
-#title {
+.main-title {
+  font-family: 'Righteous', cursive;
   text-align: left;
   margin-top: 15%;
   font-size: 4rem;
-  padding: 1% 8% 1% 17.5%;
+  padding: 1% 8% 1% 18%;
   margin-bottom: 3%;
 }
 
 .bullets {
-  padding: 1% 8% 1% 18%;
+  padding: 1% 8% 1% 18.5%;
   font-size: 0.8rem;
   word-spacing: -1px;
   line-height: 1.5rem;
@@ -221,8 +242,8 @@
   color: white;
   padding: 10px 15px;
   border: none;
-  left: 2.5% !important;
-  top: 1%;
+  left: 6% !important;
+  top: 2%;
   position: fixed;
   border-radius: 8px;
 }
@@ -230,7 +251,7 @@
 .redirect {
   font-size: 0.8rem;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 30%;
 }
 .up-picture {
   display: flex;
@@ -243,6 +264,18 @@
 
 .up-text {
   margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 4%;
+    width: 25%;
+}
+
+.bar {
+  width: 20% !important;
 }
 }
 
@@ -274,6 +307,17 @@
   transition: 0.3s;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
+}
+
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.sidebar .contactex {
+  font-size: 0.7rem;
+  padding-top: 0px;
 }
 
 /* When you mouse over the navigation links, change their color */

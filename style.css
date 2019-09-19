@@ -102,11 +102,18 @@ footer {
     text-align: center;
   }
   .openbtn {
-    margin-top: 0%;
-   left: 6%;
-   transform: scale(0.7);
-   position:fixed;
-   z-index: 1;
+    font-size: 20px;
+    transform: scale(0.55);
+    z-index: 4;
+    cursor: pointer;
+    background-color: #535c68;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    left: 0% !important;
+    top: 1%;
+    position: fixed;
+    border-radius: 8px;
   }
 
   #page1 .pd-text {
@@ -127,7 +134,7 @@ footer {
   .story {
     display: block;
     font-size: 1rem;
-    padding: 0% 4%;
+    padding: 0% 4% 0% 7%;
     line-height: 2.5rem;
     word-spacing: -1px;
   }
@@ -398,7 +405,16 @@ footer {
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
 }
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
 
+.sidebar .contactex {
+  font-size: 0.7rem;
+  padding-top: 0px;
+}
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
