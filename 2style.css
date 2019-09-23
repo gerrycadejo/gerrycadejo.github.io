@@ -1,172 +1,410 @@
 html, body {
-  width: 100vw;
-  overflow-x: hidden;
-}
-* {
-  box-sizing: border-box;
-}
-
-
-.item {
-  width: 99vw;
-  height: 90vh;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #fff;
-  text-align: center;
-  color: #000;
-  font-size: 1em;
-  z-index: 0;
-  margin-bottom: 400px;
-}
-/* Style the header: fixed position (always stay at the top) */
-.header {
-  position: fixed;
-  bottom: 0;
-  height: 10%;
-  z-index: 1;
-  width: 100%;
-  background-color: #ffffff;
+text-align: center;
+padding: 0;
+margin: 0 auto;
+font-family: 'Sancreek', cursive;
+height: 100%;
 }
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
+#rotate {
+  display: none;
 }
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: #4caf50;
-  width: 0%;
-}
-
-
-
-/* navbar*-------------------------------------------------/
-
-/* The sidebar menu */
-.sidebar {
-  height: 100vh; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #535c68; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 25px 45px 8px 32px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #fff;
+#loadingPage {
+  height: 100%;
   display: block;
-  transition: 0.3s;
+  width: 100%;
+  background-color: #34495e;
+  z-index: 60;
+  color: #ffffff;
+}
+
+#loadingPage h3{
+  font-size: 1.2rem;
+  padding-top: 55%;
+}
+#loadingPage p {
+
   font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-}
-
-.sidebar .contactdet {
-padding-top: 152px;
-    font-size: 0.9rem;
-    font-weight: bolder;
-}
-
-.sidebar .contactex {
   font-size: 0.7rem;
-  padding-top: 0px;
+  margin: 19px 8% 1px 8%;
+  padding-left: 2%;
+  border-left: 3px solid #f1c40f;
+  border-left-
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
+#map {
+height: 100%;
+width: 100%;
+display: none;
 }
 
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+
+
+.navbar {
+height: 9vh;
+width: 100%;
+z-index: -1;
+position: fixed;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+margin-top: 10px;
 }
 
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #535c68;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  left: 6%;
-  top: 2%;
-  position: fixed;
-  border-radius: 8px;
+.navbar-collapse {
+  background-color: #ffffff;
+ webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+-moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
+border-radius: 6px;
+max-width: 200px;
+margin-top: 2%;
 }
 
-.openbtn:hover {
-  background-color: #535c68;
+ .cuack{
+   border-bottom: 1px solid #1abc9c26;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#page1 {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+li a {
+  color: black;
 }
-/*Tool tip Css*/
 
-#tooltip
-{
-    text-align: center;
-    color: #fff;
-    background: linear-gradient(315deg, #485461 0%, #28313b 74%);;
-    position: absolute;
-    z-index: 100;
-    padding: 15px;
+.navbar-brand {
+  display:none;
+}
+
+.navbar-toggler-icon {
+  background-image: url(butger2.png) !important;
+  border: 0px solid #fff;
+  width: 37px;
+  height: 37px;
+  border-radius: 5px;
+  -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    outline: none;
+    outline-color: #ffffff00;
+    outline-width: thin;
+}
+
+
+
+/*  #f1c40f */
+/* This is the div with the bar title */
+.map-selector {
+border-radius: 12px;
+box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+background-color: #ffffff;
+width: 300px;
+padding: 7px;
+font-weight: 500;
+pointer-events: auto;
+}
+
+#barName {
+  flex: auto;
+  background: #ffffff;
+  padding: 3px;
+  border-radius: 4px;
+  -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
+  box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
+  margin-left: 0%;
+  margin-right: 15%;
+  margin-top: 1.6%;
+  max-width: 250px;
+  min-width: 180px;
+}
+
+#replace-me {
+    margin-top: 0;
+    padding: 1%;
+    margin: 2px;
+    border-radius: 10px;
+    display: inline;
     font-size: 0.8rem;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 8px;
+  }
+
+  .greendot {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: #34495e;
+    border-radius: 0.2rem;
+    display: inline-block;
+  }
+
+.selected-pin {
+  position: absolute;
+  z-index: -1;
+  bottom: 2%;
+  margin-left: 10%;
+  width: 80%;
+  background: #fff;
+  max-height: 85vh;
+  max-width: 350px;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(88,88,88,.2);
 }
 
-    #tooltip:after /* triangle decoration */
-    {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid #2d3641;
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -10px;
-        margin-left: -10px;
-    }
+.selected-pin-top {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    border-bottom: 4px solid #34495e;
+}
 
-        #tooltip.top:after
-        {
-            border-top-color: transparent;
-            border-bottom: 10px solid #111;
-            top: -20px;
-            bottom: auto;
-        }
+.selected-pin-text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2%;
+}
 
-        #tooltip.left:after
-        {
-            left: 10px;
-            margin: 0;
-        }
+.moremargin {
+  margin-top: 3rem;
+}
 
-        #tooltip.right:after
-        {
-            right: 10px;
-            left: auto;
-            margin: 0;
-        }
+.feedback-class {
+    position: absolute;
+    z-index: 20;
+    bottom: 8%;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 14px solid #f1c40f;
+    background: #ffffff;
+    max-height: 85vh;
+    max-width: 350px;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px 0 rgba(88,88,88,.2);
+    text-align: center;
+}
+
+.feedback-class h2 {
+font-size: 1.5rem;
+margin: 0 auto;
+margin-top: 1.2rem;
+margin-bottom: 0.5rem;
+
+}
+
+.selected-pin-text p {
+  margin-top: -7px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1rem;
+  padding: 9px 7px
+}
+
+.selected-pin-text img {
+  height: 50%;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.mini {
+  background-color: #34495e;
+  border-color: #34495e;
+  width: 50%;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+h5 {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  color: #0e0e0e;
+  margin-bottom: 0.1rem
+  }
+
+
+.selected-pin-top p {
+text-align: center;
+padding: 15px;
+margin: 0 auto;
+border-radius: 12px;
+margin-top: 4%;
+font-size: 0.8em;
+background-color: transparent;
+}
+
+
+#center-button {
+    position: absolute;
+    z-index: -1;
+    bottom: 45%;
+    right: 3%;
+    width: 40px;
+    border: 4px solid #ffffff;
+    background: #fff;
+    max-height: 85vh;
+    max-width: 25vh;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    outline-color: #ffffff36;
+    outline-width: thin;
+}
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    outline: 0;
+}
+
+.modal-content h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 0.8rem;
+ padding: 10px 19px;
+}
+
+#distancelimit {
+  display: none;
+  background-color: yellow;
+  height: 100vh;
+}
+#dis-head {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 40%;
+  padding-left: 5%;
+  padding-top: 20%;
+  padding-right: 5%;
+  text-align: center;
+}
+#dis-text {
+  margin: 0 auto;
+  margin-top: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+}
+
+#dis-button {
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
+  margin-top: 20%;
+}
+
+/***** MEDIA QUERIES *****/
+/****** Phones in horizontal mode*******/
+@media only screen and (min-width: 450px){
+  .selected-pin {
+    max-width: 700px;
+  }
+  #barName {
+    margin-left:   18%;
+    margin-right: 25%;
+  }
+}
+@media only screen and (max-height: 541px) {
+  #map {
+    display: none;
+  }
+
+  #congratulations {
+    display: none;
+  }
+  #feedback {
+    display: none;
+  }
+
+  #center-button {
+    display: none;
+  }
+  #desktop {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #rotate {
+    display: block;
+    height: 100vh;
+    background-color: #fcfc64;
+  }
+  #rot-head {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 20%;
+    padding-right: 5%;
+  }
+  #rot-text {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+  }
+}
+
+
+
+/*-LOADEEEERRRR--*/
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  border-radius: 4px;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #f1c40f;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
