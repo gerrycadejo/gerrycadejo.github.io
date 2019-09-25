@@ -1,256 +1,513 @@
+/*font-family: 'Righteous', cursive;
+font-family: 'Open Sans', sans-serif;*/
+
 html, body {
-  text-align: center;
-  padding: 0;
   margin: 0 auto;
-  font-family: 'Sancreek', cursive;
-  height: 100%;
-}
-
-#desktop {
-  display: none;
-}
-
-#rotate {
-  display: none;
-}
-#landingback {
-  background-image: url('background.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.btn {
+  padding: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  background-color: #fc64fc;
-  border-color: transparent;
-  border-radius: 7  px;
-}
-
-.btn-primary {
-  font-family: 'Sancreek', cursive;
-  font-weight: bold;
-  background-color: #ff00ff;
-}
-
-.container-fluid  {
-  background-color: #fcfc64;
   height: 100%;
-}
-
-#label-beer img {
-  min-height: 220px;
-  max-height: 240px;
-  width: 76%;
-  min-width: 250px;
-  max-width: 287px;
-}
-
-h1 {
-  font-family: 'Sancreek', cursive;
-}
-
-.top {
-  height: 25%
-}
-
-.centro {
-  height: 25%;
-}
-
-.bottom {
-  height: 50%;
-  align-items: center;
-}
-
-.bottom img {
-  width: 28%;
-  max-width: 125px;
-}
-
-.navbar {
-  height: 0%;
-  background-color: transparent !important;
-  width:inherit;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  z-index: 2;
-  position: fixed;
-}
-
-/*
-.navbar-collapse {
-  padding: 4%;
-  background-color: #fb3232;
-  border-radius: 20px;
-  margin-right: 60%;
-}
-
-.navbar-light .navbar-toggler {
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.bg-light {
-  background-color: #fcfc64 !important;
-}*/
-
-.navbar {
-    height: 9vh;
-    width: 100%;
-    z-index: 30;
-    position: fixed;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-family: 'Sancreek', cursive;
-}
-
-li a {
-  color: black;
-}
-
-.navbar-toggler-icon {
-  background-image: url(butger2.png) !important;
-  border: 0px solid #fff;
-  width: 37px;
-  height: 37px;
-  border-radius: 5px;
-  -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
-  -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
-  box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
-}
-
-.navbar-collapse {
- background-color: #ffffff;
- -webkit-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
- -moz-box-shadow: -4px 0px 7px -2px rgba(88,88,88,.2);
- box-shadow: -5px 3px 7px -2px rgba(88,88,88,.2);
- border-radius: 6px;
- width: 180px;
- max-width: 171px;
- margin-top: 14%;
- align-items: center;
- text-align: center;
- position: fixed;
-}
-.navbar-light .navbar-toggler {
-  border-color: rgb(52, 73, 94, 0.01);
-}
-
-.navbar-brand {
-  display:none;
-}
-
-.navbar-toggler:focus, .navbar-toggler:hover {
-    text-decoration: none;
-    outline: none;
-    outline-color: #ffffff00;
-    outline-width: thin;
-}
-
-
-.cuack {
-  border-bottom: 1px solid #1abc9c26;
-}
-
-
-
-
-
-.modal-content {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 5px;
-    outline: 0;
-}
-
-.modal-content h5 {
   text-align: center;
-  font-weight: bold;
+  color: black;
+  background-color: #ffffff;
+  overflow-y:visible;
+  overflow-x: hidden;
+
 }
 
-.modal-body {
- font-family: 'Open Sans', sans-serif;
- font-size: 0.8rem;
- padding: 10px 19px;
+/* VIdeo CSS */
+.row {
+  height: 100vh;
 }
 
-.alert-warning {
-    color: black;
-    background-color: #fcfc64;
-    border-color: #ffeeba;
-    z-index: 40;
-    position: absolute;
+#text-wrapper {
+  background-image:url('introvid_1.gif');
+  background-position: center;
+  background-size: auto;
+  height: 50%;
+}
+
+#page1 {
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+
+/* landing page, aka #page1 */
+
+
+
+#page1 h1 {
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+  font-size: 2.0rem;
+}
+
+#subtitle {
+  display: block;
+}
+
+#page1 .pd-text {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.underlined {
+  font-size: 1rem !important;
+  background-color: #e056fd;
+  font-weight: bolder !important;
+}
+
+footer {
+  position: absolute;
+    bottom: 1%;
     margin: 0 auto;
-    border-radius: 12px;
-    font-size: 1rem;
     width: 100%;
+    height: 3%;
 }
 
-/***************MEDIA QUERIES****************/
-/* large devices */
-@media only screen and (min-width: 768px) {
-  #landingback {
-    display: none;
+.img-mod {
+  margin: 0 auto;
+  padding: 2%;
+  width: 40vh;
+}
+
+.clickable {
+  cursor:pointer;
+}
+.modal-content {
+  border-radius: 0.6rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* scrool n roll */
+
+
+
+/* */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
-  .navbar {
-    display: none;
+  #page1 h1, p {
+    text-align: center;
   }
-  #desktop {
+  .openbtn {
+    font-size: 20px;
+    transform: scale(0.55);
+    z-index: 4;
+    cursor: pointer;
+    background-color: #535c68;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    left: 0% !important;
+    top: 1%;
+    position: fixed;
+    border-radius: 8px;
+  }
+
+  #page1 .pd-text {
+    font-size: 0.6rem;
+  }
+
+  #page1 .underlined {
+    font-size: 1rem;
+    margin: 0 auto;
+    font-weight: bolder !important;
+
+  }
+
+  #page1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .story {
     display: block;
+    font-size: 1rem;
+    padding: 0% 4% 0% 7%;
+    line-height: 2.5rem;
+    word-spacing: -1px;
   }
 
-  #desk-head {
-    font-size: 2.2rem;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-top: 20%;
-    padding-right: 5%;
+  .work {
+    background-color: #f6e58d;
+    border-radius: 4px;
+    font-weight: bold;
   }
 
-  #desk-text {
+  .last-title {
+    position:relative;
+    top: 25vh;
+  }
+  .end-text {
+    display: block;
+    font-size: 1rem;
+    padding: 0% 4%;
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    position:relative;
+    top: 27vh;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .icon {
+    width: 6%;
+    position: relative;
+    margin: 0px 2%;
+    top: 35vh;
+    border-radius: 4px;
+  }
+  .hire-me {
+    position: relative;
+    top: 32vh;
+    width: 170px;
+    font-weight: bold;
+    background-color: #ff7979 !important;
+  }
+
+  .made {
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+
+  .mentor {
+    width: 80%;
+    height: 40%;
     margin: 0 auto;
-    margin-top: 5%;
-    font-family: 'Open Sans', sans-serif;
+    padding: 2%;
+    padding-top: 0%;
+    padding-bottom: 6%;
+  }
+
+  .letitle {
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .clooney {
+    width: 310px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 4%;
+  }
+  .modclooney {
+    border-radius: 0.6rem;
+    width: 310px;
+    margin: 0 auto;
+  }
+  .staffer {
+    margin: 0 auto;
+    padding:2%;
+    width: 270px;
+  }
+  .chats {
+    width: 300px;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .chatmod {
+    margin: 0 auto;
+  }
+  .letitle-1 {
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+  .caru {
+    width: 63%;
+    padding: 3%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    border-radius: 30px
+  }
+  .clickable {
+    cursor:pointer;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+  }
+  .sidebar .contactex {
+    font-size: 0.5rem !important;
+    padding-top: 0px;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) {
+  #page1 h1, p {
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .openbtn {
+    margin-top: 0%;
+   left: 6%;
+   transform: scale(0.9);
+   position:fixed;
+   z-index: 1;
+  }
+
+  #page1 .pd-text {
     font-size: 0.8rem;
   }
-}
-/****** Phones in horizontal mode*******/
-@media only screen and (max-height: 541px) {
-  #landingback {
-    display: none;
-  }
-  #desktop {
-    display: none;
-  }
-  .navbar {
-    display: none;
+
+  #page1 .underlined {
+    font-size: 1rem;
+    margin: 0 auto;
+    font-weight: bolder !important;
+
   }
 
-  #rotate {
+  #page1 h1 {
+    font-size: 2.5rem;
+  }
+  #subtitle {
+    font-size: 1.5rem;
+  }
+  .story {
     display: block;
+    font-size: 1.5rem;
+    padding: 0% 15%;
+    line-height: 3.5rem;
+    word-spacing: -1px;
   }
-  #rot-head {
-    font-size: 1.8rem;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-top: 20%;
-    padding-right: 5%;
+
+  .work {
+    background-color: #f6e58d;
+    border-radius: 4px;
+    font-weight: bold;
   }
-  #rot-text {
+
+  .last-title {
+    position:relative;
+    top: 25vh;
+  }
+  .end-text {
+    display: block;
+    font-size: 1.4rem;
+    padding: 0% 4%;
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    position:relative;
+    top: 27vh;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .icon {
+    width: 2%;
+    position: relative;
+    margin: 0px 1%;
+    top: 45vh;
+    border-radius: 4px;
+  }
+  .hire-me {
+    position: relative;
+    text-transform: uppercase;
+    width: 180px;
+    top: 32vh;
+    font-weight: bold;
+    background-color: #ff7979 !important;
+  }
+  .mentor {
+    width: 50%;
+    height: 50%;
     margin: 0 auto;
-    margin-top: 5%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
+    padding: 2%;
+    padding-top: 0%;
+  }
+  .letitle {
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .caru {
+    width: 63%;
+    padding: 3%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    border-radius: 30px
+  }
+  .clooney {
+    width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .modclooney {
+    border-radius: 0.6rem;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .staffer {
+    margin: 0 auto;
+    padding:2%;
+    width: 400px;
+  }
+  .chats {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .chatmod{
+    width: 510px;
+    margin: 0 auto;
+  }
+  .letitle-1 {
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+  .clickable {
+    cursor:pointer;
   }
 }
+
+
+
+/* navbar*-------------------------------------------------/
+
+/* The sidebar menu */
+.sidebar {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #535c68; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 25px 45px 8px 32px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.sidebar .contactex {
+  font-size: 0.7rem;
+  padding-top: 0px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #535c68;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  left: 6%;
+  position: fixed;
+  border-radius: 8px;
+}
+
+.openbtn:hover {
+  background-color: #535c68;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#page1 {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*Tool tip Css*/
+
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(315deg, #485461 0%, #28313b 74%);;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+}
+
+    #tooltip:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #2d3641;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+
+        #tooltip.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid #111;
+            top: -20px;
+            bottom: auto;
+        }
+
+        #tooltip.left:after
+        {
+            left: 10px;
+            margin: 0;
+        }
+
+        #tooltip.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+        }

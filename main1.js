@@ -1,19 +1,14 @@
-/*
-function intro() {
-  setTimeout(introduction, 20000);
+const luck = document.querySelectorAll('#luck path');
+for (let i = 0; i< luck.length; i++ ) {
+  console.log(luck[i].getTotalLength());
 }
-intro();
-*/
-
-
-
 
 
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "40vh";
   document.getElementById('burger').style.display = "none";
-  document.getElementById("page1").style.marginLeft = "250px";
+  document.getElementById('scroll-indicator').style.display = "none";
 
 }
 
@@ -21,13 +16,14 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById('burger').style.display = "block";
-  document.getElementById("page1").style.marginLeft = "0";
+  document.getElementById('scroll-indicator').style.display = "block";
+
 
 }
 
 
 
-  window.onscroll = function() {scrollProgress()};
+window.onscroll = function() {scrollProgress()};
 
 function scrollProgress() {
   var winScroll = document.documentElement.scrollTop;
@@ -37,7 +33,17 @@ function scrollProgress() {
   var scrolled = (winScroll / height) * 100;
   console.log(scrolled);
   document.getElementById("myBar").style.width = scrolled + "%";
+  if (scrolled >= 94) {
+    console.log('its happening');
+    document.getElementById('scroll-indicator').style.opacity = "0";
+  } else {
+    console.log('not yet');
+    document.getElementById('scroll-indicator').style.opacity = "1";
+
+  }
 }
+
+
 /*
 function removeScroll() {
   document.getElementById('scroll-bar').style.display = "none";
