@@ -265,6 +265,7 @@ footer {
   }
   .scroller {
     display: none;
+    opacity: 0 !important;
     position: fixed;
     bottom: 0;
     left: 0;
