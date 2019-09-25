@@ -105,7 +105,7 @@ footer {
   transform: translate(-50%, 10px);
   cursor: pointer;
   border-bottom: 1px solid #000;
-  animation: mickey 2s ease forwards 2.5s;
+  animation: mickey 2s ease forwards 3s;
   opacity: 0;
     }
   .openbtn {
@@ -321,7 +321,7 @@ footer {
     transition: 2s;
     stroke-dasharray: 4470;
     stroke-dashoffset: 4470;
-    animation: border 4s ease forwards 2s;
+    animation: border 4s ease forwards 2.5s;
   }
   #words {
     margin-bottom: 10%;
@@ -335,13 +335,13 @@ footer {
     width: 80%;
     transform: translate(-50%, -50%);
     margin-bottom: 5%;
-    animation: fill 0.2s ease forwards 2.6s;
+    animation: fill 0.2s ease forwards 3.3s;
   }
 
   #luck path{
     stroke-dasharray: 1000px;
     stroke-dashoffset: 1000px;
-    animation: hey 1.8s ease 1s;
+    animation: hey 1.8s ease 1.5s;
   }
 
   @keyframes hey {
