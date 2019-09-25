@@ -74,3 +74,5 @@ $( function()
 			tooltip.bind( 'click', remove_tooltip );
 		});
 	});
+
+  

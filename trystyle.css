@@ -1,7 +1,7 @@
 html, body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Serif', serif;
   overflow-y: scroll;
 
 }
@@ -12,9 +12,17 @@ html, body {
   .row {
     margin: 0 auto;
   }
+.item h1 {
+      font-family: 'Righteous', cursive;
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 10%;
+      }
 .item {
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 30%;
   color: #000;
   font-size: 1em;
   z-index: 0;
@@ -83,10 +91,12 @@ footer {
     overflow-x: hidden;
   }
   .autor {
+    font-family: 'Noto Serif', serif;
   text-align: center;
+  font-style: italic;
   display: block;
-  color: blue;
-  font-size: 0.8rem;
+  color: #000;
+  font-size: 0.7rem;
   margin: 0 auto;
   position: absolute;
   top: 75%;
@@ -94,7 +104,7 @@ footer {
   z-index: 1;
   transform: translate(-50%, 10px);
   cursor: pointer;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #000;
   animation: mickey 2s ease forwards 2.5s;
   opacity: 0;
     }
@@ -122,12 +132,16 @@ footer {
     }
   .story {
     display: block;
+    font-family: 'Noto Serif', serif;
     font-size: 1rem;
     padding: 0% 4% 0% 4%;
     line-height: 2.5rem;
     word-spacing: -1px;
   }
-
+  .first-letter {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
   .work {
     background-color: #f6e58d;
     border-radius: 4px;
@@ -151,6 +165,11 @@ footer {
   .section {
     display: block;
     margin-bottom: 10%;
+  }
+
+  #last-part {
+    text-align: center;
+    margin-bottom: 2%;
   }
 
   .icon {
@@ -272,6 +291,8 @@ footer {
     width: 0%;
     border-radius: 5px;
   }
+
+
   /*--------------------------------
   -------------------------------
   ANIMATION MOBILE --------------
@@ -355,7 +376,16 @@ footer {
 ----------------------------------------------
 -------DESKTOP--------------------------------*/
 @media screen and (min-width: 769px) {
-
+  .item {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    color: #000;
+    font-size: 1em;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: inherit;
+  }
   .item h1 {
       font-family: 'Righteous', cursive;
       font-weight: 800;
@@ -370,14 +400,17 @@ footer {
     text-align: center;
     display: block;
     margin: 0 auto;
-    color: blue;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #000;
     position: absolute;
     top: 75%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, 10px);
     cursor: pointer;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #000;
     animation: mickey 2s ease forwards 2s;
     opacity: 0;
     }
@@ -412,8 +445,14 @@ footer {
   display: block;
   transition: opacity 2s;
 }
+
+.first-letter {
+  font-size: 4rem;
+  font-weight: 600;
+}
   .story {
     display: block;
+    font-family: 'Noto Serif', serif;
     font-size: 1.5rem;
     padding: 0% 15%;
     line-height: 3.5rem;
@@ -526,6 +565,7 @@ footer {
   }
   #last-part {
     text-align: center;
+    margin-bottom: 2%;
   }
   .scroller {
     position: fixed;
