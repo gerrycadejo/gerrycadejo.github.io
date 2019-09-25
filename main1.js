@@ -44,16 +44,9 @@ function scrollProgress() {
 
 window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
 if( window.isMobile) {
-  if (document.documentElement.scrollTop >  0) {
-    var triangle = document.querySelector('.progress-bar');
-    console.log('the scroll is'+ document.documentElement.scrollTop);
-    var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    var draw = length * scrollpercent;
-    console.log(scrollpercent +'%');
-    triangle.style.width = scrollpercent +'%';
-    document.querySelector('.scroller').style.display="block";
+  document.getElementById('scroll-indicator').style.opacity = "0";
   }
-}
+
 /*
 function removeScroll() {
   document.getElementById('scroll-bar').style.display = "none";
