@@ -262,6 +262,8 @@ footer {
   .sidebar .contactex {
     font-size: 0.5rem !important;
     padding-top: 0px;
+    cursor: text;
+    color: white !important;
   }
   .scroller {
     display: none;
@@ -292,6 +294,7 @@ footer {
     width: 0%;
     border-radius: 5px;
   }
+
 
 
   /*--------------------------------
@@ -594,7 +597,12 @@ footer {
     width: 0%;
     border-radius: 5px;
   }
-
+  .sidebar .contactex {
+    font-size: 0.7rem;
+    padding-top: 0px;
+    cursor: text;
+    color: white !important;
+  }
 /* ANIMATION COVER----
 --------------------------
 ----------------------*/
@@ -682,7 +690,7 @@ to {
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #535c68; /* Black*/
+  background-color: #000; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -706,10 +714,7 @@ padding-top: 152px;
     font-weight: bolder;
 }
 
-.sidebar .contactex {
-  font-size: 0.7rem;
-  padding-top: 0px;
-}
+
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {

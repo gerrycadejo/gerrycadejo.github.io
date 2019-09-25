@@ -2,7 +2,7 @@
   html, body {
     margin: 0 auto;
     padding: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
     height: 100%;
     text-align: center;
     color: black;
@@ -106,7 +106,7 @@
   transform: scale(0.55);
   z-index: 4;
   cursor: pointer;
-  background-color: #535c68;
+  background-color: #000;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -120,6 +120,9 @@
   font-size: 0.8rem;
   margin: 0 auto;
   margin-bottom: 10%;
+  cursor: pointer;
+  font-weight: bolder;
+
 }
 .up-picture {
   display: none;
@@ -136,6 +139,7 @@
 .buru {
   display: none;
 }
+
 }
 /*---------------------------------------------------
 ---------------------------------------------------
@@ -216,7 +220,6 @@
 .grey {
   background-color: #000;
   color: #fff;
-  border-radius: 6px;
   display: flex;
   padding-top: 2%;
   padding-bottom: 3%;
@@ -240,7 +243,7 @@
   transform: scale(0.9);
   z-index: 4;
   cursor: pointer;
-  background-color: #535c68;
+  background-color: #000;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -251,9 +254,11 @@
 }
 
 .redirect {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   margin: 0 auto;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
+  cursor: pointer;
+  font-weight: bolder;
 }
 .up-picture {
   display: flex;
@@ -278,6 +283,10 @@
 
 .bar {
   width: 20% !important;
+}
+
+.btn-dark {
+  background-color: #000 !important;
 }
 }
 
@@ -340,7 +349,7 @@ padding-top: 152px;
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #535c68;
+  background-color: #000;
   color: white;
   padding: 10px 15px;
   border: none;
