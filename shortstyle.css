@@ -1,0 +1,809 @@
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+  .row {
+    margin: 0 auto;
+  }
+.item h1 {
+      font-family: 'Righteous', cursive;
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 10%;
+      }
+.item {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30%;
+  color: #000;
+  font-size: 1em;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: inherit;
+}
+/* Style the header: fixed position (always stay at the top) */
+
+
+.underlined {
+  font-size: 1rem !important;
+  background-color: #e056fd;
+  font-weight: bolder !important;
+}
+
+footer {
+  position: absolute;
+    bottom: 1%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 3%;
+}
+
+.img-mod {
+  margin: 0 auto;
+  padding: 2%;
+  width: 40vh;
+}
+
+
+.modal-content {
+  border-radius: 0.6rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* scrool n roll */
+
+
+
+/* */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+    text-align: center;
+  }
+  .container-fluid {
+    overflow-x: hidden;
+    margin: 0 auto;
+  }
+  #portada {
+    overflow-x: hidden;
+    margin: 0 auto;
+    overflow-y: hidden;
+    margin-bottom: 100px;
+  }
+  #body-text {
+    margin-top: 100vh;
+    overflow-x: hidden;
+  }
+  .autor {
+    font-family: 'Noto Serif', serif;
+  text-align: center;
+  font-style: italic;
+  display: block;
+  color: #000;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 10px);
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+  animation: mickey 2s ease forwards 3s;
+  opacity: 0;
+    }
+  .openbtn {
+    font-size: 20px;
+    transform: scale(0.55);
+    z-index: 40 !important;
+    cursor: pointer;
+    background-color: #535c68;
+    color: white;
+    padding: 10px 15px !important;
+    border: none;
+    left: 0% !important;
+    top: 0% !important;
+    position: fixed;
+    border-radius: 8px;
+
+  }
+
+  h1 {
+      font-family: 'Righteous', cursive;
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  .story {
+    display: block;
+    font-family: 'Noto Serif', serif;
+    font-size: 1rem;
+    padding: 0% 4% 0% 4%;
+    line-height: 2.5rem;
+    word-spacing: -1px;
+  }
+  .first-letter {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .work {
+    background-color: #f6e58d;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .last-title {
+    position:relative;
+    top: 25vh;
+  }
+  .end-text {
+    display: block;
+    font-size: 1rem;
+    padding: 0% 4%;
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    position:relative;
+    top: 27vh;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  #last-part {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  .icon {
+    width: 6%;
+    position: relative;
+    margin: 0px 2%;
+    top: 35vh;
+    border-radius: 4px;
+  }
+  .hire-me {
+    position: relative;
+    margin: 0 auto;
+    top: 32vh;
+    width: 170px;
+    font-weight: bold;
+    background-color: #ff7979 !important;
+  }
+
+  .made {
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+
+  .mentor {
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    padding-top: 0%;
+    padding-bottom: 6%;
+  }
+
+  .letitle {
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .portrait {
+    max-width: 280px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .clooney {
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .modclooney {
+    border-radius: 0.6rem;
+    width: 310px;
+    margin: 0 auto;
+  }
+  .staffer {
+    margin: 0 auto;
+    padding:2%;
+    width: 270px;
+  }
+  .chats {
+    width: 300px;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .chatmod {
+    margin: 0 auto;
+  }
+  .letitle-1 {
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+  .caru {
+    width: 63%;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    border-radius: 30px;
+    border: 1px solid black;
+  }
+  .clickable {
+    cursor:pointer;
+    background-color: transparent;
+    border: transparent;
+    color: blue !important;
+    outline: none;
+  }
+  .sidebar .contactex {
+    font-size: 0.5rem !important;
+    padding-top: 0px;
+    cursor: text;
+    color: white !important;
+  }
+  .scroller {
+    display: none;
+    opacity: 0 !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 07%;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .progress-container {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 10px;
+    background: #c7ecee;
+    border-radius: 5px;
+  }
+
+  .progress-bar {
+    height: 10px;
+    margin-top: 2%;
+    background: #130f40;
+    width: 0%;
+    border-radius: 5px;
+  }
+
+
+
+  /*--------------------------------
+  -------------------------------
+  ANIMATION MOBILE --------------
+  -----------*/
+  #portasvg{
+    transform: scale(0.91);
+    width: 90%;
+    border: 87px solid;
+    border-image-source: url(illustrations/border.svg);
+    border-image-slice:0;
+
+  }
+  #portada #portasvg,
+  #portada #portasvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+  }
+
+  #portasvg{
+    stroke: #000;
+    stroke-width: 4;
+    transition: 2s;
+    stroke-dasharray: 4470;
+    stroke-dashoffset: 4470;
+    animation: border 4s ease forwards 2.5s;
+  }
+
+  #words {
+    margin-bottom: 10%;
+  }
+
+
+  #luck {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5%;
+    animation: fill 0.2s ease forwards 3.3s;
+  }
+
+  #luck path{
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: hey 1.8s ease 1.5s;
+  }
+
+  @keyframes hey {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fill  {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: #000;
+    }
+  }
+
+  @keyframes border {
+
+
+  to {
+    border-image-slice:170;
+    }
+  }
+
+  @keyframes mickey {
+    to {
+      opacity: 1;
+    }
+  }
+
+}
+
+/* ------------------------------------------
+-------------------------------------------
+----------------------------------------------
+----------------------------------------------
+-------DESKTOP--------------------------------*/
+@media screen and (min-width: 769px) {
+  .item {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    color: #000;
+    font-size: 1em;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: inherit;
+  }
+  .item h1 {
+      font-family: 'Righteous', cursive;
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 5%;
+      }
+
+
+
+    .autor {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #000;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 10px);
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    animation: mickey 2s ease forwards 2s;
+    opacity: 0;
+    }
+
+  body {
+    overflow-x: hidden;
+  }
+  .container-fluid {
+    overflow-x: hidden;
+    margin: 0 auto;
+    overflow-y: hidden;
+  }
+  #portada {
+    overflow-x: hidden;
+    margin: 0 auto;
+    overflow-y: hidden;
+    margin-bottom: 100px;
+  }
+  #body-text {
+    margin-top: 100vh;
+    overflow-x: hidden;
+  }
+  .openbtn {
+    margin-top: 0%;
+   left: 6%;
+   transform: scale(0.9);
+   position:fixed;
+   z-index: 400 !important;
+  }
+
+#scroll-indicator {
+  display: block;
+  transition: opacity 2s;
+}
+
+.first-letter {
+  font-size: 4rem;
+  font-weight: 600;
+}
+  .story {
+    display: block;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+    padding: 0% 15%;
+    line-height: 3.5rem;
+    word-spacing: -1px;
+  }
+
+  .work {
+    background-color: #f6e58d;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .last-title {
+    position:relative;
+    top: 25vh;
+  }
+  .end-text {
+    display: block;
+    font-size: 1.4rem;
+    padding: 0% 4%;
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    position:relative;
+    top: 27vh;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .icon {
+    width: 2%;
+    position: relative;
+    margin: 0px 1%;
+    top: 45vh;
+    border-radius: 4px;
+  }
+  .hire-me {
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 180px;
+    top: 32vh;
+    font-weight: bold;
+    background-color: #ff7979 !important;
+  }
+  .mentor {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    padding-top: 0%;
+  }
+  .letitle {
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .caru {
+    width: 63%;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    border-radius: 30px;
+    border: 1px solid black;
+  }
+  .portrait {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: %;
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+  .clooney {
+    width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .modclooney {
+    border-radius: 0.6rem;
+    width: 520px;
+    margin: 0 auto;
+  }
+  .staffer {
+    margin: 0 auto;
+    padding:2%;
+    width: 400px;
+  }
+  .chats {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2%;
+  }
+  .chatmod{
+    width: 510px;
+    margin: 0 auto;
+  }
+  .letitle-1 {
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+  .clickable {
+    cursor:pointer;
+    color: blue !important;
+  }
+  #last-part {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .scroller {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 07%;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .progress-container {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 10px;
+    background: #c7ecee;
+    border-radius: 5px;
+  }
+
+  .progress-bar {
+    height: 10px;
+    margin-top: 2%;
+    background: #130f40;
+    width: 0%;
+    border-radius: 5px;
+  }
+  .sidebar .contactex {
+    font-size: 0.7rem;
+    padding-top: 0px;
+    cursor: text;
+    color: white !important;
+  }
+/* ANIMATION COVER----
+--------------------------
+----------------------*/
+#portasvg{
+  transform: scale(0.95);
+}
+#portada #portasvg,
+#portada #portasvg #portarect{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  fill: transparent;
+}
+
+#portada #portasvg #portarect{
+  stroke: #000;
+  stroke-width: 4;
+  transition: 2s;
+  stroke-dasharray: 4470;
+  stroke-dashoffset: 4470;
+  animation: border 4s ease forwards 2s;
+}
+#words {
+  margin-bottom: 10%;
+}
+
+
+#luck {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 5%;
+  animation: fill 0.2s ease forwards 1.6s;
+}
+
+#luck path{
+  stroke-dasharray: 1000px;
+  stroke-dashoffset: 1000px;
+  animation: hey 1.8s ease;
+}
+
+@keyframes hey {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill  {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #000;
+  }
+}
+
+@keyframes border {
+
+
+to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes mickey {
+  to {
+    opacity: 1;
+  }
+}
+
+}
+
+
+
+
+/* navbar*-------------------------------------------------/
+
+/* The sidebar menu */
+.sidebar {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 25px 45px 8px 32px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  left: 6%;
+  top: 2%;
+  position: fixed;
+  border-radius: 8px;
+}
+
+.openbtn:hover {
+  background-color: #535c68;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#page1 {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+/*Tool tip Css*/
+
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(315deg, #485461 0%, #28313b 74%);;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+}
+
+    #tooltip:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #2d3641;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+
+        #tooltip.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid #111;
+            top: -20px;
+            bottom: auto;
+        }
+
+        #tooltip.left:after
+        {
+            left: 10px;
+            margin: 0;
+        }
+
+        #tooltip.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+        }
