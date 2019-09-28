@@ -67,11 +67,16 @@ footer {
 }
 /* scrool n roll */
 
+/*
+------------------------------------
+----------------------------------
+--------------------------------------------
+small screen iphone 5*/
 
 
 /* */
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   body {
     overflow-x: hidden !important;
     text-align: center;
@@ -153,13 +158,14 @@ footer {
     top: 25vh;
   }
   .end-text {
+    font-family: 'Noto Serif', serif;
     display: block;
     font-size: 1rem;
     padding: 0% 4%;
     line-height: 1.5rem;
     word-spacing: -1px;
     position:relative;
-    top: 27vh;
+    top: 18vh;
   }
 
   .section {
@@ -181,15 +187,20 @@ footer {
   }
   .hire-me {
     position: relative;
-    margin: 0 auto;
-    top: 32vh;
-    width: 170px;
-    font-weight: bold;
-    background-color: #ff7979 !important;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 195px;
+  height: 2%;
+  top: 30vh;
+  margin-top: 5px;
+  padding-bottom: 13px;
+  padding-top: 0px;
+  font-weight: bold;
   }
 
   .made {
     font-size: 0.7rem;
+    font-family: 'Noto Serif', serif;
     font-weight: bolder;
   }
 
@@ -294,88 +305,120 @@ footer {
     width: 0%;
     border-radius: 5px;
   }
+  .ilus {
+    max-width: 100% !important;
+    display: block !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+    width: 92% !important;
 
-
+  }
+  #last-title {
+    position: relative;
+    top: 15vh;
+  }
 
   /*--------------------------------
   -------------------------------
   ANIMATION MOBILE --------------
   -----------*/
-  #portasvg{
-    transform: scale(0.91);
-    width: 90%;
-    border: 87px solid;
-    border-image-source: url(illustrations/border.svg);
-    border-image-slice:0;
-
-  }
-  #portada #portasvg,
-  #portada #portasvg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-  }
-
-  #portasvg{
-    stroke: #000;
-    stroke-width: 4;
-    transition: 2s;
-    stroke-dasharray: 4470;
-    stroke-dashoffset: 4470;
-    animation: border 4s ease forwards 2.5s;
-  }
-
-  #words {
-    margin-bottom: 10%;
-  }
-
-
-  #luck {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    margin-bottom: 5%;
-    animation: fill 0.2s ease forwards 3.3s;
-  }
-
-  #luck path{
-    stroke-dasharray: 1000px;
-    stroke-dashoffset: 1000px;
-    animation: hey 1.8s ease 1.5s;
-  }
-
-  @keyframes hey {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  @keyframes fill  {
-    from {
+  #cta {
       fill: transparent;
-    }
-    to {
-      fill: #000;
-    }
+      border: 21px solid;
+      border-image-source: url(illustrations/buttoni.svg);
+      border-image-slice: 24;
+      font-size: 0.7rem;
+      font-family: 'Mansalva', cursive;
+      stroke: #000;
+      stroke-width: 4;
+      transition: all 1s;
+      background: #ff7979;
+      background-clip: padding-box;
+      transform: scale(0.8);
   }
 
-  @keyframes border {
+
+ #cta:hover {
+   border-image-slice: 20;
+   transform:scale(1.1);
+ }
+ #portasvg{
+     transform: scale(0.91);
+     width: 90%;
+     border: 87px solid;
+     border-image-source: url(illustrations/border.svg);
+     border-image-slice:0;
+
+   }
+   #portada #portasvg,
+   #portada #portasvg {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     fill: transparent;
+   }
+
+   #portasvg{
+     stroke: #000;
+     stroke-width: 4;
+     transition: 2s;
+     stroke-dasharray: 4470;
+     stroke-dashoffset: 4470;
+     animation: border 4s ease forwards 2.5s;
+   }
+
+   #words {
+     margin-bottom: 10%;
+   }
 
 
-  to {
-    border-image-slice:170;
-    }
-  }
+   #luck {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     width: 80%;
+     transform: translate(-50%, -50%);
+     margin-bottom: 5%;
+     animation: fill 0.2s ease forwards 3.3s;
+   }
 
-  @keyframes mickey {
-    to {
-      opacity: 1;
-    }
-  }
+   #luck path{
+     stroke-dasharray: 1000px;
+     stroke-dashoffset: 1000px;
+     animation: hey 1.8s ease 1.5s;
+   }
+
+   @keyframes hey {
+     to {
+       stroke-dashoffset: 0;
+     }
+   }
+   @keyframes fill  {
+     from {
+       fill: transparent;
+     }
+     to {
+       fill: #000;
+     }
+   }
+
+   @keyframes border {
+
+
+   to {
+     border-image-slice:170;
+     }
+   }
+
+   @keyframes mickey {
+     to {
+       opacity: 1;
+     }
+   }
 
 }
 
@@ -384,7 +427,7 @@ footer {
 ----------------------------------------------
 ----------------------------------------------
 -------DESKTOP--------------------------------*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 761px) {
   .item {
     max-width: 100%;
     margin: 0 auto;
@@ -485,13 +528,46 @@ footer {
     line-height: 1.5rem;
     word-spacing: -1px;
     position:relative;
+    font-family: 'Noto Serif', serif;
     top: 27vh;
+  }
+  .made {
+    font-size: 0.7rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
   }
 
   .section {
     display: block;
     margin-bottom: 10%;
+    text-align: center;
   }
+
+  html:not(.no-js) [data-aos^=zoom][data-aos^=zoom].aos-animate {
+    opacity: 1;
+    -webkit-transform: translateZ(0) scale(1.4);
+    transform: translateZ(0) scale(1.4);
+}
+
+#ilu1 {
+
+}
+
+  #last-title {
+    position: relative;
+    top: 15vh;
+  }
+
+  .ilus {
+    max-width: 100% !important;
+    display: block !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+    width: 27% !important;
+  }
+
 
   .icon {
     width: 2%;
@@ -504,10 +580,9 @@ footer {
     position: relative;
     margin: 0 auto;
     text-transform: uppercase;
-    width: 180px;
-    top: 32vh;
+    width: 240px;
+    top: 40vh;
     font-weight: bold;
-    background-color: #ff7979 !important;
   }
   .mentor {
     width: 50%;
@@ -608,29 +683,54 @@ footer {
     cursor: text;
     color: white !important;
   }
-/* ANIMATION COVER----
---------------------------
+/* SVG-----------------------------------------
+----------------------------------------
 ----------------------*/
+
+ #cta {
+   fill: transparent;
+   border: 21px solid;
+   border-image-source: url(illustrations/buttoni.svg);
+  border-image-slice: 30;
+  font-size: 1rem;
+  font-family: 'Mansalva', cursive;
+  stroke: #000;
+  stroke-width: 4;
+  transition: all 1s;
+  background: #ff7979;
+  background-clip: padding-box;
+}
+
+#cta:hover {
+  border-image-slice: 20;
+  transform:scale(1.1);
+}
+
 #portasvg{
-  transform: scale(0.95);
+  transform: scale(0.97);
+  width: 90%;
+  border: 87px solid;
+  border-image-source: url(illustrations/border.svg);
+  border-image-slice:0;
+
 }
 #portada #portasvg,
-#portada #portasvg #portarect{
+#portada #portasvg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 95%;
+  height: 100%;
   fill: transparent;
 }
 
-#portada #portasvg #portarect{
+#portasvg{
   stroke: #000;
   stroke-width: 4;
   transition: 2s;
   stroke-dasharray: 4470;
   stroke-dashoffset: 4470;
-  animation: border 4s ease forwards 2s;
+  animation: border 4s ease forwards 2.5s;
 }
 #words {
   margin-bottom: 10%;
@@ -670,7 +770,7 @@ footer {
 
 
 to {
-    stroke-dashoffset: 0;
+  border-image-slice:170;
   }
 }
 
