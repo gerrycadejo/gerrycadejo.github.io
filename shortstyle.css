@@ -179,9 +179,9 @@ small screen iphone 5*/
   }
 
   .icon {
-    width: 6%;
+    width: 8%;
     position: relative;
-    margin: 0px 2%;
+    margin: 0px 4.4%;
     top: 35vh;
     border-radius: 4px;
   }
@@ -328,7 +328,7 @@ small screen iphone 5*/
       fill: transparent;
       border: 21px solid;
       border-image-source: url(illustrations/buttoni.svg);
-      border-image-slice: 24;
+      border-image-slice: 20;
       font-size: 0.7rem;
       font-family: 'Mansalva', cursive;
       stroke: #000;
@@ -339,9 +339,8 @@ small screen iphone 5*/
       transform: scale(0.8);
   }
 
-
  #cta:hover {
-   border-image-slice: 20;
+   border-image-slice: 14;
    transform:scale(1.1);
  }
  #portasvg{
