@@ -2,7 +2,7 @@
   html, body {
     margin: 0 auto;
     padding: 0 auto;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', serif;
     height: 100%;
     text-align: center;
     color: black;
@@ -51,17 +51,20 @@
   text-align: justify;
   font-size: 1rem;
   line-height: 2rem;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .row {
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   height: 100vh;
 }
 
 .sec {
   margin: 0 auto;
   margin-bottom: 5%;
+  text-align: left;
 }
 
 .main-title {
@@ -116,14 +119,44 @@
 }
 
 .redirect {
-  font-size: 0.8rem;
   margin: 0 auto;
-  margin-bottom: 25%;
+  margin-bottom: 45%;
   cursor: pointer;
   font-weight: bolder;
+    position: relative;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 195px;
+  height: 2%;
+  margin-top: 5px;
+  padding-bottom: 13px;
+  padding-top: 0px;
+  font-weight: bold;
+  fill: transparent;
+  border: 21px solid;
+  border-image-source: url(illustrations/buttoni2.svg);
+  border-image-slice: 20;
+  font-size: 0.7rem;
+  font-family: 'Mansalva', cursive;
+  stroke: #000;
+  stroke-width: 4;
+  transition: all 1s;
+  background: #f6e58d;
+  background-clip: padding-box;
+  transform: scale(0.8);
 }
+.redirect:hover {
+  border-image-slice: 14;
+  transform:scale(1.1);
+}
+
 .redirect a {
   margin-bottom: 5%;
+}
+.white-space {
+  height: 40px;
+  width: 100%;
+  background-color: white;
 }
 .up-picture {
   display: none;
@@ -151,7 +184,21 @@ padding-top: 122px;
     font-size: 0.7rem;
     font-weight: bolder;
 }
+.written-titles{
+  margin: 0 auto;
+  margin-left: 7%;
+}
+.razon {
+  transform: scale(1) !important;
+  margin-left: 7% !important;
+  margin-bottom: 0%;
+  margin-top: 0%;
 
+}
+.razon1 {
+  transform: scale(1) !important;
+  margin-left: 7% !important;
+}
 }
 /*---------------------------------------------------
 ---------------------------------------------------
@@ -197,7 +244,8 @@ padding-top: 122px;
   text-align: justify;
   font-size: 1.5rem;
   line-height: 2.5rem;
-
+  margin-bottom: 5%;
+  margin-top: 5%;
 
 }
 
@@ -210,6 +258,11 @@ padding-top: 122px;
 .sec {
   margin: 0 auto;
   margin-bottom: 5%;
+  text-align: left;
+}
+
+.centroimg {
+  text-align: center;
 }
 
 .main-title {
@@ -266,11 +319,35 @@ padding-top: 122px;
 }
 
 .redirect {
-  font-size: 1.3rem;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 45%;
   cursor: pointer;
   font-weight: bolder;
+    position: relative;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 225px;
+  height: 2%;
+  margin-top: 5px;
+  padding-bottom: 13px;
+  padding-top: 0px;
+  font-weight: bold;
+  fill: transparent;
+  border: 21px solid;
+  border-image-source: url(illustrations/buttoni2.svg);
+  border-image-slice: 30;
+  font-size: 1rem;
+  font-family: 'Mansalva', cursive;
+  stroke: #000;
+  stroke-width: 4;
+  transition: all 1s;
+  background: #f6e58d;
+  background-clip: padding-box;
+  transform: scale(1);
+}
+.redirect:hover {
+  border-image-slice: 17;
+  transform:scale(1.2);
 }
 .up-picture {
   display: flex;
@@ -292,13 +369,30 @@ padding-top: 122px;
     margin-top: 4%;
     width: 25%;
 }
-
+.white-space {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+}
 .bar {
   width: 20% !important;
 }
 
 .btn-dark {
   background-color: #000 !important;
+}
+.written-titles {
+  transform: scale(1.2);
+  margin: 0 auto;
+  margin-left: 16%;
+}
+.razon {
+  transform: scale(1.2) !important;
+    margin-left: 17% !important;
+}
+.razon1 {
+  transform: scale(1.2) !important;
+  margin-left: 17% !important;
 }
 }
 
