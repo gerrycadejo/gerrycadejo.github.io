@@ -159,10 +159,10 @@ animation: loading1 0.6s infinite;
     position: relative;
     font-family: monospace;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 5px;
     margin-top: 5%;
-    width: 50%;
-    -webkit-appearance: none 
+    width: 40%;
+    -webkit-appearance: none
     color: #b6b6b6 !important;
     }
     .warning {
