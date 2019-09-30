@@ -5,6 +5,15 @@ html, body {
   overflow-y: scroll;
 
 }
+body {
+  background-color: #000;
+  animation: fondo 4s ease forwards;
+}
+@keyframes fondo {
+  to {
+    background-color: #fff;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -380,6 +389,7 @@ small screen iphone 5*/
      left: 50%;
      top: 50%;
      width: 80%;
+     background-color: transparent;
      transform: translate(-50%, -50%);
      margin-bottom: 5%;
      animation: fill 0.2s ease forwards 3.3s;
