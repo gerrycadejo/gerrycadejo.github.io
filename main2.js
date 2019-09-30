@@ -17,7 +17,7 @@ document.getElementById("cta").addEventListener("click", storyPage);
 function storyPage() {
   document.getElementById('landing').style.display = "none";
   document.getElementById('loading-story').style.display = "block";
-  setTimeout(startStory , 7000);
+  setTimeout(startStory , 5000);
 }
 
 function startStory(){
