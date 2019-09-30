@@ -31,6 +31,7 @@ DESKTOP/*/
   height: 100%;
   margin: 0 auto;
   margin-top: 4%;
+  margin-bottom: 0%;
   }
   .welcome {
   margin: 0 auto;
@@ -38,13 +39,13 @@ DESKTOP/*/
   }
   .creative-intern {
   margin: 0 auto;
-  padding: 0% 5%;
+  padding: 0% 10%;
   font-size: 0.9rem;
   text-align: justify !important;
   }
   .fila {
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 3% !important;
     margin-bottom: 10%;
     height: 100%;
     font-size: 5rem;
@@ -258,7 +259,7 @@ DESKTOP/*/
   }
   .fila {
     margin: 0 auto;
-    margin-top: 6%;
+    margin-top: 5%;
     height: 100%;
     font-size: 5rem;
     color: white;
@@ -451,7 +452,12 @@ DESKTOP/*/
     top: 0% !important;
     position: fixed;
     border-radius: 8px;
-
+  }
+  .sidebar .contactex {
+    font-size: 0.5rem;
+    padding-top: 0px;
+    cursor: text;
+    color: white !important;
   }
   .white {
   height: 100%;
@@ -471,7 +477,7 @@ DESKTOP/*/
   }
   .fila {
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 2%;
     height: 100%;
     font-size: 5rem;
     color: white;

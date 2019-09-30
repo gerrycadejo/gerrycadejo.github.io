@@ -17,7 +17,9 @@
     padding-right: 0px;
   }
 
-
+.act{
+  width: 90%;
+}
   .opening {
     background-color: #dff9fb;
     border-radius: 6px;
@@ -122,6 +124,7 @@
   margin: 0 auto;
   margin-bottom: 45%;
   cursor: pointer;
+  -webkit-appearance: none;
   font-weight: bolder;
     position: relative;
   margin: 0 auto;
@@ -190,6 +193,7 @@ padding-top: 122px;
 }
 .razon {
   transform: scale(1) !important;
+  width: 90%;
   margin-left: 7% !important;
   margin-bottom: 0%;
   margin-top: 0%;
@@ -322,6 +326,7 @@ padding-top: 122px;
   margin: 0 auto;
   margin-bottom: 45%;
   cursor: pointer;
+  -webkit-appearance: none;
   font-weight: bolder;
     position: relative;
   margin: 0 auto;
