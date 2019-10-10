@@ -1,0 +1,1077 @@
+html, body {
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+.new-page{
+  position: fixed!important;
+  width: 85vw !important;
+  top: 0 !important;
+  right: 0 !important;
+  padding: 0 !important;
+}
+/*First page and fix instructions div*/
+/* background for landing page */
+#landing{
+  background-color: #00030a;
+  transition: all 1.2s;
+}
+.footer {
+  font-size: 0.5rem;
+  color:#b9b9b9;
+  position: fixed;
+  bottom: 0.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*
+.instructions {
+  width : 15vw !important;
+  position: absolute !important;
+  top : 0 !important;
+  left :0 !important;
+  padding: 0 !important;
+  background-image: none !important;
+}
+*/
+.row {
+  height: 100vh;
+}
+/* title on top of password field */
+.password {
+  margin-top: 250px;
+  color: #ada6a6;
+  font-size: 0.8rem;
+  background: transparent;
+  font-family: 'Roboto Mono', monospace;
+  transition: all 1s;
+}
+
+/* password field*/
+.hello {
+  color: white;
+  margin: 5px auto;
+  font-family: 'Roboto Mono', monospace;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 6px 20px;
+  width: 100px;
+  font-size: 0.8rem;
+  outline: none;
+  transition: 0.75s;
+  border-color: #fff;
+  box-shadow:0 0 10px #c8bbfae6, inset 0 0 10px #c8bbfa, 0 2px 0 #000;
+  transition: all 1s;
+}
+
+.hello:focus {
+  width: 225px;
+  box-shadow: 0 0 15px #c8bbfae6, inset 0 0 10px #c8bbfa, 0 2px 0 #000;
+}
+
+.wrong {
+    border-color: #EA2027 !important;
+    border-color: 5px !important;
+    animation: wrong 0.2s ease;
+  }
+
+@keyframes wrong {
+  50% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(16px);
+  }
+}
+/* neon light sign landing*/
+.logo {
+  text-align: center;
+  width: 65%;
+  height: 150px;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+  }
+
+  .logo b{
+  font: 400 10vh "Orbitron";
+  color: #fee;
+ text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  transition: 2s;
+  }
+
+  .logo b:hover{
+  color: #5a505f;
+  }
+  .logo b span{
+  animation: blink linear infinite 2s;
+  }
+  .logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+  }
+/* animation neon sign landing*/
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+/* choose stage PAGE @@@@@@@@@@@@@@@@@@@@@------------------------------------------------------------
+--------------------------
+-----------------------------------------------
+--------------------------------------------------------------*/
+#stages{
+  position: absolute;
+  transition: 0.6s;
+
+}
+.box1, .box2, .box3{
+  margin: 0 5px;
+  padding: 10px;
+  letter-spacing: 1px;
+  background: none;
+  border: 2px solid #000;
+  height: 15.25em;
+  border-radius: 2.25em;
+  color: #000;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .5s;
+  outline: none;
+  vertical-align: middle;
+  align-content: center;
+  cursor: pointer;
+  margin-left: 2%;
+}
+
+.box1 {
+  animation: light1 1.2s ease;
+  color: #00E676;
+  text-shadow: 0 0 7px #00E676;
+  border-color: #00E676;
+  box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+  transition: all 1.2s;
+}
+
+.box2 {
+  animation: light2 3.2s ease;
+  color: #ff005b;
+  text-shadow: 0 0 7px #ff005b;
+  border-color: #ff005b;
+  box-shadow: 0 0 15px #ff005b, inset 0 0 15px #ff005b;
+  transition: all 1.2s;
+}
+.box3 {
+  animation: light3 6.2s ease ;
+  color: #2196F3;
+  text-shadow: 0 0 7px #2196F3;
+  border-color: #2196F3;
+  box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3;
+  transition: all 1.2s;
+}
+.stagetxt{
+  position: relative;
+  top: 40%;
+}
+#stages .col-3:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+  border-color: #fff;
+  box-shadow: 0 0 15px #fff, inset 0 0 15px #fff;
+}
+
+.off {
+  color: transparent !important;
+  text-shadow: 0 0 7px transparent !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 15px transparent, inset 0 0 15px transparent !important;
+}
+
+
+
+@keyframes light1 {
+  from {
+    color: #000;
+    text-shadow: 0 0 7px #000;
+    border-color: #000;
+    box-shadow: 0 0 15px #000, inset 0 0 15px #000;
+  }
+  to {
+    color: #00E676;
+    text-shadow: 0 0 7px #00E676;
+    border-color: #00E676;
+    box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+  }
+}
+@keyframes light2 {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 7px transparent;
+    border-color: transparent;
+    box-shadow: 0 0 15px transparent, inset 0 0 15px transparent;
+  }
+  27% {
+    color: transparent;
+    text-shadow: 0 0 7px transparent;
+    border-color: transparent;
+    box-shadow: 0 0 15px transparent, inset 0 0 15px transparent;
+  }
+  40% {
+    color: #ff005b;
+    text-shadow: 0 0 7px #ff005b;
+    border-color: #ff005b;
+    box-shadow: 0 0 15px #ff005b, inset 0 0 15px #ff005b;
+  }
+}
+@keyframes light3 {
+  0% {
+    color: transparent;
+    text-shadow: 0 0 7px transparent;
+    border-color: transparent;
+    box-shadow: 0 0 15px transparent, inset 0 0 15px transparent;
+  }
+  27% {
+    color: transparent;
+    text-shadow: 0 0 7px transparent;
+    border-color: transparent;
+    box-shadow: 0 0 15px transparent, inset 0 0 15px transparent;
+  }
+  40% {
+    color: #2196F3;
+    text-shadow: 0 0 7px #2196F3;
+    border-color: #2196F3;
+    box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3;
+  }
+}
+
+/*---------------------------------
+.........................................
+@@@@@@@@@@@@@@@@@@@@@
+PAGE DEFINE */
+#define {
+  position: absolute;
+  animation: entrance 1s ease forwards;
+}
+.define-head {
+  position: relative;
+  color: #00E676;
+  left: 0;
+  margin: 50px -15px;
+  text-align: left!important;
+  text-shadow: 0 0 7px #2196F3;
+}
+.define-instructions{
+  margin-top: 25px;
+  text-align: left !important;
+}
+#define-input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: -10vh;
+}
+
+#define form {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  height: 30%;
+}
+#define form textarea{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 20%;
+  color: white;
+  font-size: 2rem;
+  outline: none;
+  border-bottom: 2px solid white;
+  word-wrap: break-word;
+}
+
+#define form label {
+  position: relative;
+  text-align: right;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  color: #868484;
+}
+
+#define form button{
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  border: none;
+  border-bottom: 1px solid #868484;
+}
+#define form button:hover {
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+
+/*---------------------------------
+.........................................
+@@@@@@@@@@@@@@@@@@@@@
+PAGE DEFINE WORKSHOPS */
+
+#define-bands{
+  display:none;
+}
+
+#define-bands .col-3{
+  margin-top: 20vh;
+}
+#define-bands .col-3:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+  border-color: #fff;
+  box-shadow: 0 0 15px #fff, inset 0 0 15px #fff;
+}
+
+#define-bands i {
+  position: relative;
+  top: -15vh;
+  animation: entrance 3s ease forwards;
+}
+
+#define-bands i:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+  transform: scale(1.5);
+}
+
+.interrogation{
+  height: 5%;
+}
+.interrogation:hover {
+  border: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+.modal-header {
+  color: #000;
+}
+.modal-body{
+  color: #000;
+}
+/*---------------------------------
+.........................................
+@@@@@@@@@@@@@@@@@@@@@
+PAGE DEFINE WORKSHOPS */
+/*---------------------------------
+........................................band1*/
+#main-band-1{
+  display: none;
+  animation: entrance 1.2s ease forwards;
+}
+
+#main-band-1 h5{
+  text-align: left;
+}
+#band-1-input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: -20vh;
+}
+.instructions-head{
+  text-align: left;
+  padding: 0;
+}
+.fill {
+  background: transparent;
+  border: none;
+  width: 50%;
+  border-bottom: 2px solid #fff;
+  color: white;
+  outline: none;
+  text-align: center;
+  position: relative;
+}
+.fill-paragraph{
+  text-align: left;
+  line-height: 43px;
+}
+#fill-1{
+  left: 216px;
+}
+#fill-2{
+  left: 206px;
+}
+#fill-3{
+  left: 117px;
+}
+#fill-4{
+  left: 94px;
+}
+#fill-5{
+  left: 78px;
+}
+.back{
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: left;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 0px;
+
+  outline: none!important;
+}
+.back:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+.next {
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: right;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 375px;
+  outline: none!important;
+}
+.next:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+.head-mark{
+  position: absolute;
+  left: 140px;
+  top: 5px;
+  cursor: pointer;
+}
+
+/*---------------------------------
+........................................band2*/
+#main-band-2{
+  display: none;
+  animation: entrance 1.2s ease forwards;
+
+}
+.define-head.dos {
+color: #ff005b !important;
+text-shadow: 0 0 7px #ff005b !important;
+}
+#band-2-input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: -15vh;
+}
+
+.options {
+  background: transparent;
+  color: #ff005b !important;
+  text-shadow: 0 0 7px #ff005b !important;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.options option{
+  color: black;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+.fill-select {
+  background: transparent;
+  border: none;
+  width: 40%;
+  border-bottom: 1px solid #fff;
+  color: white;
+  outline: none;
+  text-align: center;
+  position: relative;
+  top: -1px;
+  height: 10%;
+}
+.sfill-paragraph{
+  text-align: left;
+  line-height: 63px;
+  margin-bottom: 54px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.statement-title{
+  text-align: left;
+}
+/*---------------------------------
+........................................band3*/
+
+#main-band-3{
+  display: none;
+  animation: entrance 1.2s ease forwards;
+
+}
+.define-head.tres {
+  color: #2196F3 !important;
+  text-shadow: 0 0 7px #2196F3 !important;
+}
+#band-3-input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: -27vh;
+}
+.why-fill-paragraph{
+  text-align: center;
+  line-height: 43px;
+  font-size: 1.4rem;
+}
+.why-fill {
+  background: transparent;
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  color: white;
+  outline: none;
+  text-align: center;
+  position: relative;
+  top: 25px;
+  height: 10%;
+  margin-bottom: 35px;
+}
+#next-3, #back-3{
+  display: none;
+}
+.ask {
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: center;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 0px;
+  outline: none!important;
+}
+.ask:hover{
+  border: 2px solid;
+  text-shadow: 0 0 7px #2196F3 !important;
+  color: #2196F3 !important;
+  border-color: #2196F3 !important;
+  box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3 !important;
+}
+#problem-question{
+  text-shadow: 0 0 7px #2196F3 !important;
+  color: #2196F3 !important;
+}
+/*---------------------------------
+........................................output*/
+#main-define-output{
+  display: none;
+}
+
+#main-define-content{
+  animation: entrance 2s ease forwards;
+}
+#define-output{
+margin: 0;
+padding: 0;
+font-size: 2rem;
+position: relative;
+max-height: 100%;
+top: 5vh;
+}
+.output-head {
+  position: relative;
+  color: #00E676;
+  left: 0;
+  text-align: center!important;
+  text-shadow: 0 0 7px #2196F3;
+}
+.back-output{
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: left;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: -320px;
+  top: -47px;
+  outline: none!important;
+}
+.next-output {
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: right;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 320px;
+  top: 20px;
+  outline: none!important;
+}
+.next-output:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+.back-output:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+#back-out-1, #back-out2, #back-out-3{
+  display: none;
+}
+#def-band-1-output,#def-band-2-output,#def-band-3-output, {
+}
+/*---------------------------------
+.........................................
+@@@@@@@@@@@@@@@@@@@@@
+PAGE ideate WORKSHOPS */
+#ideate-bands{
+  display:none;
+}
+.ideate-head{
+  position: relative;
+  color: #00E676;
+  left: 0;
+  color: #ff005b !important;
+  text-shadow: 0 0 7px #ff005b !important;
+}
+
+.top{
+  position: relative;
+  top: -10vh;
+}
+#ideate-bands .col-3:hover {
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+    border-color: #fff;
+    box-shadow: 0 0 15px #fff, inset 0 0 15px #fff;
+}
+
+#ideate-bands i:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+  transform: scale(1.5);
+}
+/* ------------------
+-------------------------------------------------
+------------------FIRST WORKSHOP IDEATE------------*/
+#ideate-band-1{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+.ideate-head.uno {
+  position: absolute;
+  top: -180px;
+  left: 80px;
+  margin-bottom: 20px;
+  text-align: center!important;
+  color: #00E676 !important;
+}
+.what-question.uno{
+  text-align: center!important;
+  color: #00E676;
+  text-shadow: 0 0 7px #00E676;
+}
+.carousel {
+  height: 400px !important;
+  width:400px !important;
+  margin: 0 auto;
+}
+#ideate-1-input {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: 0vh;
+}
+.instructions-title-ideate{
+  text-align: center!important;
+  text-decoration: underline;
+}
+
+.ideate-instructions{
+  margin-top: 25px;
+  text-align: center !important;
+  margin-bottom: 35px;
+}
+.ideate-title{
+  text-align: center!important;
+  text-decoration: underline;
+}
+
+.inext {
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: right;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 0px;
+  outline: none!important;
+}
+.inext:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+.iback{
+  background-color: transparent;
+  color: #868484;
+  width: 100px;
+  text-align: left;
+  border: none;
+  position: relative;
+  border-bottom: 1px solid #868484;
+  left: 0px;
+
+  outline: none!important;
+}
+.iback:hover{
+  border-color: #00E676;
+  border: 1px solid;
+  color: #00E676;
+  box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+/* ------------------
+-------------------------------------------------
+------------------second WORKSHOP IDEATE------------*/
+#ideate-band-2{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+.needs{
+  width: 14%;
+  margin: 5px;
+  color: #ff005b;
+  text-shadow: 0 0 7px #00E676;
+  border-color: #00E676;
+  box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+}
+.services{
+  width: 14%;
+  margin: 5px;
+  color: #2196F3;
+  text-shadow: 0 0 7px #ff005b;
+  border-color: #ff005b;
+  box-shadow: 0 0 15px #ff005b, inset 0 0 15px #ff005b;
+}
+
+.tech {
+  width: 14%;
+  margin: 5px;
+  color: #ff005b;
+  text-shadow: 0 0 7px #2196F3;
+  border-color: #2196F3;
+  box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3;
+}
+
+#mashup {
+  margin-top: 58px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+/* ------------------
+-------------------------------------------------
+------------------second WORKSHOP IDEATE------------*/
+#ideate-band-3{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+#ch-instruction {
+  padding: 0px 60px;
+}
+/* ------------------
+-------------------------------------------------
+------------------OUT PUT IDEATE------------*/
+#main-ideate-output{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+
+#ideate-band-1-output {
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+}
+#main-ideate-output  textarea{
+  background-color: transparent;
+      border: none;
+      width: 60%;
+      height: 20%;
+      color: white;
+      margin-top: 40px;
+      font-size: 1.5rem;
+      outline: none;
+      border-bottom: 2px solid white;
+      word-wrap: break-word;
+}
+
+#main-ideate-output  label {
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  color: #868484;
+}
+/*---------------------------------
+.........................................
+@@@@@@@@@@@@@@@@@@@@@
+PAGE DEFINE WORKSHOPS */
+#build-bands {
+  display: none;
+}
+.build-head{
+  position: relative;
+  color: #00E676;
+  left: 0;
+  text-shadow: 0 0 7px #2196F3 !important;
+  color: #2196F3 !important;
+}
+#build-bands .col-3:hover {
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+    border-color: #fff;
+    box-shadow: 0 0 15px #fff, inset 0 0 15px #fff;
+}
+
+#build-bands i:hover {
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+  transform: scale(1.5);
+}
+
+/* ------------------
+-------------------------------------------------
+------------------first WORKSHOP Build------------*/
+#build-band-1{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+
+.build-head.uno{
+  position: absolute;
+  top: -180px;
+  left: 80px;
+}
+#fillin {
+
+}
+#fill-6{
+  left: 216px;
+}
+#fill-7{
+  left: 86px;
+}
+#fill-8{
+  left: 40px;
+}
+#fill-9{
+  left: 164px;
+}
+#fill-10{
+  left: 66px;
+}
+/* ------------------
+-------------------------------------------------
+------------------second WORKSHOP Build------------*/
+
+/* ------------------
+-------------------------------------------------
+------------------second WORKSHOP Build------------*/
+/* ------------------
+
+
+-------------------------------------------------
+------------------OUTPUT WORKSHOP Build------------*/
+#main-build-output{
+  display: none;
+}
+/* ---------------------
+------------------------------
+-------------------------------------------------
+--------------------------------------------
+---------------------general animations*/
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes exit {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lightsOff{
+  80% {
+    color:#fff;
+  }
+  100% {
+    color:#000;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #000, 0 0 0.5em #000, 0 0 0.1em #000, 0 10px 3px #000;
+  }
+}
+
+
+
+/* The sidebar menu --------------------------------
+--------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------------
+---------------------------------------------------*/
+.sidebar {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  font-family: 'Roboto Mono', monospace;
+  right: 0;
+  background-color: #000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+
+/* -------------------------------------
+--------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------------
+---------------------------------------------------The sidebar links */
+.sidebar a {
+  padding: 25px 45px 8px 32px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  display: block;
+  transition: 0.6s;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+#sign2 {
+  font-size: 1rem;
+}
+.sidebar .contactdet {
+padding-top: 152px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  right: 2%;
+  top: 2%;
+  position: fixed;
+  z-index: 40;
+  border: 2px solid #a09e9e;
+  border-radius: 8px;
+  animation: entrance 6s ease forwards;
+}
+
+.openbtn:hover {
+  border-color: #F79F1F;
+  box-shadow: 0 0 8px #F79F1F, inset 0 0 8px #F79F1F;
+  -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

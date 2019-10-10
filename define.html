@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>stages</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Cuprum|Orbitron|Roboto|Saira+Semi+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d9a8534e1e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="defcloseNav()">&times;</a>
+    <a href="">Instructions</a>
+    <a href="">DEFINE</a>
+    <a href="">IDEATE</a>
+    <a href="">BUILD</a>
+  </div>
+  <div class="container-fluid" id="define">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="define-content" >
+      <div class="col-2">
+      <h1 class="define-head">INTUITION </h1>
+      </div>
+      <div class="col-8">
+      <p class="define-instructions">So, what you gonna have? How about we start by defining that problem</p>
+      </div>
+      <div class="col-10" id="define-input">
+      <form id="deform">
+      <textarea name="name" rows="5" required cols="8" id="define-question" type="text" name="FirstName" autocomplete="off" maxlength="100" placeholder="My problem is..."></textarea>
+      <label id="count">Max 100 characters </label>
+      <button value="Next" type="submit">Next </button>
+      </form>
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+
+
+<!-- select workshop page @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+  <div class="container-fluid" id="define-bands">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="bands-content" >
+      <div class="col-3 box1" id="band-1" onclick="switchOff1()">
+        <h1 class="stagetxt">THE MEMBRANE </h1>
+      </div>
+      <div class="col-3 box2" id="band-2" onclick="switchOff2()">
+        <h1 class="stagetxt">ROLES n' ROSES </h1>
+      </div>
+      <div class="col-3 box3" id="band-3" onclick="switchOff3()">
+        <h1 class="stagetxt">TELL ME WHY </h1>
+      </div>
+      <!-- first interrogation mark-->
+      <div class="col-3 interrogation" style="">
+        <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#define-ws-1"style="left:-3vh;"></i>
+        </div>
+        <!--MODAL FIRST BAND -->
+  <div class="modal fade" id="define-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> The Membrane</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        With this workshop you will identify how to structure the problem to be solved.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal ends-->
+        <div class="col-3 interrogation" style="">
+          <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#define-ws-2" style="z-index: 30"></i>
+          </div>
+          <!--MODAL second BAND -->
+  <div class="modal fade" id="define-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">ROLES n' ROSES </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                Here you will identify from a user perspective what’s lacking with your service.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal ends-->
+          <div class="col-3 interrogation" style="">
+            <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#define-ws-3" style="left:5vh"></i>
+            </div>
+            <!--MODAL third BAND -->
+    <div class="modal fade" id="define-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TELL ME WHY</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Trough this workshop you will identify the reason of the problem/lack which brought you here.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal ends-->
+      </div>
+
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+
+  <!--  WORKSHOPS DEFINE  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 1@@@@@-->
+  <div class="container-fluid" id="main-band-1">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="band-1-content" >
+      <div class="col-2">
+      <h1 class="define-head">DEFINE </h1>
+      </div>
+      <div class="col-4 instructions-head" >
+      <h5 class="instructions-title">What now?</h5>
+      <p class="define-instructions"> Please fill in the statement</p>
+      <i id="mark-band-1"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#band-ws-1"></i>
+      </div>
+      <div class="col-4">
+      <h5 class="statement-title">Problem</h5>
+      <p class="define-instructions" id="def-statement"></p>
+      </div>
+      <!-- Force next columns to break to new line -->
+      <div class="w-100"></div>
+      <div class="col-2" id="timer"></div>
+      <div class="col-8" id="band-1-input">
+      <p id="fillin" class="fill-paragraph">
+      Who is the user?<input type="text" required class="fill"id="fill-1" type="text" autocomplete="off" maxlength="20" placeholder="Restaurant owners..."><br>
+      What is their goal?<input type="text" required class="fill"id="fill-2" type="text" autocomplete="off" maxlength="20" placeholder="Book nice music..."><br>
+      What problem do they have?<input type="text" required class="fill"id="fill-3" type="text" autocomplete="off" maxlength="20" placeholder="finding artists..."><br>
+      How does that make them feel?<input type="text" required class="fill"id="fill-4" type="text" autocomplete="off" maxlength="20" placeholder="confused..."><br>
+      What would be an ideal situation?<input type="text" required class="fill"id="fill-5" type="text" autocomplete="off" maxlength="20" placeholder="artists find them..."><br>
+      </p>
+      <button class="next" onclick="outputPage1()">Next</button>
+      <button class="back" onclick="backWorkshop()">Back</button>
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+  <div class="modal fade" id="band-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">THE MEMBRANE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Welcome to the first hit of the night! When we say “Insight in”, you say “The membrane!”
+            Make sure to answer every question the band asks.
+            You have 5 minutes! You don’t wanna miss the beat drop, so click the timer!!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends-->
+    <!-- BAND 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="container-fluid" id="main-band-2">
+      <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+      <div class="row align-items-center justify-content-center" id="band-2-content" >
+        <div class="col-2">
+        <h1 class="define-head dos">DEFINE</h1>
+        </div>
+        <div class="col-4 instructions-head" >
+        <h5 class="instructions-title">What now?</h5>
+        <p class="define-instructions"> Please fill in the statement</p>
+        <i id="mark-band-2"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#band-ws-2";></i>
+        </div>
+        <div class="col-4">
+        <h5 class="statement-title">Problem</h5>
+        <p class="define-instructions" id="def-statement-2"></p>
+        </div>
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+        <div class="col-10 align-self-center" id="band-2-input">
+        <p id="fillin" class="sfill-paragraph">
+        We are <select class="options" id="sfill-1" name="roles">
+          <option value="restaurant owners">restaurant owners</option>
+          <option value="artists">artists</option>
+          <option value="event planners">event planners</option>
+          <option value="project managers">project managers</option>
+          <option value="agents">agents</option>
+        </select>
+        and our main concern is<input type="text" required class="fill-select"id="sfill-2" type="text" autocomplete="off" maxlength="30" placeholder="negotiating...">.<br>
+        The reason why is because it is<input type="text" required class="fill-select"id="sfill-3" type="text" autocomplete="off" maxlength="30" placeholder="time consuming...">
+        What we really want is to<input type="text" required class="fill-select"id="sfill-4" type="text" autocomplete="off" maxlength="30" placeholder="have more transparency...">
+        so that we can feel <select class="options" id="sfill-5" name="feelings">
+          <option value="efficient">efficient</option>
+          <option value="relaxed">relaxed</option>
+          <option value="satisfied">satisfied</option>
+          <option value="safe">safe</option>
+          <option value="motivated">motivated</option>
+          <option value="positive">positive</option>
+
+        </select> after using the service.
+        </p>
+        <button class="next" onclick="outputPage2()">Next</button>
+        <button class="back" onclick="backWorkshop()">Back</button>
+        </div>
+        </div>
+      <p class="footer" id="qgroup">made with ❤ by Q group</p>
+    </div>
+    <div class="modal fade" id="band-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ROLES n' ROSES</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Tonight you can be whoever you want to be -- for 5 minutes. Step into the shoes of someone else.
+              Walk a mile in their shoes. What do they see?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BAND 3@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+      <div class="container-fluid" id="main-band-3">
+        <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+        <div class="row align-items-center justify-content-center" id="band-3-content" >
+          <div class="col-2">
+          <h1 class="define-head tres">DEFINE</h1>
+          </div>
+          <div class="col-4 instructions-head" >
+          <h5 class="instructions-title">What now?</h5>
+          <p class="define-instructions"> Please answer the questions</p>
+          <i id="mark-band-3"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#band-ws-3";></i>
+          </div>
+          <div class="col-4">
+          <h5 class="statement-title">Problem</h5>
+          <p class="define-instructions" id="def-statement-3"></p>
+          </div>
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+          <div class="col-10 align-self-center" id="band-3-input">
+          <p id="fillin" class="why-fill-paragraph">
+          <span id="problem-question">Why is this problem happening? </span> <br>
+          <span id="problema"></span> <br>
+          <input type="text" required class="why-fill"id="why-1" type="text" autocomplete="off" maxlength="40" placeholder="This is happening because...">.<br>
+
+          </p>
+          <button class="ask" onclick="ask()" id="ask">ask</button>
+          <button class="next" onclick="outputPage3()" id="next-3">Next</button>
+          <button class="back" onclick="backWorkshop()" id="back-3">Back</button>
+          </div>
+          </div>
+        <p class="footer" id="qgroup">made with ❤ by Q group</p>
+      </div>
+      <div class="modal fade" id="band-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TELL ME WHY</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ssss
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Output band -->
+<div class="container-fluid" id="main-define-output">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="main-define-content" >
+    <div class="col-8">
+    <h1 class="output-head">Let the beat drop!</h1>
+    </div>
+    <div class="col-10" id="define-output">
+    <p class="output" id="def-band-1-output"></p>
+    <p class="output" id="def-band-2-output"></p>
+    <p class="output" id="def-band-3-output"></p>
+
+    </div>
+    <div class="w-100"></div>
+    <div class="col-10">
+    <button class="next-output" id="next-out-1" onclick="goToIdeate1()">Next</button>
+    <button class="next-output" id="next-out-2" onclick="goToIdeate2()">Next</button>
+    <button class="next-output" id="next-out-3" onclick="goToIdeate3()">Next</button>
+
+    <p>Ready for the next step?</p>
+    <button class="back-output" onclick="inputPage1()" id="back-out-1">Back</button>
+    <button class="back-output" onclick="inputPage2()" id="back-out-2">Back</button>
+    <button class="back-output" onclick="inputPage3()" id="back-out-3">Back</button>
+
+    </div>
+    </div>
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+<!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BANDS@@@@@-->
+<div class="container-fluid" id="ideate-bands">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="bands-content" >
+    <div class="col-8">
+    <h1 class="ideate-head">IDEATE</h1>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-3 box1 top" id="band-4" onclick="switchOff4()">
+      <h1 class="stagetxt">WANNABE</h1>
+    </div>
+    <div class="col-3 box2 top" id="band-5" onclick="switchOff5()">
+      <h1 class="stagetxt">MASHUP PUMPKINS </h1>
+    </div>
+    <div class="col-3 box3 top" id="band-6" onclick="switchOff6()">
+      <h1 class="stagetxt">RUN DMC20 </h1>
+    </div>
+    <!-- first interrogation mark-->
+    <div class="col-3 interrogation top" style="">
+      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-1"style="left:-3vh;"></i>
+      </div>
+      <!--MODAL FIRST BAND -->
+<div class="modal fade" id="ideate-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WANNABE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Short Description
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends-->
+      <div class="col-3 interrogation top" style="">
+        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-2" style="z-index: 30"></i>
+        </div>
+        <!--MODAL second BAND -->
+<div class="modal fade" id="ideate-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">IDEATE Band 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Short Description
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal ends-->
+        <div class="col-3 interrogation top" style="">
+          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-3" style="left:5vh"></i>
+          </div>
+          <!--MODAL third BAND -->
+  <div class="modal fade" id="ideate-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">BAND 3 IDEATE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            SHORT DESCRIPTION
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends-->
+    </div>
+
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+<!--  WORKSHOPS DEFINE  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BAND 1@@@@@-->
+<div class="container-fluid" id="ideate-band-1">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="ideate-1-content" >
+    <div class="col-3" style="border-right: 2px solid white;">
+    <h1 class="ideate-head uno">IDEATE</h1>
+    <h5 class="instructions-title-ideate">What now?</h5>
+    <p class="ideate-instructions"> Start brainstorming</p>
+    <i id="mark-bandi-1"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#bandi-ws-1"; style="top:5px;left:70px;margin-let:4%"></i>
+    <h5 class="ideate-title">Creative <br> Framework</h5>
+    <p class="ideate-instructions" id="statement-1"></p>
+    <button class="iback" onclick="backiWorkshop()" id="iback-1">Back</button>
+    <button class="inext" onclick="outputiPage1()" id="inext-1">Next</button>
+    </div>
+    <div class="col-8 align-self-center" id="ideate-1-input">
+    <h3 class="what-question uno">What would you do if you were .. </h3> <br>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/spotify.gif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/volvo.gif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/mcdonalds.gif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/ikea.gif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/darth.gif" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/airbnb.gif" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div>
+    </div>
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+<div class="modal fade" id="bandi-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">IDEATE BAND 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          SHORT DESCRIPTION
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BAND 2@@@@@-->
+<div class="container-fluid" id="ideate-band-2">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="ideate-2-content" >
+    <div class="col-3" style="border-right: 2px solid white;">
+    <h1 class="ideate-head uno">IDEATE</h1>
+    <h5 class="instructions-title-ideate">What now?</h5>
+    <p class="ideate-instructions"> Pick 3 and start brainstorming</p>
+    <i id="mark-bandi-1"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#bandi-ws-2"; style="top:5px;left:70px;margin-let:4%"></i>
+    <h5 class="ideate-title">Creative <br> Framework</h5>
+    <p class="ideate-instructions" id="statement-2"></p>
+    <button class="iback" onclick="backiWorkshop()" id="iback-2">Back</button>
+    <button class="inext" onclick="outputiPage2()" id="inext-2">Next</button>
+    </div>
+    <div class="col-8 align-self-center" id="ideate-1-input">
+    <h3 class="what-question uno">Select one of each color </h3> <br>
+    <input type="button" class="needs"name="" id="input1" onclick="needs1()" value="Eating">
+    <input type="button" class="needs"name="" id="input2" onclick="needs2()" value="Talking">
+    <input type="button" class="needs"name="" id="input3" onclick="needs3()" value="Singing">
+    <input type="button" class="needs"name="" id="input4" onclick="needs4()" value="Writing">
+    <input type="button" class="needs"name="" id="input5" onclick="needs5()" value="Drawing"> <br>
+    <input type="button" class="services"name="" id="input6" onclick="services1()" value="Spotify">
+    <input type="button" class="services"name="" id="input7" onclick="services2()" value="Facetime">
+    <input type="button" class="services"name="" id="input8" onclick="services3()" value="BankID">
+    <input type="button" class="services"name="" id="input9" onclick="services4()" value="Google Maps">
+    <input type="button" class="services"name=""id="input10" onclick="services5()" value="Swish"><br>
+    <input type="button" class="tech"name="" id="input11" onclick="tech1()" value="Bluetooth">
+    <input type="button" class="tech"name="" id="input12" onclick="tech2()"value="3D Printer">
+    <input type="button" class="tech"name="" id="input13" onclick="tech3()"value="Smartphone">
+    <input type="button" class="tech"name="" id="input14" onclick="tech4()"value="Headphones">
+    <input type="button" class="tech"name="" id="input15" onclick="tech5()" value="Touchpad">
+    <p id="mashup"> </p>
+
+    </div>
+    </div>
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+<div class="modal fade" id="bandi-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MASHUP PUMPKINS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Pick one card from each category, just one!
+          And now? You have 4 minutes come up with a bunch of ideas, that combines all three things!
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BAND 3@@@@@-->
+<div class="container-fluid" id="ideate-band-3">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="ideate-3-content" >
+    <div class="col-3" style="border-right: 2px solid white;">
+    <h1 class="ideate-head uno">IDEATE</h1>
+    <h5 class="instructions-title-ideate">What now?</h5>
+    <p class="ideate-instructions"> Follow the lead</p>
+    <i id="mark-bandi-1"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#bandi-ws-3"; style="top:5px;left:70px;margin-let:4%"></i>
+    <h5 class="ideate-title">Creative <br> Framework</h5>
+    <p class="ideate-instructions" id="statement-3"></p>
+    <button class="iback" onclick="backiWorkshop()" id="iback-2">Back</button>
+    <button class="inext" onclick="outputiPage3()" id="inext-2">Next</button>
+    </div>
+    <div class="col-8 align-self-center" id="ideate-1-input">
+    <h3 class="what-question uno" id="ch-instruction">Use the creative framework as a guide and write down one idea. You'll have 2 minutes</h3> <br>
+    <br>
+    <br>
+    <br>
+    <button class="ask" id="change-instruction">Start</button>
+
+
+    </div>
+    </div>
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+<div class="modal fade" id="bandi-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">IDEATE BAND 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          SHORT DESCRIPTION
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+OUTPUT@@@@@-->
+<div class="container-fluid" id="main-ideate-output">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="main-define-content" >
+    <div class="col-8">
+    <h1 class="output-head">Drop it like is hot!</h1>
+    </div>
+    <div class="col-10" id="ideate-output">
+    <p class="output" id="ideate-band-1-output">Now that you have had awesome idea, try making a decision and go only for one.
+    One way you can decide is by dotmocracy. Each person gets three votes and you vote by putting a dot next to the ideas that you
+    resonate the more with. Write the idea you all agree in the space below</p>
+    <textarea name="name" rows="3" required cols="8" id="ideate-question" type="text" name="FirstName" autocomplete="off" maxlength="140" placeholder="Our idea is..."></textarea>
+    <label id="icount">Max 140 characters </label>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-10">
+    <button class="next-output" id="next-build" onclick="goToBuild()">Next</button>
+    <p>Ready for the next step?</p>
+    <button class="back-output" onclick="idInputpage1()" id="iback-out-1">Back</button>
+    <button class="back-output" onclick="idInputpage2()" id="iback-out-2">Back</button>
+    <button class="back-output" onclick="idInputpage3()" id="iback-out-3">Back</button>
+
+    </div>
+    </div>
+  <p class="footer" id="qgroup">made with ❤ by Q group</p>
+</div>
+
+<!--  WORKSHOPS BUILD  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BANDS@@@@@-->
+<div class="container-fluid" id="build-bands">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="build-content" >
+    <div class="col-8">
+    <h1 class="build-head">BUILD</h1>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-3 box1 top" id="band-7" onclick="switchOff7()">
+      <h1 class="stagetxt">PITCH IT BAE </h1>
+    </div>
+    <div class="col-3 box2 top" id="band-8" onclick="switchOff8()">
+      <h1 class="stagetxt">JOURNEY </h1>
+    </div>
+    <div class="col-3 box3 top" id="band-9" onclick="switchOff9()">
+      <h1 class="stagetxt">ENJOY DIVISION</h1>
+    </div>
+    <!-- first interrogation mark-->
+    <div class="col-3 interrogation top" style="">
+      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-1"style="left:-3vh;"></i>
+    </div>
+      <!--MODAL FIRST BAND -->
+<div class="modal fade" id="build-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">BUILD Band 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Short Description
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends-->
+      <div class="col-3 interrogation top" style="">
+        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-2" style="z-index: 30"></i>
+        </div>
+        <!--MODAL second BAND -->
+  <div class="modal fade" id="build-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">BUILD Band 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Short Description
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal ends-->
+        <div class="col-3 interrogation top" style="">
+          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-3" style="position:relative;left:5vh"></i>
+          </div>
+          <!--MODAL third BAND -->
+  <div class="modal fade" id="build-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">BUILD 3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            SHORT DESCRIPTION
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 1@@@@@-->
+  <div class="container-fluid" id="build-band-1">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="build-1-content" >
+      <div class="col-3" style="border-right: 2px solid white;">
+      <h1 class="build-head uno">BAND 1</h1>
+      <h5 class="instructions-title-ideate">What now?</h5>
+      <p class="ideate-instructions"> Answer the questions</p>
+      <i id="mark-bandi-1"class="far fa-question-circle head-mark" data-toggle="modal" data-target="#bandb-ws-1"; style="top:5px;left:70px;margin-let:4%"></i>
+      <h5 class="ideate-title">Idea</h5>
+      <p class="ideate-instructions" id="build-statement-1"></p>
+      <button class="iback" onclick="backBWorkshop()" id="bback-1">Back</button>
+      <button class="inext" onclick="outputBPage1()" id="bnext-1">Next</button>
+      </div>
+      <div class="col-8 align-self-center" id="ideate-1-input" style="padding:58px;">
+      <h3 class="what-question uno">Pitch better have my money </h3> <br>
+      <p id="fillin" class="fill-paragraph">
+      Who is the user?<input type="text" required class="fill"id="fill-6" type="text" autocomplete="off" maxlength="20" placeholder="Restaurant owners..."><br>
+      What are they struggling with?<input type="text" required class="fill"id="fill-7" type="text" autocomplete="off" maxlength="20" placeholder="planning events..."><br>
+      How is this problem affecting them?<input type="text" required class="fill"id="fill-8" type="text" autocomplete="off" maxlength="20" placeholder="more stress..."><br>
+      What is your solution?<input type="text" required class="fill"id="fill-9" type="text" autocomplete="off" maxlength="30" placeholder="weekly newsletters"><br>
+      What feature will you implement ?<input type="text" required class="fill"id="fill-10" type="text" autocomplete="off" maxlength="20" placeholder="mailchimp services"><br>
+      </p>
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+  <div class="modal fade" id="bandb-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">PITCH</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          Now you have an awesome idea! Answer the questions. You have 4 minutes.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 2@@@@@-->
+
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 3@@@@@-->
+
+  <!--  WORKSHOPS Output  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 1@@@@@-->
+  <div class="container-fluid" id="main-build-output">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="main-build-content" >
+      <div class="col-8">
+      <h1 class="output-head">Sweeet! Now you have everything you need to go out and tell your story!</h1>
+      </div>
+      <div class="col-10" id="define-output">
+      <p class="output" id="build-band-goodbye"></p>
+      <p class="output" id="build-band-1-output"></p>
+      <p class="output" id="def-band-3-output"></p>
+
+      </div>
+      <div class="w-100"></div>
+      <div class="col-10">
+
+      <p>Do you want to do it again?</p>
+      <button class="back-output" onclick="backHome()" id="build-out-1">Home</button>
+
+
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="define.js"></script>
+</body>
+</html>

@@ -4,36 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>stages</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Cuprum|Orbitron|Roboto|Saira+Semi+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-  <div class="container-fluid" id="landing">
-    <div class="row align-items-end justify-content-center" id="landing-content">
-      <div class="col-10">
-        <div class="logo"><b id="sign">TH<span>E </span>SP<span>O</span>T</b></div>
-        <!--
-        <div class="wrapper">
-          <p id="text">THE SPOT</p>
-           <p id="shadow">
-              <span id="glow">THE</span><span id="blink"> SPOT</span>
-          </p>
-        </div>-->
-        <form class="box" id="form-box" onkeypress="return password(event)">
-          <p class="password" id="text-pswd">Members only</p>
-        <input type="password" name="pwd" class="hello" maxlength="10" placeholder="password" id="passwd"><br>
-      </form>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p>Instructions</p>
+    <a href="work.html">About</a>
+    <a class="contactdet" href="mailto:gerardo.gomez@hyperisland.se?subject=I saw your portfolio">Contact</a>
+  </div>
+  <div class="container-fluid" id="stages">
+    <button class="openbtn" onclick="openNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="stages-content" >
+      <div class="col-3 box1" id="stage-1" onclick="switchOff1()">
+        <h1 class="stagetxt">INTUITION </h1>
       </div>
-      <div class="col-6">
-      <p class="footer" id="qgroup">made with ❤ by Q group</p>
+      <div class="col-3 box2" id="stage-2" onclick="switchOff2()">
+        <h1 class="stagetxt">BRAINSTORM </h1>
+      </div>
+      <div class="col-3 box3" id="stage-3" onclick="switchOff3()">
+        <h1 class="stagetxt">FORM </h1>
       </div>
     </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
   </div>
-
-  <!-- first page, choose stage -->
 
 
 
