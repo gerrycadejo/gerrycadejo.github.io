@@ -938,7 +938,20 @@ PAGE DEFINE WORKSHOPS */
 /* ------------------
 -------------------------------------------------
 ------------------second WORKSHOP Build------------*/
+#build-band-2{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
 
+.feature{
+  width: 14%;
+  margin: 5px;
+  color: #ff005b;
+  text-shadow: 0 0 7px #00E676;
+  border-color: #00E676;
+  box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+}
 /* ------------------
 -------------------------------------------------
 ------------------second WORKSHOP Build------------*/

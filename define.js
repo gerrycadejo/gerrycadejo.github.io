@@ -553,7 +553,7 @@ function goToBuild(){
   var outputPage = document.getElementById('main-ideate-output');
   var buildPage = document.getElementById('build-bands');
   var idea1 = document.getElementById('build-statement-1');
-  //var idea2 = document.getElementById('build-statement-2');
+  var idea2 = document.getElementById('build-statement-2');
   //var idea3 = document.getElementById('build-statement-3');
 
   var statement1 = document.getElementById('ideate-question').value;
@@ -561,7 +561,7 @@ function goToBuild(){
   outputPage.style.display = "none";
   buildPage.style.display = "block";
   idea1.innerHTML = statement1;
-  //idea2.innerHTML = statement1;
+  idea2.innerHTML = statement1;
   //idea3.innerHTML = statement1;
 }
 
@@ -580,6 +580,21 @@ function switchOff7(){
   }, 3050)
 }
 
+function switchOff8(){
+  box7.className = 'col-3 box1 top off ';
+  box9.className = 'col-3 box3 top off ';
+  document.getElementById('mark1').style.display = "none";
+  document.getElementById('mark2').style.display = "none";
+  document.getElementById('mark3').style.display = "none";
+   setTimeout(function(){
+    box8.style.opacity = '0';
+  }, 2500);
+  setTimeout(function(){
+    document.getElementById('build-bands').style.display="none";
+    document.getElementById('build-band-2').style.display = "block";
+  }, 3050)
+}
+
 function outputBPage1(){
   var output = document.getElementById('main-build-output');
   var band1 = document.getElementById('build-band-1');
@@ -594,6 +609,8 @@ function outputBPage1(){
   output.style.display ="block";
   outputStatement1.innerHTML = fill6 + " are struggling with " + fill7+ " and this is causing them "+ fill8 + " That's why we came up with a  " + fill9 + " by implementing " + fill10;
 }
+
+
 
 function backHome(){
   window.location.href = "stages.html";
