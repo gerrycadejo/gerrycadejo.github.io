@@ -13,26 +13,82 @@
 <body>
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <p>Instructions</p>
-    <a href="work.html">About</a>
-    <a class="contactdet" href="mailto:gerardo.gomez@hyperisland.se?subject=I saw your portfolio">Contact</a>
+    <a  data-toggle="modal" data-target="#overlay" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">GUIDE</a>
+    <a href="define.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">EARTH</a>
+    <a href="ideate.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">FIRE</a>
+    <a href="build.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">WIND</a>
   </div>
   <div class="container-fluid" id="stages">
     <button class="openbtn" onclick="openNav()" id="burger"></button>
     <div class="row align-items-center justify-content-center" id="stages-content" >
       <div class="col-3 box1" id="stage-1" onclick="switchOff1()">
-        <h1 class="stagetxt">INTUITION </h1>
+        <h1 class="stagetxt">EARTH </h1>
       </div>
       <div class="col-3 box2" id="stage-2" onclick="switchOff2()">
-        <h1 class="stagetxt">BRAINSTORM </h1>
+        <h1 class="stagetxt">FIRE </h1>
       </div>
       <div class="col-3 box3" id="stage-3" onclick="switchOff3()">
-        <h1 class="stagetxt">FORM </h1>
+        <h1 class="stagetxt">WIND </h1>
       </div>
     </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
   </div>
 
+  <div class="modal fade bd-example-modal-xl" id="overlay" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style="background-color:#000;">
+        <div class="modal-header" style="border-bottom:none;color:white;">
+           <h5 class="modal-title" id="exampleModalLabel"></h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+            <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel" style="width: 75%!important;height:70%!important;">
+          <ol class="carousel-indicators" style="bottom: -30px!important;">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/guide1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide4.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide5.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide6.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide7.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide8.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

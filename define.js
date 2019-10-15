@@ -93,6 +93,7 @@ function switchOff3(){
 }
 
 function backWorkshop(){
+  clic = 0;
   var band1 = document.getElementById('main-band-1');
   var band2 = document.getElementById('main-band-2');
   var band3 = document.getElementById('main-band-3');
@@ -198,7 +199,7 @@ function outputPage3(){
   output.style.display ="block";
   outputStatement1.style.display = "none";
   outputStatement2.style.display = "none";
-  outputStatement3.innerHTML = "How might we help " + why;
+  outputStatement3.innerHTML = "The underlying reason this problem happens is " + why;
   outputStatement3.style.display = "block";
 }
 
@@ -223,13 +224,16 @@ function inputPage3(){
   var band3 = document.getElementById('main-band-3');
   var problema = document.getElementById('problema');
   var why = document.getElementById('why-1');
+  var problemquestion = document.getElementById('problem-question');
   band3.style.display ="block";
   output.style.display = "none";
   askbutton.style.display ="initial";
   next.style.display = "none";
-  back.style.display = "none";
   why.value = why.defaultValue;
   problema.innerHTML = "";
+  why.style.display= "initial";
+  problemquestion.innerHTML = "Why is this problem happening?"
+
 }
 let clic = 0;
 function ask(){
@@ -239,6 +243,7 @@ function ask(){
   var back = document.getElementById('back-3');
   var why = document.getElementById('why-1');
   var problema = document.getElementById('problema');
+  var problemquestion = document.getElementById('problem-question');
   clic = parseInt(clic)+parseInt(1);
   if (clic == 1){
     problema.innerHTML = why.value;
@@ -251,6 +256,8 @@ function ask(){
     next.style.display = "initial";
     back.style.display = "initial";
     problema.innerHTML = why.value;
+    why.style.display ="none";
+    problemquestion.innerHTML = "Awesome! Move on!"
   }
 }
 
@@ -272,7 +279,10 @@ function goToIdeate1(){
   statement1.innerHTML = insight;
   statement2.innerHTML = insight;
   statement3.innerHTML = insight;
-
+  var emailout1 = document.getElementById('out-1');
+  emailout1.value = insight;
+  var definition = document.getElementById('idea-statement-2');
+  definition.innerHTML = insight;
 }
 function goToIdeate2(){
   var outputPage = document.getElementById('main-define-output');
@@ -286,7 +296,10 @@ function goToIdeate2(){
   statement1.innerHTML = insight;
   statement2.innerHTML = insight;
   statement3.innerHTML = insight;
-
+  var emailout1 = document.getElementById('out-1');
+  emailout1.value = insight;
+  var definition = document.getElementById('idea-statement-2');
+  definition.innerHTML = insight;
 }
 function goToIdeate3(){
   var outputPage = document.getElementById('main-define-output');
@@ -301,31 +314,13 @@ function goToIdeate3(){
   statement1.innerHTML = insight;
   statement2.innerHTML = insight;
   statement3.innerHTML = insight;
+  var emailout1 = document.getElementById('out-1');
+  emailout1.value = insight;
+  var definition = document.getElementById('idea-statement-2');
+  definition.innerHTML = insight;
 }
 
-function backiWorkshop(){
-  clic = 0;
-  var band1 = document.getElementById('ideate-band-1');
-  var band2 = document.getElementById('ideate-band-2');
-  var band3 = document.getElementById('ideate-band-3');
-  var ideaworkshops = document.getElementById('ideate-bands');
-  box1.style.display = "block";
-  box2.style.display ="block";
-  box3.style.display ="block";
-  band1.style.display = "none";
-  band2.style.display ="none";
-  band3.style.display ="none";
-  box4.className = 'col-3 box1 top';
-  box5.className = 'col-3 box2  top';
-  box6.className = 'col-3 box3 top';
-  box4.style.opacity ="1";
-  box5.style.opacity ="1";
-  box6.style.opacity ="1";
-  document.getElementById('mark1').style.display = "block";
-  document.getElementById('mark2').style.display = "block";
-  document.getElementById('mark3').style.display = "block";
-  ideaworkshops.style.display = "block";
-}
+
 
 function switchOff4(){
   box5.className = 'col-3 box2 top off ';
@@ -367,7 +362,6 @@ function switchOff6(){
   setTimeout(function(){
     document.getElementById('ideate-bands').style.display="none";
     document.getElementById('ideate-band-3').style.display = "block";
-    var instruction = document.getElementById('ch-instruction').innerHTML="Use the creative framework as a guide and write down one idea. You'll have 2 minutes";
 
   }, 3050)
 }
@@ -450,29 +444,15 @@ function tech5(){
   var result = document.getElementById('mashup');
   result.innerHTML = needs +" + "+ services +" + "+ tech;
 }
-clic= 0;
-document.getElementById("change-instruction").addEventListener("click", changeInstruction);
-function changeInstruction(){
-  console.log('clickin');
-  var instruction = document.getElementById('ch-instruction');
-  clic = parseInt(clic)+parseInt(1);
-  if (clic == 1){
-    console.log('click 1');
+
+
+  /*var instruction = document.getElementById('ch-instruction');
     instruction.innerHTML = 'Start writing!';
-    setTimeout(function(){
      instruction.innerHTML= 'Now share your mindblowing idea with your buddy to the right. You should have one too, and now you need to write down what are the limitations of it';
-   }, 120000);
- } if (clic ==2){
-   console.log('click 2');
    instruction.innerHTML = 'Use your glassess';
-   setTimeout(function(){
     instruction.innerHTML= 'Ok, now let’s pass the paper one more time, and now try to solve the limitations or try to make it sellable. You will have 3 minutes';
-  }, 180000);
- }
- setTimeout(function(){
   instruction.innerHTML= 'You are ready to go!';
-}, 300000);
-}
+*/
 
 var defineArea2 = document.getElementById('ideate-question');
 defineArea2.addEventListener('keypress', function(){
@@ -480,30 +460,50 @@ var charac = 140-defineArea2.value.length;
 document.getElementById('icount').innerHTML = "Max " + charac + " characters";
 var text = defineArea2.value;
 });
+function backiWorkshop(){
+  cuack = 0;
+  var band1 = document.getElementById('ideate-band-1');
+  var band2 = document.getElementById('ideate-band-2');
+  var band3 = document.getElementById('ideate-band-3');
+  var ideaworkshops = document.getElementById('ideate-bands');
+  band1.style.display = "none";
+  band2.style.display ="none";
+  band3.style.display ="none";
+  box4.className = 'col-3 box1 top';
+  box5.className = 'col-3 box2  top';
+  box6.className = 'col-3 box3 top';
+  box4.style.opacity ="1";
+  box5.style.opacity ="1";
+  box6.style.opacity ="1";
+  document.getElementById('mark1').style.display = "block";
+  document.getElementById('mark2').style.display = "block";
+  document.getElementById('mark3').style.display = "block";
+  ideaworkshops.style.display = "block";
+}
 //document.getElementById('def-statement').innerHTML = text;
 //document.getElementById('def-statement-2').innerHTML = text;
 //document.getElementById('def-statement-3').innerHTML = text;
 function idInputpage1(){
-  var output = document.getElementById('main-ideate-output');
+  var brain2 = document.getElementById('converge-band');
   var band1 = document.getElementById('ideate-band-1');
   band1.style.display ="block";
-  output.style.display = "none";
+  brain2.style.display = "none";
 }
 function idInputpage2(){
-  var output = document.getElementById('main-ideate-output');
+  var brain2 = document.getElementById('converge-band');
   var band2 = document.getElementById('ideate-band-2');
   band2.style.display ="block";
-  output.style.display = "none";
+  brain2.style.display = "none";
 }
 function idInputpage3(){
-  clic=0;
-  var output = document.getElementById('main-ideate-output');
+  cuack=0;
+  var brain2 = document.getElementById('converge-band');
   var band3 = document.getElementById('ideate-band-3');
   band3.style.display ="block";
-  output.style.display = "none";
+  brain2.style.display = "none";
 }
 function outputiPage1(){
-  var output = document.getElementById('main-ideate-output');
+  var brain2 = document.getElementById('converge-band');
   var band1 = document.getElementById('ideate-band-1');
   var button1 = document.getElementById('iback-out-1');
   var button2 = document.getElementById('iback-out-2');
@@ -513,10 +513,12 @@ function outputiPage1(){
   button2.style.display="none";
   button3.style.display="none";
   band1.style.display="none";
-  output.style.display ="block";
+  brain2.style.display ="block";
+  var emailout2 = document.getElementById('out-2');
+
 }
 function outputiPage2(){
-  var output = document.getElementById('main-ideate-output');
+  var brain2 = document.getElementById('converge-band');
   var band1 = document.getElementById('ideate-band-2');
   var button1 = document.getElementById('iback-out-1');
   var button2 = document.getElementById('iback-out-2');
@@ -526,10 +528,10 @@ function outputiPage2(){
   button2.style.display="initial";
   button3.style.display="none";
   band1.style.display="none";
-  output.style.display ="block";
+  brain2.style.display ="block";
 }
 function outputiPage3(){
-  var output = document.getElementById('main-ideate-output');
+  var brain2 = document.getElementById('converge-band');
   var band1 = document.getElementById('ideate-band-3');
   var button1 = document.getElementById('iback-out-1');
   var button2 = document.getElementById('iback-out-2');
@@ -539,7 +541,20 @@ function outputiPage3(){
   button2.style.display="none";
   button3.style.display="initial";
   band1.style.display="none";
-  output.style.display ="block";
+  brain2.style.display ="block";
+}
+
+function ideationOutput(){
+  var brain2 = document.getElementById('converge-band');
+  var ideaout = document.getElementById('main-ideate-output');
+  brain2.style.display ="none";
+  ideaout.style.display ="block";
+}
+function backConverge(){
+  var brain2 = document.getElementById('converge-band');
+  var ideaout = document.getElementById('main-ideate-output');
+  brain2.style.display ="block";
+  ideaout.style.display ="none";
 }
 
 /* THIS IS THE BUILD SECTION --------------------
@@ -554,7 +569,7 @@ function goToBuild(){
   var buildPage = document.getElementById('build-bands');
   var idea1 = document.getElementById('build-statement-1');
   var idea2 = document.getElementById('build-statement-2');
-  //var idea3 = document.getElementById('build-statement-3');
+  var idea3 = document.getElementById('build-statement-3');
 
   var statement1 = document.getElementById('ideate-question').value;
   console.log(statement1);
@@ -562,7 +577,7 @@ function goToBuild(){
   buildPage.style.display = "block";
   idea1.innerHTML = statement1;
   idea2.innerHTML = statement1;
-  //idea3.innerHTML = statement1;
+  idea3.innerHTML = statement1;
 }
 
 function switchOff7(){
@@ -594,24 +609,687 @@ function switchOff8(){
     document.getElementById('build-band-2').style.display = "block";
   }, 3050)
 }
+function switchOff9(){
+  box7.className = 'col-3 box1 top off ';
+  box8.className = 'col-3 box2 top off ';
+  document.getElementById('mark1').style.display = "none";
+  document.getElementById('mark2').style.display = "none";
+  document.getElementById('mark3').style.display = "none";
+   setTimeout(function(){
+    box9.style.opacity = '0';
+  }, 2500);
+  setTimeout(function(){
+    document.getElementById('build-bands').style.display="none";
+    document.getElementById('build-band-3').style.display = "block";
+  }, 3050)
+}
 
 function outputBPage1(){
   var output = document.getElementById('main-build-output');
   var band1 = document.getElementById('build-band-1');
   var button1 = document.getElementById('bnext-1');
   var outputStatement1 = document.getElementById('build-band-1-output');
+  var outputStatement2 = document.getElementById('build-band-2-output');
+  var otherStatement = document.getElementById('build-output');
+  var bnext1 = document.getElementById('obnext-1');
+  var bback1 = document.getElementById('obback-1');
+  var bback2 = document.getElementById('obback-2');
+  bback2.style.display="none";
   var fill6 = document.getElementById('fill-6').value;
   var fill7 = document.getElementById('fill-7').value;
   var fill8 = document.getElementById('fill-8').value;
   var fill9 = document.getElementById('fill-9').value;
   var fill10 = document.getElementById('fill-10').value;
+  var start = document.getElementById('start');
+  var act = document.getElementById('act');
+  var achieve = document.getElementById('achieve');
+  var finish = document.getElementById('finish');
+  start.style.display="none";
+  act.style.display="none";
+  achieve.style.display="none";
+  finish.style.display="none";
+  otherStatement.style.display="block";
   band1.style.display="none";
   output.style.display ="block";
+  bback1.style.display = "initial";
+  bnext1.style.display="initial";
   outputStatement1.innerHTML = fill6 + " are struggling with " + fill7+ " and this is causing them "+ fill8 + " That's why we came up with a  " + fill9 + " by implementing " + fill10;
+  outputStatement2.style.display = "none";
+  var emailout3 = document.getElementById('out-3');
+  emailout3.value = outputStatement1.innerHTML;
 }
 
+var featuremapoutput;
 
+function outputBPage2(){
+  var output = document.getElementById('main-build-output');
+  var band2 = document.getElementById('build-band-2');
+  var otherStatement = document.getElementById('build-output');
+  var bnext2 = document.getElementById('obnext-2');
+  var bback2 = document.getElementById('obback-2');
+  var start = document.getElementById('start');
+  var act = document.getElementById('act');
+  var achieve = document.getElementById('achieve');
+  var finish = document.getElementById('finish');
+  var outputStatement1 = document.getElementById('build-band-1-output');
+  var outputStatement2 = document.getElementById('build-band-2-output');
+  outputStatement2.style.display ="block";
+  // extracting the data
+  var txtarea1 = document.getElementById('explain-1');
+  var txtarea2 = document.getElementById('explain-2');
+  var txtarea3 = document.getElementById('explain-3');
+  var span1 = document.getElementById('bmashup1').innerHTML;
+  var span2 = document.getElementById('bmashup2').innerHTML;
+  var span3 = document.getElementById('bmashup3').innerHTML;
+  var block1 = document.getElementById('feat-explain-1');
+  var block2= document.getElementById('feat-explain-2');
+  var block3 = document.getElementById('feat-explain-3');
+  otherStatement.style.display="block";
+  start.style.display="none";
+  act.style.display="none";
+  achieve.style.display="none";
+  finish.style.display="none";
+  band2.style.display="none";
+  output.style.display ="block";
+  bback2.style.display = "initial";
+  bnext2.style.display="initial";
+  outputStatement1.innerHTML ="";
+  block1.innerHTML = "It will be " + span1 + " " + txtarea1.value;
+  block2.innerHTML = "Its next pillar will be " + span2 + " " + txtarea2.value;
+  block3.innerHTML = "Finally, it will be " + span3 + " " + txtarea3.value;
+  featuremapoutput = span1 + " " + txtarea1.value + " " + span2 + " " + txtarea2.value + " " + span3 + " " + txtarea3.value;
+  var emailout3 = document.getElementById('out-3');
+  emailout3.value = featuremapoutput;
+}
+function outputBPage3(){
+  var output = document.getElementById('main-build-output');
+  var band3 = document.getElementById('build-band-3');
+  // pitch output
+  var otherStatement = document.getElementById('build-output');
+  var outputStatement2 = document.getElementById('build-band-2-output');
+  outputStatement2.style.display ="none";
+  // JOURNEY output
+  var start = document.getElementById('start');
+  var act = document.getElementById('act');
+  var achieve = document.getElementById('achieve');
+  var finish = document.getElementById('finish');
+  //buttons back
+  var bback3 = document.getElementById('obback-3');
+  //buttons next
+  var bnext3 = document.getElementById('obnext-3');
+  // GET in the blanks JOURNEY
+  var journey1 = document.getElementById('j-1');
+  var journey2 = document.getElementById('j-2');
+  var journey3 = document.getElementById('j-3');
+  var journey4 = document.getElementById('j-4');
+  // GET in the questions JOURNEY
+  var qjour1 = document.getElementById('fill-11');
+  var qjour2 = document.getElementById("fill-12");
+  var qjour3 = document.getElementById("fill-13");
+  var qjour4 = document.getElementById("fill-14");
+// Remove input page3 and display output3
+  band3.style.display="none";
+  output.style.display ="block";
+// remove input other pages
+  otherStatement.style.display="none";
+  // appear cols of journey
+  start.style.display="block";
+  act.style.display="block";
+  achieve.style.display="block";
+  finish.style.display="block";
+// leave the correct buttons
+  bback3.style.display = "initial";
+  bnext3.style.display="initial";
+  // fill in the paragraphs
+  journey1.innerHTML = qjour1.value;
+  journey2.innerHTML = qjour2.value;
+  journey3.innerHTML = qjour3.value;
+  journey4.innerHTML = qjour4.value;
+  var emailout3 = document.getElementById('out-3');
+  emailout3.value = "1. " + journey1.innerHTML + " 2. " + journey2.innerHTML + " 3. " + journey3.innerHTML + " 4. " + journey4.innerHTML;
+}
 
+function backBWorkshop(){
+  var band1 = document.getElementById('build-band-1');
+  var band2 = document.getElementById('build-band-2');
+  var band3 = document.getElementById('build-band-3');
+  var buildworkshop = document.getElementById('build-bands')
+  values = ["","",""];
+  buildworkshop.style.display = "block";
+  band1.style.display = "none";
+  band2.style.display ="none";
+  band3.style.display ="none";
+  box7.className = 'col-3 box1 top';
+  box8.className = 'col-3 box2 top';
+  box9.className = 'col-3 box3 top';
+  box7.style.opacity ="1";
+  box8.style.opacity ="1";
+  box9.style.opacity ="1";
+  document.getElementById('mark1').style.display = "block";
+  document.getElementById('mark2').style.display = "block";
+  document.getElementById('mark3').style.display = "block";
+  console.log(values);
+}
+var values = ["", "",""];
+function feature1(){
+    console.log(values);
+    var button1 = document.getElementById("bbinput1").value;
+    var bmashup1 = document.getElementById('bmashup1');
+    var bmashup2 = document.getElementById('bmashup2');
+    var bmashup3 = document.getElementById('bmashup3');
+    values.shift();
+    values.push(button1)
+    console.log(values);
+    bmashup1.innerHTML = values[0];
+    bmashup2.innerHTML = values[1];
+    bmashup3.innerHTML = values[2];
+
+}
+function feature2(){
+  console.log(values);
+  var button1 = document.getElementById("bbinput2").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature3(){
+  var button1 = document.getElementById("bbinput3").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature4(){
+  var button1 = document.getElementById("bbinput4").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature5(){
+  var button1 = document.getElementById("bbinput5").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature6(){
+  var button1 = document.getElementById("bbinput6").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature7(){
+  var button1 = document.getElementById("bbinput7").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature8(){
+  var button1 = document.getElementById("bbinput8").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature9(){
+  var button1 = document.getElementById("bbinput9").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+function feature10(){
+  var button1 = document.getElementById("bbinput10").value;
+  var bmashup1 = document.getElementById('bmashup1');
+  var bmashup2 = document.getElementById('bmashup2');
+  var bmashup3 = document.getElementById('bmashup3');
+  values.shift();
+  values.push(button1)
+  console.log(values);
+  bmashup1.innerHTML = values[0];
+  bmashup2.innerHTML = values[1];
+  bmashup3.innerHTML = values[2];
+}
+
+function backBinput1(){
+  var band1 = document.getElementById('build-band-1');
+  var output = document.getElementById('main-build-output');
+  band1.style.display ="block";
+  output.style.display ="none";
+}
+function backBinput2(){
+  var band2 = document.getElementById('build-band-2');
+  var output = document.getElementById('main-build-output');
+  var outputStatement1 = document.getElementById('build-band-1-output');
+  outputStatement1.innerHTML = "";
+  values = ["","",""];
+  band2.style.display ="block";
+  output.style.display ="none";
+}
+function backBinput3(){
+  var band3 = document.getElementById('build-band-3');
+  var output = document.getElementById('main-build-output');
+  band3.style.display ="block";
+  output.style.display ="none";
+}
 function backHome(){
   window.location.href = "stages.html";
 }
+
+function resume1(){
+  var resume = document.getElementById('resume');
+  var one = document.getElementById("main-define-output");
+  var two = document.getElementById("main-ideate-output");
+  var three = document.getElementById("main-build-output");
+  var last = document.getElementById('last-one');
+  // buttons define
+  var dbbut1 = document.getElementById('back-out-1');
+  var dbbut2 = document.getElementById('back-out-2');
+  var dbbut3 = document.getElementById('back-out-3');
+  var dnext1 = document.getElementById('next-out-1');
+  var dnext2 = document.getElementById('next-out-2');
+  var dnext3 = document.getElementById('next-out-3');
+  dbbut1.style.display = "none";
+  dbbut2.style.display = "none";
+  dbbut3.style.display = "none";
+  dnext1.style.display = "none";
+  dnext2.style.display = "none";
+  dnext3.style.display = "none";
+  //buttons ideate
+  var ibbut1 = document.getElementById('iback-out-1');
+  var ibbut2 = document.getElementById('iback-out-2');
+  var ibbut3 = document.getElementById('iback-out-3');
+  var ibbut4 = document.getElementById('iback-out-4');
+  var inext = document.getElementById('next-build');
+  ibbut1.style.display = "none";
+  ibbut2.style.display = "none";
+  ibbut3.style.display = "none";
+  ibbut4.style.display = "none";
+  inext.style.display = "none";
+  //buttons build
+  var bnext1 = document.getElementById('obnext-1');
+  var bnext2 = document.getElementById('obnext-2');
+  var bnext3 = document.getElementById('obnext-3');
+  var bbbut1 = document.getElementById('obback-1');
+  var bbbut2 = document.getElementById('obback-2');
+  var bbbut3 = document.getElementById('obback-3');
+  bnext1.style.display = "none";
+  bnext2.style.display = "none";
+  bnext3.style.display = "none";
+  bbbut1.style.display = "none";
+  bbbut2.style.display = "none";
+  bbbut3.style.display = "none";
+// change titles of pages
+  var defhead = document.getElementById('define-head');
+  var idehead = document.getElementById('ideate-head');
+  var buihead = document.getElementById('build-head');
+  var marca1 = document.getElementById('marca1');
+  var creativeHost = document.getElementById('creative-host');
+  marca1.style.opacity="0";
+  creativeHost.style.display="none";
+  defhead.innerHTML = "EARTH";
+  idehead.innerHTML = "FIRE";
+  buihead.innerHTML = "WIND";
+  buihead.style.fontSize = "2.5rem";
+  // change idea format in ideation
+  var ideabox = document.getElementById('ideate-question');
+  var idescription = document.getElementById('ideate-band-1-output');
+  var ideap = document.getElementById('idea-statement');
+  var contador = document.getElementById('icount');
+  ideap.innerHTML = ideabox.value;
+  ideap.style.display = "block";
+  ideabox.style.display= "none";
+  idescription.style.display ="none";
+  icount.style.display = "none";
+
+  resume.style.display="block";
+  one.style.display="block";
+  two.style.display="block";
+  three.style.display="block";
+  last.style.display="block";
+  var ideap = document.getElementById('idea-statement').innerHTML;
+  var out2 = document.getElementById('out-2');
+  out2.value = ideap;
+}
+
+function myFunction(){
+  var out1 = document.getElementById('out-1');
+  var out2 = document.getElementById('out-2');
+  var out3 = document.getElementById('out-3');
+  console.log(out1.value);
+  console.log(out2.value);
+  console.log(out3.value);
+
+}
+
+/*--------TIMER---------------------------------------
+------------------------------------------------------
+-----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------*/
+/*convergence timer*/
+
+var seconds = 60;
+var minutes = 5;
+var timer;
+function startTime(){
+  var secdisplay = document.getElementById('clock-converge');
+  var nextbutton = document.getElementById('next-idea-output');
+    minutes = minutes-1;
+      timer = setInterval(function(){
+      seconds = seconds-1;
+      // as long as there is one second it ill display dinamcally
+    if (minutes >= 0){
+        secdisplay.innerHTML = "0"+minutes + ":" + seconds;
+      }    // less than 10 it'll display a 0 in seconds
+       if (seconds < 10){
+          secdisplay.innerHTML = "0"+minutes + ":0" +seconds;
+        }// restart the sec countdown and display 00
+         if (seconds <= 0){
+          secdisplay.innerHTML = "0"+minutes + ":00";
+          seconds = 60;
+          minutes--;
+        } // after the time ends it clears the interval
+         if (minutes < 0){
+        console.log('hola');
+        secdisplay.innerHTML = "00:00";
+        clearInterval(timer);
+        nextbutton.style.display ="initial";
+      }
+    }, 1000);
+  }
+
+
+function resetTime(){
+  var secdisplay = document.getElementById('clock-converge');
+  secdisplay.innerHTML = "05:00";
+  seconds = 60;
+  minutes = 5;
+  clearInterval(timer);
+}
+function add1(){
+  var secdisplay = document.getElementById('clock-converge');
+  minutes = minutes +1;
+  if (seconds <= 59){
+    secdisplay.innerHTML = "0" + minutes + ":" + seconds;
+ } if (seconds == 60){
+ secdisplay.innerHTML = "0"+minutes + ":00";
+} if(minutes >= 8){
+  resetTime();
+  alert("That's a no no... try doing it with less time! ")
+}
+}
+
+function minus1(){
+  var secdisplay = document.getElementById('clock-converge');
+  minutes = minutes-1;
+  if (seconds <= 59){
+    secdisplay.innerHTML = "0" + minutes + ":" + seconds;
+ }
+  if (seconds == 60){
+  secdisplay.innerHTML = "0"+minutes + ":00";
+ }
+ if (minutes < 0){
+   resetTime();
+ }
+}
+/*FIRST------------------ IDEATION---------- timer*/
+var oneseconds = 60;
+var oneminutes = 3;
+var stop;
+function oneStartTime(){
+  console.log('start');
+  var secdisplay = document.getElementById('clock-converge-1');
+  var nextbutton = document.getElementById('inext-1');
+    oneminutes = oneminutes-1;
+      stop = setInterval(function(){
+      oneseconds = oneseconds-1;
+      // as long as there is one second it ill display dinamcally
+    if (oneminutes >= 0){
+        secdisplay.innerHTML = "0"+oneminutes + ":" + oneseconds;
+      }    // less than 10 it'll display a 0 in seconds
+       if (oneseconds < 10){
+          secdisplay.innerHTML = "0"+oneminutes + ":0" +oneseconds;
+        }// restart the sec countdown and display 00
+         if (oneseconds <= 0){
+          secdisplay.innerHTML = "0"+oneminutes + ":00";
+          oneseconds = 60;
+          oneminutes--;
+        } // after the time ends it clears the interval
+         if (oneminutes < 0){
+        console.log('hola');
+        secdisplay.innerHTML = "00:00";
+        clearInterval(stop);
+        nextbutton.style.display ="initial";
+      }
+    }, 1000);
+  }
+
+
+function oneResetTime(){
+  var secdisplay = document.getElementById('clock-converge-1');
+  secdisplay.innerHTML = "03:00";
+  oneseconds = 60;
+  oneminutes = 3;
+  clearInterval(stop);
+}
+function oneAdd1(){
+  var secdisplay = document.getElementById('clock-converge-1');
+  oneminutes = oneminutes +1;
+  if (oneseconds <= 59){
+    secdisplay.innerHTML = "0" + oneminutes + ":" + oneseconds;
+ } if (oneseconds == 60){
+ secdisplay.innerHTML = "0"+oneminutes + ":00";
+} if(oneminutes >= 5){
+  oneResetTime();
+  alert("That's a no no... try doing it with less time! ")
+}
+}
+
+function oneMinus1(){
+  var secdisplay = document.getElementById('clock-converge-1');
+  oneminutes = oneminutes-1;
+  if (oneseconds <= 59){
+    secdisplay.innerHTML = "0" + oneminutes + ":" + oneseconds;
+ }
+  if (oneseconds == 60){
+  secdisplay.innerHTML = "0"+oneminutes + ":00";
+ }
+ if (oneminutes < 0){
+   oneResetTime();
+ }
+}
+/*second------------------ IDEATION---------- timer*/
+var twoseconds = 60;
+var twominutes = 3;
+var alto;
+function twoStartTime(){
+  console.log('start');
+  var secdisplay = document.getElementById('clock-converge-2');
+  var nextbutton = document.getElementById('inext-2');
+    twominutes = twominutes-1;
+      alto = setInterval(function(){
+      twoseconds = twoseconds-1;
+      // as long as there is one second it ill display dinamcally
+    if (twominutes >= 0){
+        secdisplay.innerHTML = "0"+twominutes + ":" + twoseconds;
+      }    // less than 10 it'll display a 0 in seconds
+       if (twoseconds < 10){
+          secdisplay.innerHTML = "0"+twominutes + ":0" +twoseconds;
+        }// restart the sec countdown and display 00
+         if (twoseconds <= 0){
+          secdisplay.innerHTML = "0"+twominutes + ":00";
+          twoseconds = 60;
+          twominutes--;
+        } // after the time ends it clears the interval
+         if (twominutes < 0){
+        console.log('hola');
+        secdisplay.innerHTML = "00:00";
+        clearInterval(alto);
+        nextbutton.style.display ="initial";
+      }
+    }, 1000);
+  }
+
+
+function twoResetTime(){
+  var secdisplay = document.getElementById('clock-converge-2');
+  secdisplay.innerHTML = "03:00";
+  twoseconds = 60;
+  twominutes = 3;
+  clearInterval(alto);
+}
+function twoAdd1(){
+  var secdisplay = document.getElementById('clock-converge-2');
+  twominutes = twominutes +1;
+  if (twoseconds <= 59){
+    secdisplay.innerHTML = "0" + twominutes + ":" + twoseconds;
+ } if (twoseconds == 60){
+ secdisplay.innerHTML = "0"+twominutes + ":00";
+} if(twominutes >= 5){
+  twoResetTime();
+  alert("That's a no no... try doing it with less time! ")
+}
+}
+
+function twoMinus1(){
+  var secdisplay = document.getElementById('clock-converge-2');
+  twominutes = twominutes-1;
+  if (twoseconds <= 59){
+    secdisplay.innerHTML = "0" + twominutes + ":" + twoseconds;
+ }
+  if (twoseconds == 60){
+  secdisplay.innerHTML = "0"+twominutes + ":00";
+ }
+ if (twominutes < 0){
+   twoResetTime();
+ }
+}
+/*third------------------ IDEATION---------- timer*/
+/*third------------------ IDEATION---------- timer*/
+var lastseconds = 60;
+var lastminutes = 3;
+var detente;
+var speedNico = document.getElementById('ch-instruction');
+var touch = 0;
+
+function lastStartTime(){
+  console.log('start');
+  var secdisplay = document.getElementById('clock-converge-3');
+    lastminutes = lastminutes-1;
+      detente = setInterval(function(){
+      lastseconds = lastseconds-1;
+      // as long as there is one second it ill display dinamcally
+    if (lastminutes >= 0){
+        secdisplay.innerHTML = "0"+lastminutes + ":" + lastseconds;
+      }    // less than 10 it'll display a 0 in seconds
+       if (lastseconds < 10){
+          secdisplay.innerHTML = "0"+lastminutes + ":0" +lastseconds;
+        }// restart the sec countdown and display 00
+         if (lastseconds <= 0){
+          secdisplay.innerHTML = "0"+lastminutes + ":00";
+          lastseconds = 60;
+          lastminutes--;
+        } // after the time ends it clears the interval
+         if (lastminutes < 0){
+        console.log('hola');
+        secdisplay.innerHTML = "00:00";
+        clearInterval(detente);
+        speedNico.innerHTML = "Reset the timer";
+      }
+    }, 1000);
+  }
+
+
+function lastResetTime(){
+  var nextbutton = document.getElementById('inext-3');
+  console.log(touch);
+  touch = touch + 1;
+  var secdisplay = document.getElementById('clock-converge-3');
+  secdisplay.innerHTML = "03:00";
+  lastseconds = 60;
+  lastminutes = 3;
+  clearInterval(detente);
+  if (touch == 1){
+    speedNico.innerHTML ="2. Everybody give your idea to the buddy to your right. Now that you have the other person's idea, write down what could be its limitations. You have 2 minutes.";
+  }
+  if (touch ==2){
+    speedNico.innerHTML ="3. Finally give both, idea and limitations, to the person to your right. Now try to build on top of the idea so that it can overcome its limitations. You have 3 minutes.";
+    nextbutton.style.display ="initial";
+  }if (touch ==3){
+    speedNico.innerHTML ="Awesome! You are ready to go!";
+  }
+}
+function lastAdd1(){
+  var secdisplay = document.getElementById('clock-converge-3');
+
+  lastminutes = lastminutes +1;
+  if (lastseconds <= 59){
+    secdisplay.innerHTML = "0" + lastminutes + ":" + lastseconds;
+ } if (lastseconds == 60){
+ secdisplay.innerHTML = "0"+lastminutes + ":00";
+} if(lastminutes >= 5){
+  lastResetTime();
+  alert("That's a no no... try doing it with less time! ")
+}
+}
+
+function lastMinus1(){
+  var secdisplay = document.getElementById('clock-converge-3');
+  lastminutes = lastminutes-1;
+  if (lastseconds <= 59){
+    secdisplay.innerHTML = "0" + lastminutes + ":" + lastseconds;
+ }
+  if (lastseconds == 60){
+  secdisplay.innerHTML = "0"+lastminutes + ":00";
+ }
+ if (lastminutes < 0){
+   lastResetTime();
+ }
+}
+/*third------------------ IDEATION---------- timer*/

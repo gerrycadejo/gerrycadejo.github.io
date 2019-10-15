@@ -2,6 +2,7 @@ html, body {
   padding: 0 auto;
   margin: 0 auto;
   text-align: center;
+  overflow-x: hidden;
   color: white;
   font-family: 'Orbitron', sans-serif;
   background-color: #000;
@@ -38,6 +39,9 @@ html, body {
   background-image: none !important;
 }
 */
+a{
+  font-family: 'Orbitron', sans-serif;
+}
 .row {
   height: 100vh;
 }
@@ -154,15 +158,46 @@ html, body {
   }
 }
 
-
+#resume{
+  display: none;
+}
 /* choose stage PAGE @@@@@@@@@@@@@@@@@@@@@------------------------------------------------------------
 --------------------------
 -----------------------------------------------
 --------------------------------------------------------------*/
+.cabeza {
+  position: fixed !important;
+  top: 3vh !important;
+  left: 6vw !important;
+}
+.instructions-title{
+  position: fixed !important;
+  font-size: 1.5rem !important;
+  top: 140px !important;
+  left: 5vw !important;
+}
+.instruccion{
+  position: fixed !important;
+  top: 148px !important;
+  left: 10vw !important;
+  cursor: pointer;
+}
+.utensils{
+  position:fixed;
+  top: 148px !important;
+  left: 14vw !important;
+  cursor: pointer;
+}
+.tips{
+  position:fixed;
+  top: 148px !important;
+  left: 12vw !important;
+  cursor: pointer;
+}
+
 #stages{
   position: absolute;
   transition: 0.6s;
-
 }
 .box1, .box2, .box3{
   margin: 0 5px;
@@ -209,9 +244,28 @@ html, body {
   box-shadow: 0 0 15px #2196F3, inset 0 0 15px #2196F3;
   transition: all 1.2s;
 }
+
+.instrucciones div{
+  background-color: #00E676;
+  border: none;
+  text-align: left;
+    font-size: 1rem;
+}
+.ejemplo div{
+    background-color: #ff005b;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .supplies div{
+      background-color:   #2196F3;
+      border: none;
+      text-align: left;
+      font-size: 1rem;
+}
 .stagetxt{
+  top: 97px;
   position: relative;
-  top: 40%;
 }
 #stages .col-3:hover {
   color: #fff;
@@ -289,7 +343,7 @@ html, body {
 @@@@@@@@@@@@@@@@@@@@@
 PAGE DEFINE */
 #define {
-  position: absolute;
+  position: ;
   animation: entrance 1s ease forwards;
 }
 .define-head {
@@ -362,7 +416,13 @@ PAGE DEFINE WORKSHOPS */
 #define-bands{
   display:none;
 }
-
+.ideate-head{
+  position: relative;
+  color: #00E676;
+  left: 0;
+  color: #ff005b;
+  text-shadow: 0 0 7px #ff005b !important;
+}
 #define-bands .col-3{
   margin-top: 20vh;
 }
@@ -459,9 +519,10 @@ PAGE DEFINE WORKSHOPS */
   width: 100px;
   text-align: left;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: 0px;
+  left: 6vw;
+  bottom: 60px;
 
   outline: none!important;
 }
@@ -477,9 +538,10 @@ PAGE DEFINE WORKSHOPS */
   width: 100px;
   text-align: right;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: 375px;
+  bottom: 60px;
+  left: 86vw;
   outline: none!important;
 }
 .next:hover{
@@ -586,7 +648,7 @@ text-shadow: 0 0 7px #ff005b !important;
   height: 10%;
   margin-bottom: 35px;
 }
-#next-3, #back-3{
+#next-3{
   display: none;
 }
 .ask {
@@ -641,10 +703,10 @@ top: 5vh;
   width: 100px;
   text-align: left;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: -320px;
-  top: -47px;
+  left: 6vw;
+  bottom: 60px;
   outline: none!important;
 }
 .next-output {
@@ -653,10 +715,10 @@ top: 5vh;
   width: 100px;
   text-align: right;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: 320px;
-  top: 20px;
+  left: 86vw;
+  bottom: 60px;
   outline: none!important;
 }
 .next-output:hover{
@@ -683,7 +745,7 @@ PAGE ideate WORKSHOPS */
 #ideate-bands{
   display:none;
 }
-.ideate-head{
+#ideate-bands.ideate-head{
   position: relative;
   color: #00E676;
   left: 0;
@@ -712,7 +774,7 @@ PAGE ideate WORKSHOPS */
 ------------------FIRST WORKSHOP IDEATE------------*/
 #ideate-band-1{
   display: none;
-  background-color: #000;
+  background-color: #030303;
   animation: entrance 1.2s ease forwards;
 }
 .ideate-head.uno {
@@ -747,11 +809,11 @@ PAGE ideate WORKSHOPS */
 
 .ideate-instructions{
   margin-top: 25px;
-  text-align: center !important;
+  text-align: left !important;
   margin-bottom: 35px;
 }
 .ideate-title{
-  text-align: center!important;
+  text-align: left!important;
   text-decoration: underline;
 }
 
@@ -761,9 +823,10 @@ PAGE ideate WORKSHOPS */
   width: 100px;
   text-align: right;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: 0px;
+  left: 86vw;
+  bottom: 60px;
   outline: none!important;
 }
 .inext:hover{
@@ -778,10 +841,10 @@ PAGE ideate WORKSHOPS */
   width: 100px;
   text-align: left;
   border: none;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid #868484;
-  left: 0px;
-
+  left: 6vw;
+  bottom: 60px;
   outline: none!important;
 }
 .iback:hover{
@@ -789,6 +852,9 @@ PAGE ideate WORKSHOPS */
   border: 1px solid;
   color: #00E676;
   box-shadow: 0 0 5px #00E676, inset 0 0 5px #00E676;
+}
+#inext-1{
+  display:none;
 }
 /* ------------------
 -------------------------------------------------
@@ -805,6 +871,9 @@ PAGE ideate WORKSHOPS */
   text-shadow: 0 0 7px #00E676;
   border-color: #00E676;
   box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
+}
+#inext-2{
+  display:none;
 }
 .services{
   width: 14%;
@@ -831,14 +900,65 @@ PAGE ideate WORKSHOPS */
 }
 /* ------------------
 -------------------------------------------------
-------------------second WORKSHOP IDEATE------------*/
+------------------third WORKSHOP IDEATE------------*/
 #ideate-band-3{
   display: none;
   background-color: #000;
   animation: entrance 1.2s ease forwards;
 }
 #ch-instruction {
-  padding: 0px 60px;
+  padding: 0px 80px;
+}
+#inext-3{
+  display:none;
+}
+/* ------------------
+-------------------------------------------------
+------------------converge IDEATE------------*/
+#converge-band{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+#converge-band .build-head{
+color: #ff005b !important;
+text-shadow: 0 0 7px #ff005b !important;
+}
+
+#next-idea-output{
+  display: none;
+}
+
+.timer {
+  border: 2px solid #ff005b;
+  box-shadow: 0 0 5px #ff005b, inset 0 0 5px #ff005b;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 3px 10px;
+}
+.addminus{
+  font-size: 3rem;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.addminus:hover{
+  font-size: 2.5rem;
+}
+.but-timer{
+  margin-top: 6px;
+  font-size: 0.8rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none!important;
+}
+.but-timer:hover{
+  border: 1px solid #00E676;
+}
+.but-timer:focus{
+  border-bottom: 1px solid #ff005b;
+  transform: scale(1.050);
+
 }
 /* ------------------
 -------------------------------------------------
@@ -852,6 +972,10 @@ PAGE ideate WORKSHOPS */
 #ideate-band-1-output {
   font-size: 1.2rem;
   line-height: 2.6rem;
+}
+#idea-statement {
+  display: none;
+  font-size: 2rem;
 }
 #main-ideate-output  textarea{
   background-color: transparent;
@@ -924,13 +1048,13 @@ PAGE DEFINE WORKSHOPS */
   left: 216px;
 }
 #fill-7{
-  left: 86px;
+  left: 91px;
 }
 #fill-8{
-  left: 40px;
+  left: 49px;
 }
 #fill-9{
-  left: 164px;
+  left: 167px;
 }
 #fill-10{
   left: 66px;
@@ -943,7 +1067,23 @@ PAGE DEFINE WORKSHOPS */
   background-color: #000;
   animation: entrance 1.2s ease forwards;
 }
-
+#build-band-2 .right{
+  left: 30px;
+}
+#build-band-2 span{
+  display: block;
+  position: relative;
+  top: 0px;
+  text-align: center;
+}
+#build-band-2 .ideate-instructions{
+  text-align: left !important;
+}
+#build-band-2 textarea{
+  width: 100%;
+  bottom: 0px;
+  display: inline-block;
+}
 .feature{
   width: 14%;
   margin: 5px;
@@ -952,22 +1092,154 @@ PAGE DEFINE WORKSHOPS */
   border-color: #00E676;
   box-shadow: 0 0 15px #00E676, inset 0 0 15px #00E676;
 }
+.explain{
+  text-shadow: none!important;
+  color: #fff !important;
+  display: block;
+  font-size: 1.8rem !important;
+}
+
+#build-band-2 .fill-paragraph{
+  text-align: left;
+    line-height: 43px;
+    width: 27%;
+    margin: 40px 20px;
+    display: inline-block;
+}
 /* ------------------
 -------------------------------------------------
 ------------------second WORKSHOP Build------------*/
-/* ------------------
 
+#build-band-3{
+  display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+#build-band-3 h3{
+  position: absolute;
+  top: 22vh;
+  left: 86vh;
+}
+#build-band-3 .fill-paragraph{
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+#build-band-3 .col-4{
+  top: 50px;
+}
+.build-3-input1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 100%;
+  top: 0vh;
+  left: 4vh;
+}
+#build-band-3 textarea{
+  display:block;
+  margin: 0 auto;
+  width: 83%;
+  margin-top: 40px;
+}
 
--------------------------------------------------
+/* -------------------------------------------------------------------
 ------------------OUTPUT WORKSHOP Build------------*/
 #main-build-output{
   display: none;
+  background-color: #000;
+  animation: entrance 1.2s ease forwards;
+}
+
+#build-output{
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  position: relative;
+  max-height: 100%;
+  top: 5vh;
+}
+#start{
+  display: none;
+}
+#act{
+  display:none;
+}
+#achieve{
+  display:none;
+}
+#finish{
+  display:none;
+}
+#obback-1{
+  display: none;
+}
+#obback-2{
+  display: none;
+}
+#obback-3{
+  display: none;
+}
+#obnext-1{
+  display: none;
+}
+#obnext-2{
+  display: none;
+}
+#obnext-3{
+  display: none;
+}
+#main-build-output h1{
+  font-size: 1.5rem;
+}
+#main-build-output span{
+  color: #ff005b;
+  text-shadow: 0 0 7px #ff005b;
+}
+.even{
+  height: 33% !important;
+    width: 100% !important;
+    border-color: #ff005b;
+    box-shadow: inset 0px 0px 5px -46px #ff005b, 0px 6px 7px -5px #ff005b;
+    border-bottom: 3px dashed;
+    border-right: 3px dashed;
+    border-left: 3px dashed;
+    border-spacing: initial;
+}
+.odd{
+  height: 33% !important;
+    width: 100% !important;
+    border-color: #ff005b;
+    box-shadow: 0px -7px 4px -5px #ff005b, 0px 0px 21px -27px #ff005b;
+    border-top: 3px dashed;
+    border-right: none;
+}
+.journey{
+  padding: 15px;
 }
 /* ---------------------
-------------------------------
+-------------------resume-----------/*/
+#last-button{
+  position: absolute;
+  bottom: -32vh;
+  left: 0vh;
+}
+
+#last-one {
+  display: none;
+}
+#email {
+  position: relative;
+  text-align: center;
+  top: 0;
+  left:0;
+  width: 200px;
+}
+/*
 -------------------------------------------------
 --------------------------------------------
 ---------------------general animations*/
+/*-------*/
 @keyframes entrance {
   0% {
     opacity: 0;
