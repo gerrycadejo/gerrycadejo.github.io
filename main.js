@@ -28,7 +28,7 @@ function password(e) {
       console.log('heellooo');
       } else
       {
-        if (correct.value !== 'hola')
+        if (correct.value !== 'gigital')
         {
           console.log('meh')
           border.className = 'hello wrong';
