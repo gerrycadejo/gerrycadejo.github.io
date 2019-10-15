@@ -75,46 +75,36 @@ function transitionStage(){
 function switchOff1(){
   box2.className = 'col-3 box2 off ';
   box3.className = 'col-3 box3 off ';
-  setTimeout(function(){
-    box2.style.display = 'none';
-    box3.style.display = 'none ';
-  }, 1900);
+
    setTimeout(function(){
     box1.style.opacity = '0';
   }, 2500);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3650)
+  }, 3050)
 }
 
 function switchOff2(){
   box1.className = 'col-3 box1 off ';
   box3.className = 'col-3 box3 off ';
-  setTimeout(function(){
-    box1.style.display = 'none';
-    box3.style.display = 'none ';
-  }, 1900);
    setTimeout(function(){
     box2.style.opacity = '0';
   }, 2500);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3650)
+  }, 3050)
 }
 
 function switchOff3(){
   box1.className = 'col-3 box1 off ';
   box2.className = 'col-3 box2 off ';
-  setTimeout(function(){
-    box1.style.display = 'none';
-    box2.style.display = 'none ';
-  }, 1900);
+
    setTimeout(function(){
     box3.style.opacity = '0';
   }, 2500);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3650)
+  }, 3050)
 }
 
 
