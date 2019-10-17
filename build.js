@@ -1,6 +1,4 @@
-var box1 = document.getElementById('band-1');
-var box2 = document.getElementById('band-2');
-var box3 = document.getElementById('band-3');
+
 var box4 = document.getElementById('band-4');
 var box5 = document.getElementById('band-5');
 var box6 = document.getElementById('band-6');
@@ -26,424 +24,25 @@ function defcloseNav(){
   document.getElementById('qgroup').style.display = "block";
 }
 
-var defineArea = document.getElementById('define-question');
-defineArea.addEventListener('keypress', function(){
-var charac = 100-defineArea.value.length;
-document.getElementById('count').innerHTML = "Max " + charac + " characters";
-var text = defineArea.value;
-document.getElementById('def-statement').innerHTML = text;
-document.getElementById('def-statement-2').innerHTML = text;
-document.getElementById('def-statement-3').innerHTML = text;
-
-});
 
 
-document.getElementById("deform").addEventListener('submit', function(event){event.preventDefault();goWorkshops()});
+
 
 function goWorkshops(){
   console.log('mm');
-  document.getElementById('define-bands').style.display= "block";
+  document.getElementById('ideate-bands').style.display= "block";
   document.getElementById('define').style.display= "none";
 }
 
 
-function switchOff1(){
-  box2.className = 'col-3 box2 off ';
-  box3.className = 'col-3 box3 off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box1.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('define-bands').style.display="none";
-    document.getElementById('main-band-1').style.display = "block";
-  }, 2500)
-}
 
-function switchOff2(){
-  box1.className = 'col-3 box1 off ';
-  box3.className = 'col-3 box3 off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box2.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('define-bands').style.display="none";
-    document.getElementById('main-band-2').style.display = "block";
-  }, 2500)
-}
-
-function switchOff3(){
-  box1.className = 'col-3 box1 off ';
-  box2.className = 'col-3 box2 off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box3.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('define-bands').style.display="none";
-    document.getElementById('main-band-3').style.display = "block";
-  }, 2500)
-}
-
-function backWorkshop(){
-  clic = 0;
-  var band1 = document.getElementById('main-band-1');
-  var band2 = document.getElementById('main-band-2');
-  var band3 = document.getElementById('main-band-3');
-  var defworkshops = document.getElementById('define-bands');
-  box1.style.display = "block";
-  box2.style.display ="block";
-  box3.style.display ="block";
-  band1.style.display = "none";
-  band2.style.display ="none";
-  band3.style.display ="none";
-  box1.className = 'col-3 box1';
-  box2.className = 'col-3 box2 ';
-  box3.className = 'col-3 box3 ';
-  box1.style.opacity ="1";
-  box2.style.opacity ="1";
-  box3.style.opacity ="1";
-  document.getElementById('mark1').style.display = "block";
-  document.getElementById('mark2').style.display = "block";
-  document.getElementById('mark3').style.display = "block";
-  defworkshops.style.display = "block";
-}
-
-function outputPage1(){
-  var output = document.getElementById('main-define-output');
-  var band1 = document.getElementById('main-band-1');
-  var button1 = document.getElementById('back-out-1');
-  var button2 = document.getElementById('back-out-2');
-  var button3 = document.getElementById('back-out-3');
-  var next1 = document.getElementById('next-out-1');
-  var next2 = document.getElementById('next-out-2');
-  var next3 = document.getElementById('next-out-3');
-  var outputStatement1 = document.getElementById('def-band-1-output');
-  var outputStatement2 = document.getElementById('def-band-2-output');
-  var outputStatement3 = document.getElementById('def-band-3-output');
-  var fill1 = document.getElementById('fill-1').value;
-  var fill2 = document.getElementById('fill-2').value;
-  var fill3 = document.getElementById('fill-3').value;
-  var fill4 = document.getElementById('fill-4').value;
-  var fill5 = document.getElementById('fill-5').value;
-  outputStatement1.style.display = "block";
-  outputStatement2.style.display = "none";
-  outputStatement3.style.display = "none";
-  button1.style.display="initial";
-  button2.style.display="none";
-  button3.style.display="none";
-  next1.style.display="initial";
-  next2.style.display="none";
-  next3.style.display="none";
-  band1.style.display="none";
-  output.style.display ="block";
-  outputStatement1.innerHTML = "The " + fill1 + " are struggling with " + fill3 + " when they are trying to " + fill2 + ". This makes them feel " + fill4 + " and in the future they'd love if " + fill5;
-}
-function outputPage2(){
-  var output = document.getElementById('main-define-output');
-  var band2 = document.getElementById('main-band-2');
-  var next1 = document.getElementById('next-out-1');
-  var next2 = document.getElementById('next-out-2');
-  var next3 = document.getElementById('next-out-3');
-  var button1 = document.getElementById('back-out-1');
-  var button2 = document.getElementById('back-out-2');
-  var button3 = document.getElementById('back-out-3');
-  var outputStatement1 = document.getElementById('def-band-1-output');
-  var outputStatement2 = document.getElementById('def-band-2-output');
-  var outputStatement3 = document.getElementById('def-band-3-output');
-  var fill1 = document.getElementById('sfill-1').value;
-  var fill2 = document.getElementById('sfill-2').value;
-  var fill3 = document.getElementById('sfill-3').value;
-  var fill4 = document.getElementById('sfill-4').value;
-  var fill5 = document.getElementById('sfill-5').value;
-  button1.style.display="none";
-  button2.style.display="initial";
-  button3.style.display="none";
-  next1.style.display="none";
-  next2.style.display="initial";
-  next3.style.display="none";
-  band2.style.display="none";
-  output.style.display ="block";
-  outputStatement1.style.display = "none";
-  outputStatement2.style.display = "block";
-  outputStatement2.innerHTML = "How might we help " + fill1 + " feel " + fill5 + " when they are dealing with " + fill3 + " " + fill2 + " so that they can " + fill4 +"?";
-  outputStatement3.style.display = "none";
-}
-function outputPage3(){
-  var output = document.getElementById('main-define-output');
-  var band3 = document.getElementById('main-band-3');
-  var next1 = document.getElementById('next-out-1');
-  var next2 = document.getElementById('next-out-2');
-  var next3 = document.getElementById('next-out-3');
-  var button1 = document.getElementById('back-out-1');
-  var button2 = document.getElementById('back-out-2');
-  var button3 = document.getElementById('back-out-3');
-  var outputStatement1 = document.getElementById('def-band-1-output');
-  var outputStatement2 = document.getElementById('def-band-2-output');
-  var outputStatement3 = document.getElementById('def-band-3-output');
-  var why = document.getElementById('why-1').value;
-  button1.style.display="none";
-  button2.style.display="none";
-  button3.style.display="initial";
-  next1.style.display="none";
-  next2.style.display="none";
-  next3.style.display="initial";
-  band3.style.display="none";
-  output.style.display ="block";
-  outputStatement1.style.display = "none";
-  outputStatement2.style.display = "none";
-  outputStatement3.innerHTML = "The underlying reason this problem happens is " + why;
-  outputStatement3.style.display = "block";
-}
-
-function inputPage1(){
-  var output = document.getElementById('main-define-output');
-  var band1 = document.getElementById('main-band-1');
-  band1.style.display ="block";
-  output.style.display = "none";
-}
-function inputPage2(){
-  var output = document.getElementById('main-define-output');
-  var band2 = document.getElementById('main-band-2');
-  band2.style.display ="block";
-  output.style.display = "none";
-}
-function inputPage3(){
-  clic = 0;
-  var askbutton = document.getElementById('ask');
-  var next = document.getElementById('next-3');
-  var back = document.getElementById('back-3');
-  var output = document.getElementById('main-define-output');
-  var band3 = document.getElementById('main-band-3');
-  var problema = document.getElementById('problema');
-  var why = document.getElementById('why-1');
-  var problemquestion = document.getElementById('problem-question');
-  band3.style.display ="block";
-  output.style.display = "none";
-  askbutton.style.display ="initial";
-  next.style.display = "none";
-  why.value = why.defaultValue;
-  problema.innerHTML = "";
-  why.style.display= "initial";
-  problemquestion.innerHTML = "Why is this problem happening?"
-
-}
-let clic = 0;
-function ask(){
-  var askbutton = document.getElementById('ask');
-  var output = document.getElementById('def-band-3-output');
-  var next = document.getElementById('next-3');
-  var back = document.getElementById('back-3');
-  var why = document.getElementById('why-1');
-  var problema = document.getElementById('problema');
-  var problemquestion = document.getElementById('problem-question');
-  clic = parseInt(clic)+parseInt(1);
-  if (clic == 1){
-    problema.innerHTML = why.value;
-    why.value = why.defaultValue;
-    problemquestion.innerHTML="Oh! why is that happening?"
-  } if (clic ==2){
-    problema.innerHTML = why.value;
-    why.value = why.defaultValue;
-    problemquestion.innerHTML="jmmmm... why?"
-  } if (clic ==3){
-    askbutton.style.display = "none";
-    next.style.display = "initial";
-    back.style.display = "initial";
-    problema.innerHTML = why.value;
-    why.style.display ="none";
-    problemquestion.innerHTML = "AHA! Now that's an insight we can work with!"
-  }
-}
 
 /* THIS IS THE IDEATE SECTION --------------------
 ------------------------------------------------------
 --------------@@@@@@@@@------------------------------------------------------
 -------------------------------------------------------------------------
-----------------------------------------------------------@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-function goToIdeate1(){
-  var outputPage = document.getElementById('main-define-output');
-  var ideatePage = document.getElementById('ideate-bands');
-  var insight = document.getElementById('def-band-1-output').innerHTML;
-  var statement1 = document.getElementById('statement-1');
-  var statement2 = document.getElementById('statement-2');
-  var statement3 = document.getElementById('statement-3');
-  outputPage.style.display="none";
-  ideatePage.style.display="block";
-  statement1.innerHTML = insight;
-  statement2.innerHTML = insight;
-  statement3.innerHTML = insight;
-  var emailout1 = document.getElementById('out-1');
-  emailout1.value = insight;
-  var definition = document.getElementById('idea-statement-2');
-  definition.innerHTML = insight;
-}
-function goToIdeate2(){
-  var outputPage = document.getElementById('main-define-output');
-  var ideatePage = document.getElementById('ideate-bands');
-  var insight = document.getElementById('def-band-2-output').innerHTML;
-  var statement1 = document.getElementById('statement-1');
-  var statement2 = document.getElementById('statement-2');
-  var statement3 = document.getElementById('statement-3');
-  outputPage.style.display="none";
-  ideatePage.style.display="block";
-  statement1.innerHTML = insight;
-  statement2.innerHTML = insight;
-  statement3.innerHTML = insight;
-  var emailout1 = document.getElementById('out-1');
-  emailout1.value = insight;
-  var definition = document.getElementById('idea-statement-2');
-  definition.innerHTML = insight;
-}
-function goToIdeate3(){
-  var outputPage = document.getElementById('main-define-output');
-  var ideatePage = document.getElementById('ideate-bands');
-  var insight = document.getElementById('def-band-3-output').innerHTML;
-  var statement1 = document.getElementById('statement-1');
-  var statement2 = document.getElementById('statement-2');
-  var statement3 = document.getElementById('statement-3');
+----------------------------------------------------------@@@@@@@@@*/
 
-  outputPage.style.display="none";
-  ideatePage.style.display="block";
-  statement1.innerHTML = insight;
-  statement2.innerHTML = insight;
-  statement3.innerHTML = insight;
-  var emailout1 = document.getElementById('out-1');
-  emailout1.value = insight;
-  var definition = document.getElementById('idea-statement-2');
-  definition.innerHTML = insight;
-}
-
-
-
-function switchOff4(){
-  box5.className = 'col-3 box2 top off ';
-  box6.className = 'col-3 box3 top off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box4.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('ideate-bands').style.display="none";
-    document.getElementById('ideate-band-1').style.display = "block";
-  }, 2500)
-}
-function switchOff5(){
-  box4.className = 'col-3 box1 top off ';
-  box6.className = 'col-3 box3 top off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box5.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('ideate-bands').style.display="none";
-    document.getElementById('ideate-band-2').style.display = "block";
-  }, 2500)
-}
-function switchOff6(){
-  box4.className = 'col-3 box1 top off ';
-  box5.className = 'col-3 box2 top off ';
-  document.getElementById('mark1').style.display = "none";
-  document.getElementById('mark2').style.display = "none";
-  document.getElementById('mark3').style.display = "none";
-   setTimeout(function(){
-    box6.style.opacity = '0';
-  }, 1800);
-  setTimeout(function(){
-    document.getElementById('ideate-bands').style.display="none";
-    document.getElementById('ideate-band-3').style.display = "block";
-  }, 2500)
-}
-
-var needs = "";
-var services ="";
-var tech="";
-var resultMash = document.getElementById('mash-statement');
-function needs1(){
-  needs =document.getElementById('input1').value;
-  getValue(needs, services, tech );
-}
-function needs2(){
-  needs =document.getElementById('input2').value;
-  getValue(needs, services, tech );
-}
-function needs3(){
-   needs =document.getElementById('input3').value;
-   getValue(needs, services, tech );
-}
-function needs4(){
-   needs =document.getElementById('input4').value;
-   getValue(needs, services, tech );
-}
-function needs5(){
-  var needs =document.getElementById('input5').value;
-  getValue(needs, services, tech );
-}
-function services1(){
-  services =document.getElementById('input6').value;
-  getValue(needs, services, tech );
-}
-function services2(){
-  services =document.getElementById('input7').value;
-  getValue(needs, services, tech );
-}
-function services3(){
-  services =document.getElementById('input8').value;
-  getValue(needs, services, tech );
-}
-function services4(){
-  services =document.getElementById('input9').value;
-  getValue(needs, services, tech );
-}
-function services5(){
-  services =document.getElementById('input10').value;
-  getValue(needs, services, tech );
-}
-function tech1(){
-  tech =document.getElementById('input11').value;
-  getValue(needs, services, tech );
-}
-function tech2(){
-  tech =document.getElementById('input12').value;
-  getValue(needs, services, tech );
-}
-function tech3(){
-  tech =document.getElementById('input13').value;
-  getValue(needs, services, tech );
-}
-function tech4(){
-  tech =document.getElementById('input14').value;
-  getValue(needs, services, tech );
-}
-function tech5(){
-  tech =document.getElementById('input15').value;
-  getValue(needs, services, tech );
-}
-
-function getValue(needs, services,tech){
-  console.log(resultMash.innerHTML);
-  resultMash.innerHTML = needs +" + "+services+ " + " + tech;
-}
-
-  /*var instruction = document.getElementById('ch-instruction');
-    instruction.innerHTML = 'Start writing!';
-     instruction.innerHTML= 'Now share your mindblowing idea with your buddy to the right. You should have one too, and now you need to write down what are the limitations of it';
-   instruction.innerHTML = 'Use your glassess';
-    instruction.innerHTML= 'Ok, now let’s pass the paper one more time, and now try to solve the limitations or try to make it sellable. You will have 3 minutes';
-  instruction.innerHTML= 'You are ready to go!';
-*/
 
 var defineArea2 = document.getElementById('ideate-question');
 defineArea2.addEventListener('keypress', function(){
@@ -474,78 +73,13 @@ function backiWorkshop(){
 //document.getElementById('def-statement').innerHTML = text;
 //document.getElementById('def-statement-2').innerHTML = text;
 //document.getElementById('def-statement-3').innerHTML = text;
-function idInputpage1(){
-  var brain2 = document.getElementById('converge-band');
-  var band1 = document.getElementById('ideate-band-1');
-  band1.style.display ="block";
-  brain2.style.display = "none";
-}
-function idInputpage2(){
-  var brain2 = document.getElementById('converge-band');
-  var band2 = document.getElementById('ideate-band-2');
-  band2.style.display ="block";
-  brain2.style.display = "none";
-}
-function idInputpage3(){
-  cuack=0;
-  var brain2 = document.getElementById('converge-band');
-  var band3 = document.getElementById('ideate-band-3');
-  band3.style.display ="block";
-  brain2.style.display = "none";
-}
-function outputiPage1(){
-  var brain2 = document.getElementById('converge-band');
-  var band1 = document.getElementById('ideate-band-1');
-  var button1 = document.getElementById('iback-out-1');
-  var button2 = document.getElementById('iback-out-2');
-  var button3 = document.getElementById('iback-out-3');
-  var outputStatement1 = document.getElementById('ideate-band-1-output');
-  button1.style.display="initial";
-  button2.style.display="none";
-  button3.style.display="none";
-  band1.style.display="none";
-  brain2.style.display ="block";
-  var emailout2 = document.getElementById('out-2');
 
-}
-function outputiPage2(){
-  var brain2 = document.getElementById('converge-band');
-  var band1 = document.getElementById('ideate-band-2');
-  var button1 = document.getElementById('iback-out-1');
-  var button2 = document.getElementById('iback-out-2');
-  var button3 = document.getElementById('iback-out-3');
-  var outputStatement1 = document.getElementById('ideate-band-1-output');
-  button1.style.display="none";
-  button2.style.display="initial";
-  button3.style.display="none";
-  band1.style.display="none";
-  brain2.style.display ="block";
-}
-function outputiPage3(){
-  var brain2 = document.getElementById('converge-band');
-  var band1 = document.getElementById('ideate-band-3');
-  var button1 = document.getElementById('iback-out-1');
-  var button2 = document.getElementById('iback-out-2');
-  var button3 = document.getElementById('iback-out-3');
-  var outputStatement1 = document.getElementById('ideate-band-1-output');
-  button1.style.display="none";
-  button2.style.display="none";
-  button3.style.display="initial";
-  band1.style.display="none";
-  brain2.style.display ="block";
-}
 
 function ideationOutput(){
   var brain2 = document.getElementById('converge-band');
   var ideaout = document.getElementById('main-ideate-output');
   brain2.style.display ="none";
   ideaout.style.display ="block";
-}
-function backConverge(){
-  var brain2 = document.getElementById('converge-band');
-  var ideaout = document.getElementById('main-ideate-output');
-  brain2.style.display ="block";
-  ideaout.style.display ="none";
 }
 
 /* THIS IS THE BUILD SECTION --------------------
@@ -914,34 +448,13 @@ function backHome(){
 
 function resume1(){
   var resume = document.getElementById('resume');
-  var one = document.getElementById("main-define-output");
-  var two = document.getElementById("main-ideate-output");
   var three = document.getElementById("main-build-output");
   var last = document.getElementById('last-one');
   // buttons define
-  var dbbut1 = document.getElementById('back-out-1');
-  var dbbut2 = document.getElementById('back-out-2');
-  var dbbut3 = document.getElementById('back-out-3');
-  var dnext1 = document.getElementById('next-out-1');
-  var dnext2 = document.getElementById('next-out-2');
-  var dnext3 = document.getElementById('next-out-3');
-  dbbut1.style.display = "none";
-  dbbut2.style.display = "none";
-  dbbut3.style.display = "none";
-  dnext1.style.display = "none";
-  dnext2.style.display = "none";
-  dnext3.style.display = "none";
+
   //buttons ideate
-  var ibbut1 = document.getElementById('iback-out-1');
-  var ibbut2 = document.getElementById('iback-out-2');
-  var ibbut3 = document.getElementById('iback-out-3');
-  var ibbut4 = document.getElementById('iback-out-4');
-  var inext = document.getElementById('next-build');
-  ibbut1.style.display = "none";
-  ibbut2.style.display = "none";
-  ibbut3.style.display = "none";
-  ibbut4.style.display = "none";
-  inext.style.display = "none";
+
+
   //buttons build
   var bnext1 = document.getElementById('obnext-1');
   var bnext2 = document.getElementById('obnext-2');
@@ -956,43 +469,20 @@ function resume1(){
   bbbut2.style.display = "none";
   bbbut3.style.display = "none";
 // change titles of pages
-  var defhead = document.getElementById('define-head');
-  var idehead = document.getElementById('ideate-head');
   var buihead = document.getElementById('build-head');
-  var marca1 = document.getElementById('marca1');
-  var creativeHost = document.getElementById('creative-host');
-  marca1.style.opacity="0";
-  creativeHost.style.display="none";
-  defhead.innerHTML = "EARTH";
-  idehead.innerHTML = "FIRE";
+
+
   buihead.innerHTML = "WIND";
   buihead.style.fontSize = "2.5rem";
   // change idea format in ideation
-  var ideabox = document.getElementById('ideate-question');
-  var idescription = document.getElementById('ideate-band-1-output');
-  var ideap = document.getElementById('idea-statement');
-  var contador = document.getElementById('icount');
-  ideap.innerHTML = ideabox.value;
-  ideap.style.display = "block";
-  ideabox.style.display= "none";
-  idescription.style.display ="none";
-  icount.style.display = "none";
-  // encouragin text
-  var coutext1 =document.getElementById("courage-text1");
-  var coutext2 =document.getElementById("courage-text2");
+
   var coutext3 =document.getElementById("courage-text3");
-  coutext1.style.display="none";
-coutext2.style.display="none";
-coutext3.style.display="none";
-  // asas
+
+  coutext3.style.display="none";
+
   resume.style.display="block";
-  one.style.display="block";
-  two.style.display="block";
   three.style.display="block";
   last.style.display="block";
-  var ideap = document.getElementById('idea-statement').innerHTML;
-  var out2 = document.getElementById('out-2');
-  out2.value = ideap;
 }
 
 function myFunction(){

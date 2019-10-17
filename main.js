@@ -78,10 +78,10 @@ function switchOff1(){
 
    setTimeout(function(){
     box1.style.opacity = '0';
-  }, 2500);
+  }, 1800);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3050)
+  }, 2500)
 }
 
 function switchOff2(){
@@ -89,10 +89,10 @@ function switchOff2(){
   box3.className = 'col-3 box3 off ';
    setTimeout(function(){
     box2.style.opacity = '0';
-  }, 2500);
+  }, 1800);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3050)
+  }, 2050)
 }
 
 function switchOff3(){
@@ -101,10 +101,10 @@ function switchOff3(){
 
    setTimeout(function(){
     box3.style.opacity = '0';
-  }, 2500);
+  }, 1800);
   setTimeout(function(){
     window.location.href = "define.html";
-  }, 3050)
+  }, 2500)
 }
 
 

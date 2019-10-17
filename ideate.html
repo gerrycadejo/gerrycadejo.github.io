@@ -24,6 +24,9 @@
     <div class="row align-items-center justify-content-center" id="main-build-content" >
       <div class="col-8">
       <h1 class="output-head">Tonight's been quite a ride! Let's scroll all the way down to see how you did</h1>
+      <div class="icon-arrows" style="position:relative;top:163px;">
+    <span></span>
+  </div>
     </div>
     </div>
   </div>
@@ -93,14 +96,14 @@
     <button class="openbtn" onclick="defopenNav()" id="burger"></button>
     <div class="row align-items-center justify-content-center" id="define-content" >
       <div class="col-2">
-      <h1 class="define-head">FIRE</h1>
+      <h1 class="define-head" style="color: #ff005b; text-shadow: 0 0 7px #ff005b;">FIRE</h1>
       </div>
       <div class="col-8">
-      <p class="define-instructions">Sup! Welcome back! Before que move further, let's start by stating the creative framework</p>
       </div>
       <div class="col-10" id="define-input">
+        <p class="define-instructions">Welcome back! Let's start by defining our creative framework</p>
       <form id="deform">
-      <textarea name="name" rows="5" required cols="8" id="define-question" type="text" name="FirstName" autocomplete="off" maxlength="100" placeholder="My problem is..."></textarea>
+      <textarea name="name" rows="5" required cols="8" id="define-question" type="text" name="FirstName" autocomplete="off" style="font-size:1.2rem; text-align:center!important;" maxlength="100" placeholder="What is the problem statement?...Is there a how might we question?...What's the insight?"></textarea>
       <label id="count">Max 100 characters </label>
       <button value="Next" type="submit">Next </button>
       </form>
@@ -110,48 +113,15 @@
   </div>
 
 
-<div class="container-fluid" id="main-define-output">
-  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
-  <div class="row align-items-center justify-content-center" id="main-define-content" >
-    <div class="col-8">
-    <h1 class="output-head" id="define-head">Let the beat drop!</h1>
-    </div>
-    <div class="col-10" id="define-output">
-    <p class="output" id="def-band-1-output"></p>
-    <p class="output" id="def-band-2-output"></p>
-    <p class="output" id="def-band-3-output"></p>
+<!-- select workshop page @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
 
-    </div>
-    <div class="w-100"></div>
-    <div class="col-10">
-    <button class="next-output" id="next-out-1" onclick="goToIdeate1()">Next</button>
-    <button class="next-output" id="next-out-2" onclick="goToIdeate2()">Next</button>
-    <button class="next-output" id="next-out-3" onclick="goToIdeate3()">Next</button>
-
-    <p>Ready for the next step?</p>
-    <button class="back-output" onclick="inputPage1()" id="back-out-1">Back</button>
-    <button class="back-output" onclick="inputPage2()" id="back-out-2">Back</button>
-    <button class="back-output" onclick="inputPage3()" id="back-out-3">Back</button>
-
-    </div>
-    </div>
-  <p class="footer" id="qgroup">made with ❤ by Q group</p>
-</div>
-<!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-BANDS@@@@@-->
 <div class="container-fluid" id="ideate-bands">
   <button class="openbtn" onclick="defopenNav()" id="burger"></button>
   <div class="row align-items-center justify-content-center" id="bands-content" >
     <div class="col-8">
-    <h1 class="ideate-head">IDEATE</h1>
+    <h1 class="ideate-head">Select a band</h1>
     </div>
     <div class="w-100"></div>
     <div class="col-3 box1 top" id="band-4" onclick="switchOff4()">
@@ -165,13 +135,13 @@ BANDS@@@@@-->
     </div>
     <!-- first interrogation mark-->
     <div class="col-3 interrogation top" style="">
-      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-1"style="left:-3vh;"></i>
-      <i class="fas fa-compact-disc"></i>
+      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#wannabe"style="left:-3vh;"></i>
+      <i class="fas fa-compact-disc" data-toggle="modal" data-target="#ewannabe"></i>
       </div>
       <!--MODAL FIRST BAND -->
-<div class="modal fade" id="ideate-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="wannabe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content instrucciones elige">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">WANNABE</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -179,7 +149,29 @@ BANDS@@@@@-->
         </button>
       </div>
       <div class="modal-body">
-        Short Description
+        Soooo tell me what you’d do, what you’d really, really do.
+        Let’s look at the big players and think what would you do in their shoes, how would you solve the problem you have?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ewannabe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content supplies elige">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WANNABE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <strong>You'll need:</strong><br>
+        1. Pens<br>
+        2. Post-it notes (or many blank pieces of paper)<br>
+        3. Nice relaxing music<br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -189,45 +181,66 @@ BANDS@@@@@-->
 </div>
 <!-- modal ends-->
       <div class="col-3 interrogation top" style="">
-        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-2" style="z-index: 30"></i>
-        <i class="fas fa-compact-disc"></i>
+        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#mashup" style="z-index: 30"></i>
+        <i class="fas fa-compact-disc" data-toggle="modal" data-target="#emashup"></i>
         </div>
         <!--MODAL second BAND -->
-<div class="modal fade" id="ideate-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="mashup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content instrucciones elige">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">IDEATE Band 2</h5>
+                <h5 class="modal-title" id="exampleModalLabel">THE MASHUP PUMPKINS</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                Short Description
+              The problem is about to get (s)mashed! Here you'll make unusual connections to find an innovative solution.
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-        </div>
+</div>
+<div class="modal fade" id="emashup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content supplies elige">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">THE MASHUP PUMPKINS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <strong>You'll need:</strong><br>
+                1. Pens<br>
+                2. Post-it notes(or many blank pieces of paper)<br>
+                3. Nice relaxing music<br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+</div>
         <!-- modal ends-->
         <div class="col-3 interrogation top" style="">
-          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#ideate-ws-3" style="position: relative;left: 45px;"></i>
-          <i class="fas fa-compact-disc" style="position: relative;left: 45px;"></i>
+          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#run" style="position: relative;left: 45px;"></i>
+          <i class="fas fa-compact-disc" data-toggle="modal" data-target="#erun" style="position: relative;left: 45px;"></i>
             </div>
           <!--MODAL third BAND -->
-    <div class="modal fade" id="ideate-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="run" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content instrucciones elige">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">BAND 3 IDEATE</h5>
+            <h5 class="modal-title" id="exampleModalLabel">RUN DMC20</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            SHORT DESCRIPTION
+            It's time to dance together! Here you'll be strengthening your idea with the help of your group.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -236,6 +249,29 @@ BANDS@@@@@-->
       </div>
     </div>
     <!-- modal ends-->
+    <div class="modal fade" id="erun" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content supplies elige">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RUN DMC20</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <strong>You'll need:</strong><br>
+            1. Pens<br>
+            2. Post-it notes<br>
+            3. Blank pieces of paper (yes both post-its and paper)<br>
+            4. Teamwork!<br>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends  -->
     </div>
 
   <p class="footer" id="qgroup">made with ❤ by Q group</p>
@@ -251,9 +287,9 @@ BAND 1@@@@@-->
     <div class="row align-items-center justify-content-center" id="ideate-1-content" >
         <h1 class="define-head cabeza" style="color: #ff005b;text-shadow: 0 0 7px #ff005b;">FIRE </h1>
         <h5 class="instructions-title">Host</h5>
-        <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-        <i class="fas fa-compact-disc utensils"></i>
-        <i class="fas fa-exclamation-circle tips"></i>
+        <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#wannabe-i"></i>
+        <i class="fas fa-compact-disc utensils" data-toggle="modal" data-target="#wannabe-s"></i>
+        <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#wannabe-e"></i>
         <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
         <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">Creative <br> Framework</h5>
         <p class="define-instructions" id="statement-1"></p>
@@ -301,9 +337,9 @@ BAND 1@@@@@-->
     </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
 </div>
-<div class="modal fade" id="bandi-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="wannabe-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content instrucciones">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Wannabe</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -311,8 +347,16 @@ BAND 1@@@@@-->
           </button>
         </div>
         <div class="modal-body">
-        Playing a different role it’s crucial in terms of resolving a problem.
-        With this workshop you’ll be in other company's shoes and try to resolve the problem from another perspective.
+          <strong>Instructions:</strong><br> <br>
+          1. The group selects a brand.<br>
+          1. The facilitator starts the timer.<br>
+          3. During 3 minutes you will come up with solutions for the creative framework, the way the brand you've chosen would do it<br>
+          4. Write down as many ideas as you can.<br>
+          5. Once the time is up, share your ideas with the group (max. two minutes each).<br>
+          6. Do it as many times as you want with different brands<br>
+          7. Remember to have fun*<br><br>
+          <span class="small-note">*Note: The objective of this workshop is to get rid of "first ideas" and come up with innovative solutions.</span><br>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -320,6 +364,57 @@ BAND 1@@@@@-->
       </div>
     </div>
   </div>
+  <div class="modal fade" id="wannabe-s" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content supplies elige">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wannabe</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>You'll need:</strong><br>
+            1. Pens<br>
+            2. Post-it notes<br>
+            3. Teamwork!<br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="wannabe-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Wannabe</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example: We want to sell more pizzas</strong><br><br>
+              <u>Spotify (Data Driven)</u><br>
+              R/ New pizza based on the ingredients your friends like <br><br>
+              <u>Volvo (Product Design)</u>  <br>
+              We created a pizza box that keeps it warm<br><br>
+              <u>Mcdonald's (Happiness)</u> <br>
+              Every pizza purchased includes a ticket for the cinema<br><br>
+              <u>Ikea (Self-Service)</u> <br>
+              Do your own pizza<br><br>
+              <u>Airbnb (Gig Economy)</u> <br>
+              Your neighbor will prepare your pizza <br><br>
+              <u>Darth Vader (Evil)</u> <br>
+              Kebab Pizza.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 <!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -330,10 +425,10 @@ BAND 2@@@@@-->
   <div class="row align-items-center justify-content-center" id="ideate-2-content" >
     <h1 class="define-head cabeza" style="color: #ff005b;text-shadow: 0 0 7px #ff005b;">FIRE </h1>
     <h5 class="instructions-title">Host</h5>
-    <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-    <i class="fas fa-exclamation-circle tips"></i>
-    <i class="fas fa-compact-disc utensils"></i>
-    <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
+    <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#mashup-i"></i>
+    <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#mashup-e"></i>
+    <i class="fas fa-compact-disc utensils" data-toggle="modal" data-target="#mashup-s"></i>
+<div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
     <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">Creative <br> Framework</h5>
     <p class="define-instructions" id="statement-2"></p>
     </div>
@@ -353,20 +448,20 @@ BAND 2@@@@@-->
     <input type="button" class="services"name=""id="input10" onclick="services5()" value="Swish"><br>
     <input type="button" class="tech"name="" id="input11" onclick="tech1()" value="Bluetooth">
     <input type="button" class="tech"name="" id="input12" onclick="tech2()"value="3D Printer">
-    <input type="button" class="tech"name="" id="input13" onclick="tech3()"value="Smartphone">
+    <input type="button" class="tech"name="" id="input13" onclick="tech3()" value="Alexa">
     <input type="button" class="tech"name="" id="input14" onclick="tech4()"value="Headphones">
     <input type="button" class="tech"name="" id="input15" onclick="tech5()" value="Touchpad">
-    <p id="mashup"> </p>
+    <p id="mash-statement"> </p>
     <span class="addminus" id="minus-2" onclick="twoMinus1()">-</span><h1 class="timer" id="clock-converge-2" style="font-size: 1.6rem;text-align:center;display: inline"><time>03:00</time></h1><span class="addminus" id="add-2" onclick="twoAdd1()">+</span> <br>
     <button class="but-timer" id="reset-timer-2" onclick="twoResetTime()">Reset</button>
     <button class="but-timer" id="start-timer-2" onclick="twoStartTime()">Start</button>
-    </div>
+</div>
     </div>
   <p class="footer" id="qgroup">made with ❤ by Q group</p>
 </div>
-<div class="modal fade" id="bandi-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="mashup-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content instrucciones">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">MASHUP PUMPKINS</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -374,9 +469,15 @@ BAND 2@@@@@-->
           </button>
         </div>
         <div class="modal-body">
-          Pick one card from each category, just one!
-          And now? You have 4 minutes come up with a bunch of ideas, that combines all three things!
-
+          <strong>Instructions</strong><br> <br>
+          1. The group picks one element from each row.<br>
+          1. The facilitator starts the timer.<br>
+          3. During 3 minutes you try to solve the problem creating connections with what you selected<br>
+          4. Write down as many ideas as you can.<br>
+          5. Once the time is up, share your ideas with the group.<br>
+          6. Do it as many times as you want with different combination of elements.<br>
+          7. Remember to have fun*<br><br>
+          <span class="small-note">*Note: The objective of this workshop is to get rid of "first ideas" and come up with innovative solutions.</span><br>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -384,6 +485,53 @@ BAND 2@@@@@-->
       </div>
     </div>
   </div>
+  <div class="modal fade" id="mashup-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content ejemplo">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">MASHUP PUMPKINS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>Example:</strong> We have too many one-time users.<br><br>
+            <u>EATING + FACETIME + 3D PRINTER</u> <br>
+            We will send them an edible miniature version of their favorite person every 5 bookings. <br><br>
+            <u>SINGING + G MAPS + BLUETOOTH</u> <br>
+            We'll have online concerts triggered by geolocation that will show bookers how popular are our artists.<br><br>
+            <u>WRITING + SPOTIFY + ALEXA</u> <br>
+            A voice application for Alexa that writes a follow up email to bookers with our artists' stats on Spotify.<br><br>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="mashup-s" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content supplies elige">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">MASHUP PUMPKINS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>You'll need:</strong><br>
+              1. Pens<br>
+              2. Post-it notes<br>
+              3. Teamwork!<br>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 <!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -394,9 +542,9 @@ BAND 3@@@@@-->
   <div class="row align-items-center justify-content-center" id="ideate-3-content" >
     <h1 class="define-head cabeza" style="color: #ff005b;text-shadow: 0 0 7px #ff005b;">FIRE </h1>
     <h5 class="instructions-title">Host</h5>
-    <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-    <i class="fas fa-compact-disc utensils"></i>
-    <i class="fas fa-exclamation-circle tips"></i>
+    <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#run-i"></i>
+    <i class="fas fa-compact-disc utensils" data-toggle="modal" data-target="#run-s"></i>
+    <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#run-e"></i>
     <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
     <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">Creative <br> Framework</h5>
     <p class="define-instructions" id="statement-3"></p>
@@ -420,24 +568,84 @@ BAND 3@@@@@-->
   <p class="footer" id="qgroup">made with ❤ by Q group</p>
 </div>
 
-<div class="modal fade" id="bandi-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="run-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content instrucciones">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">IDEATE BAND 2</h5>
+          <h5 class="modal-title" id="exampleModalLabel">RUN DMC20</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          SHORT DESCRIPTION
-        </div>
+
+          <strong>Instructions</strong><br>
+          1. Get a piece of paper divide it in three and number each part. (i.e 1, 2 3)<br>
+          2. You'll have <strong>3 minutes</strong> to write down ONE solution for the problem. Use the first part of the paper<br>
+          3. Share your idea with the group<br>
+          4. Everybody gives their idea, and the paper, to the person who is to their <u>right</u><br>
+          4. Now use the second part of the paper and you'll have <strong>2 minutes</strong> to write down what might limit the other person's idea<br>
+          5. Explain the limitations you saw with the person who is at your <u>right</u> and then give them the paper<br>
+          6. Now you'll have <strong>3 minutes</strong>. Use the third part of the paper and solve the idea's limitations<br>
+          7. Share your strong ideas with the group*<br>
+          If unclear, please check the example. <br><br>
+          <span class="small-note">*Note: The objective of this workshop is to use each other as a way to have stronger ideas.</span><br>
+
+          </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="run-s" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content supplies">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RUN DMC20</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>You'll need:</strong><br><br>
+            1. Pens<br>
+            2. Post-it notes<br>
+            3. Blank pieces of paper (yes both post-its and paper)<br>
+            3. Teamwork!<br>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="run-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">IDEATE BAND 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Problem:</strong> artists don't get gigs<br>
+              *Imagine you are person "A", and you are working with person "B" and person "C"*<br>
+               <br>
+              <u>"A" came up with a solution </u> <br>
+              <strong>Solution:</strong> We should have a pop up on the landing page promoting un-booked artists <br><br>
+              <u> "B" gets  "A's" idea and writes down its limitations</u> <br>
+              <strong>Limitation:</strong> Other users might get annoyed at the pop ups<br><br>
+              <u>"C" gets  "B's" limitations of "A's" idea and finds a way to overcome them</u><br>
+              <strong>Solution 2.0:</strong> We'll create native-looking banners to promote un-booked artists<br><br>
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
   <!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -448,8 +656,8 @@ BAND 3@@@@@-->
     <div class="row align-items-center justify-content-center" id="build-2-content" >
       <h1 class="define-head cabeza" style="color: #ff005b;text-shadow: 0 0 7px #ff005b;">FIRE </h1>
       <h5 class="instructions-title">Host</h5>
-      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-      <i class="fas fa-exclamation-circle tips"></i>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#converge-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#converge-e"></i>
       <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
       <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">Creative <br> Framework</h5>
       <p class="ideate-instructions" id="idea-statement-2" style="text-align:left"></p>
@@ -469,7 +677,52 @@ BAND 3@@@@@-->
       </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
 </div>
+<div class="modal fade" id="converge-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content instrucciones">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Second Round</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Instructions:</strong><br><br>
+          1. Facilitator starts the timer.<br>
+          2. Everyone must write down <strong>ONE IDEA</strong> to solve the problem.*<br>
+          3. Share your idea with the group.<br>
+          4. Move on. <br><br>
+          <span class="small-note">*Note: There are no creative constraints,try to use the inspiration of the previous brainstorming screen.<br></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="converge-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content ejemplo">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Second Round</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>Example:</strong> <br>
+            <u>In the previous screen someone came up with:</u><br>
+            -We will create a way for concerts to happen at people's places using airbnb.<br>
+            <u>Now using that as inspiration:</u><br>
+            -We will add a feature where artists can rent bookers for a place to rehearse.<br>
 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--  WORKSHOPS ideate  @@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -492,7 +745,7 @@ OUTPUT@@@@@-->
     <div class="w-100"></div>
     <div class="col-10">
     <button class="next-output" id="next-build" onclick="goToBuild()">Next</button>
-    <p>One more stage to go!</p>
+    <p id="courage-text2">One more stage to go!</p>
     <button class="back-output" onclick="backConverge()" id="iback-out-4">Back</button>
 
     </div>
@@ -501,7 +754,7 @@ OUTPUT@@@@@-->
 </div>
 <div class="modal fade" id="bandi-convergence-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content instrucciones">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">DOTMOCRACY</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -509,7 +762,13 @@ OUTPUT@@@@@-->
           </button>
         </div>
         <div class="modal-body">
-          SHORT DESCRIPTION
+          <strong>Decision making process</strong>.<br><br>
+          1. Make sure everyone has heard the shorlist of ideas.<br>
+          2. Name each idea.<br>
+          3. Write it down and put it in a place where everyone can see it.<br>
+          4. Everyone should add a small dot on the idea they prefer. Every person gets 3 dots to give.<br>
+          5. In case there is a tie, do it again with the ones who had the most dots.<br>
+          6. In case there are still tied, pick one randomly and use the other idea later(you can acess the wind stage directly).
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -532,35 +791,35 @@ BANDS@@@@@-->
   <button class="openbtn" onclick="defopenNav()" id="burger"></button>
   <div class="row align-items-center justify-content-center" id="build-content" >
     <div class="col-8">
-    <h1 class="build-head">BUILD</h1>
+    <h1 class="build-head">Select a Band</h1>
     </div>
     <div class="w-100"></div>
     <div class="col-3 box1 top" id="band-7" onclick="switchOff7()">
       <h1 class="stagetxt">APITCHII </h1>
     </div>
     <div class="col-3 box2 top" id="band-8" onclick="switchOff8()">
-      <h1 class="stagetxt">STONE TEMPLE PILLARS </h1>
+      <h1 class="stagetxt" style="top: 70px">STONE TEMPLE PILLARS </h1>
     </div>
     <div class="col-3 box3 top" id="band-9" onclick="switchOff9()">
       <h1 class="stagetxt">JOURNEY</h1>
     </div>
     <!-- first interrogation mark-->
     <div class="col-3 interrogation top" style="">
-      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-1"style="left:-3vh;"></i>
+      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#apitch"style="left:-3vh;"></i>
     </div>
       <!--MODAL FIRST BAND -->
-<div class="modal fade" id="build-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="apitch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content instrucciones elige">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">BUILD Band 1</h5>
+        <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Short Description
-      </div>
+      Pitch better have your money! Here you'll structure your idea in a selling way!
+   </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
@@ -569,20 +828,20 @@ BANDS@@@@@-->
 </div>
 <!-- modal ends-->
       <div class="col-3 interrogation top" style="">
-        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-2" style="z-index: 30"></i>
+        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#stone" style="z-index: 30"></i>
         </div>
         <!--MODAL second BAND -->
-  <div class="modal fade" id="build-ws-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="stone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content instrucciones elige">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">BUILD Band 2</h5>
+                <h5 class="modal-title" id="exampleModalLabel">STONE TEMPLE PILLARS</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                Short Description
+                Turn up the music and get ready to define what would be the pillars of your solution and have it ready to test.
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -592,20 +851,20 @@ BANDS@@@@@-->
         </div>
         <!-- modal ends-->
         <div class="col-3 interrogation top" style="">
-          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#build-ws-3" style="position:relative;left:5vh"></i>
+          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#journey" style="position:relative;left:5vh"></i>
           </div>
           <!--MODAL third BAND -->
-  <div class="modal fade" id="build-ws-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="journey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content instrucciones elige">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">BUILD 3</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Journey</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            SHORT DESCRIPTION
+            This ain't the midnight train going anywhere!<br> Here you'll define what needs to happen when using your solution.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -625,8 +884,8 @@ BANDS@@@@@-->
     <div class="row align-items-center justify-content-center" id="build-1-content" >
       <h1 class="define-head cabeza" style="color:#2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
       <h5 class="instructions-title">Host</h5>
-      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-      <i class="fas fa-exclamation-circle tips"></i>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#apitch-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#apitch-e"></i>
       <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
       <h5 class="ideate-title" style="text-decoration:underline;text-align: left;"> IDEA</h5>
       <p class="define-instructions" id="build-statement-1"></p>
@@ -636,7 +895,7 @@ BANDS@@@@@-->
       <div class="col-9 align-self-center" id="ideate-1-input" style="padding:58px;">
       <h3 class="what-question uno">Answer the questions</h3> <br>
       <p id="fillin" class="fill-paragraph">
-      Who is the user?<input type="text" required class="fill"id="fill-6" type="text" autocomplete="off" maxlength="40" placeholder="Restaurant owners..."><br>
+      Who are the users?<input type="text" required class="fill"id="fill-6" type="text" autocomplete="off" maxlength="40" placeholder="Restaurant owners..."><br>
       What are they struggling with?<input type="text" required class="fill"id="fill-7" type="text" autocomplete="off" maxlength="40" placeholder="planning events..."><br>
       How is this problem affecting them?<input type="text" required class="fill"id="fill-8" type="text" autocomplete="off" maxlength="40" placeholder="more stress..."><br>
       What is your solution?<input type="text" required class="fill"id="fill-9" type="text" autocomplete="off" maxlength="40" placeholder="weekly newsletters"><br>
@@ -646,17 +905,21 @@ BANDS@@@@@-->
       </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
   </div>
-  <div class="modal fade" id="bandb-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="apitch-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content instrucciones">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">PITCH BAE</h5>
+            <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-          Please fill in the statement.
+            <strong>Instructions</strong><br> <br>
+            1. The facilitator asks the questions.<br>
+            2. The group should discuss and agree on one answer.<br>
+            3. The facilitator types the answer you all agreed with.<br>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -664,6 +927,36 @@ BANDS@@@@@-->
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="apitch-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong> <br>
+              <u>Idea: bookers pay as soon as they book an artist</u><br>
+              1.Who are the users?  <br>
+              R/Artists <br>
+              2.What are they struggling with?  <br>
+              R/Not getting fully paid by the bookers <br>
+              3.How is this problem affecting them?  <br>
+              R/Getting their money cut down<br>
+              4.What is your solution?  <br>
+              R/Develop online payment and have fix prices<br>
+              5.What feature will you implement?  <br>
+              R/Secure payment platform<br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
   <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
@@ -676,8 +969,8 @@ BANDS@@@@@-->
     <div class="row align-items-center justify-content-center" id="build-2-content" >
       <h1 class="define-head cabeza" style=" color: #2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
       <h5 class="instructions-title">Host</h5>
-      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-      <i class="fas fa-exclamation-circle tips"></i>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#temple-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#temple-e"></i>
       <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
       <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">IDEA</h5>
       <p class="define-instructions" id="build-statement-2"></p>
@@ -714,19 +1007,20 @@ BANDS@@@@@-->
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
   </div>
 
-  <div class="modal fade" id="bandb-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="temple-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content instrucciones">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">ENJOY DIVISION</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Stone Temple Pillars</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Woop Woop! It’s almost the end of the night! Let’s end it with a bang and a prototype.
-            Pick three qualities, take pen & paper and sketch your solution taking in consideration
-            what you selected.
+          <strong>Instructions:</strong><br> <br>
+          1. As a group, pick three pillars for your solution. <br>
+          2. Discuss how each pillar is going to live in your solution.<br>
+          3. Facilitator types the explanations on the text area. <br>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -734,6 +1028,29 @@ BANDS@@@@@-->
         </div>
       </div>
     </div>
+    <div class="modal fade" id="temple-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Stone Temple Pillars</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong><br>
+              <u>Idea: Contract builder</u> <br><br>
+              Pillars: Easy - Beautiful - fun <br>
+              R/ It will be easy by implementing a template.<br>
+              R/ It will be beautiful by having animations that show only one part at a time.<br>
+              R/ It will be fun by having animated feedback when you complete each stage.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
   <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -744,8 +1061,8 @@ BANDS@@@@@-->
     <div class="row align-items-center justify-content-center" id="build-3-content" >
       <h1 class="define-head cabeza" style=" color: #2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
       <h5 class="instructions-title">Host</h5>
-      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#band-ws-1"></i>
-      <i class="fas fa-exclamation-circle tips"></i>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#journey-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#journey-e"></i>
       <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
       <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">IDEA</h5>
       <p class="define-instructions" id="build-statement-3"></p>
@@ -755,33 +1072,34 @@ BANDS@@@@@-->
       <h3 class="what-question uno">Answer the questions...faithfully.</h3>
       <div class="col-4 align-self-center" class="build-3-input1" style="top:40px;">
       <p id="fillin" class="fill-paragraph">
-      How would the users access your solution?<textarea name="" id="fill-11" class="fill" cols="4" rows="4" placeholder="They will access the form by clicking in the..."></textarea><br>
-      What is the users' goal?<textarea name="" class="fill"id="fill-13" cols="4" rows="4" placeholder="Their goal is to provide relevant info..."></textarea><br>
+      How would the user access your solution?<textarea name="" id="fill-11" class="fill" cols="4" rows="4" placeholder="They will access the form by clicking in the..."></textarea><br>
+      What is the user's goal?<textarea name="" class="fill"id="fill-13" cols="4" rows="4" placeholder="Their goal is to provide relevant info..."></textarea><br>
     </p>
     </div>
       <div class="col-4 align-self-center" class="build-3-input1" style="top:40px;">
         <p id="fillin2" class="fill-paragraph">
       What is the main interaction of your solution?<textarea name="" id="fill-12" cols="4" class="fill" rows="4" placeholder="There they'll answer the questions and align the..."></textarea><br>
-      What would the users accomplish at the end?<textarea name="" id="fill-14" cols="4" rows="4"class="fill" placeholder="At the end they should have a profile description..."></textarea><br>
+      How would they know that they achieved their goal?<textarea name="" id="fill-14" cols="4" rows="4"class="fill" placeholder="At the end they should have a profile description..."></textarea><br>
       </p>
 
       </div>
       </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
   </div>
-  <div class="modal fade" id="bandb-ws-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="journey-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content instrucciones">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">ENJOY DIVISION</h5>
+            <h5 class="modal-title" id="exampleModalLabel">JOURNEY</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Woop Woop! It’s almost the end of the night! Let’s end it with a bang and a prototype.
-            Pick three qualities, take pen & paper and sketch your solution taking in consideration
-            what you selected.
+            <strong>Instructions:</strong><br><br>
+            1. The facilitator will read the questions. <br>
+            2. The group should agree on one answer. <br>
+            3. The facilitator will type the answers on the text area. <br>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -789,12 +1107,40 @@ BANDS@@@@@-->
         </div>
       </div>
     </div>
+    <div class="modal fade" id="journey-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">JOURNEY</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong> <br>
+              <u>Idea: scheduling events</u>.<br><br>
+              1. How would the user access your solution?<br>
+              R/ The user will access the solution by clicking on the calendar icon that is in their profile page.<br>
+              2. What is the main interaction of your solution?<br>
+              R/ The user will select a date, a location and a time for the event.<br>
+              3. What is the user's goal?<br>
+              R/ With this the user will be able to keep track of when, what and where things are happening.<br>
+              4. How would they know that they achieved their goal?<br>
+              R/ By the end of the interaction the user should get a confirmation email.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
   <!--  WORKSHOPS Output  @@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   BUILD@@@@@-->
-  <div class="container-fluid" id="main-build-output">
+  <div class="container-fluid" id="main-build-output" style="background-color:#000;">
     <button class="openbtn" onclick="defopenNav()" id="burger"></button>
     <div class="row align-items-center justify-content-center" id="main-build-content" >
       <div class="col-8">
@@ -824,7 +1170,7 @@ BANDS@@@@@-->
       </div>
       <div class="col-10">
 
-      <p>You are almost done!</p>
+      <p id="courage-text3">You are almost done!</p>
       <button class="iback" onclick="backBinput1()" id="obback-1">Back</button>
       <button class="iback" onclick="backBinput2()" id="obback-2">Back</button>
       <button class="iback" onclick="backBinput3()" id="obback-3">Back</button>
@@ -847,15 +1193,15 @@ BANDS@@@@@-->
     <div class="row align-items-center justify-content-center" id="last" >
 
     <div class="col-10">
-    <h1 class="output-head" style="font-size: 2rem;margin-bottom:5%;">Maybe is the insights talking but... WOW, you did amazing!</h1>
+    <h1 class="output-head" style="font-size: 2rem;margin-bottom:5%;">Maybe it's the insights talking but... WOW, you did amazing!</h1>
     <p onclick="myFunction()">Let's not forget about what happened here, shall we?</p>
     <button class="back-output" onclick="backHome()" id="last-button">Home</button>
     <form action="mailto:@yourdmainhere.com" method="post" enctype="text/plain" >
-    <input type="text" name="problem" value="gaaa" id="out-1"style="display:none;">
+    <input type="text" name="problem" value="" id="out-1"style="display:none;">
     <input type="text" name="idea" value="gaaa" id="out-2"style="display:none;">
     <input type="text" name="concept" value="gaaa" id="out-3"style="display:none;">
 
-    <input type="submit" class="next" id="email" name="submit" value="Send it to my email">
+    <input type="submit" class="next" id="email" name="submit" value="Send it to your email">
     </form>
       </div>
     <p class="footer" id="qgroup">made with ❤ by Q group</p>
@@ -865,6 +1211,6 @@ BANDS@@@@@-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="define.js"></script>
+<script src="ideate.js"></script>
 </body>
 </html>

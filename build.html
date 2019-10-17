@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>stages</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Cuprum|Orbitron|Roboto|Saira+Semi+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d9a8534e1e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="defcloseNav()">&times;</a>
+    <a  data-toggle="modal" data-target="#overlay1" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">GUIDE</a>
+    <a href="define.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">EARTH</a>
+    <a href="ideate.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">FIRE</a>
+    <a href="build.html" style="cursor:pointer;font-family: 'Orbitron', sans-serif;">WIND</a>
+  </div>
+  <div class="container-fluid" id="resume">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="main-build-content" >
+      <div class="col-8">
+      <h1 class="output-head">Tonight's been quite a ride! Let's scroll all the way down to see how you did</h1>
+      <div class="icon-arrows" style="position:relative;top:163px;">
+    <span></span>
+  </div>
+    </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-xl" id="overlay1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style="background-color:#000;">
+        <div class="modal-header" style="border-bottom:none;color:white;">
+           <h5 class="modal-title" id="exampleModalLabel"></h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+            <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel" style="width: 75%!important;height:70%!important;">
+          <ol class="carousel-indicators" style="bottom: -30px!important;color:white">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/guide1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide4.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide5.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide6.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide7.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/guide8.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+  <!-- select problem page @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+<!-- BUILD STAGE  -->
+<div class="container-fluid" id="main-ideate-output" style="display:block">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="main-define-content" >
+    <div class="col-8">
+      <h1 class="define-head" style="color: #2196F3;   text-shadow: 0 0 7px #2196F3;">WIND</h1>
+    </div>
+    <div class="col-10" id="ideate-output" style="top:0;">
+      <p class="define-instructions"style="margin-bottom:80px;text-align: center !important;color: #00E676;text-shadow: 0 0 7px #00E676;font-size: 1.7rem;">The good stuff starts now! Let's begin with writing your idea</p>
+    <textarea name="name" rows="3" required cols="8" id="ideate-question" type="text" name="FirstName" autocomplete="off" maxlength="140" placeholder="Our idea is..."></textarea>
+    <label id="icount">Max 140 characters </label>
+    <p class="output"id="idea-statement"></p>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-10">
+    <button class="next-output" id="next-build" onclick="goToBuild()">Next</button>
+    </div>
+    </div>
+    
+</div>
+
+
+<!--  WORKSHOPS BUILD  @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BANDS@@@@@-->
+<div class="container-fluid" id="build-bands">
+  <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+  <div class="row align-items-center justify-content-center" id="build-content" >
+    <div class="col-8">
+    <h1 class="build-head">Select a Band</h1>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-3 box1 top" id="band-7" onclick="switchOff7()">
+      <h1 class="stagetxt">APITCHII </h1>
+    </div>
+    <div class="col-3 box2 top" id="band-8" onclick="switchOff8()">
+      <h1 class="stagetxt" style="top: 70px">STONE TEMPLE PILLARS </h1>
+    </div>
+    <div class="col-3 box3 top" id="band-9" onclick="switchOff9()">
+      <h1 class="stagetxt">JOURNEY</h1>
+    </div>
+    <!-- first interrogation mark-->
+    <div class="col-3 interrogation top" style="">
+      <i id="mark1"class="far fa-question-circle" data-toggle="modal" data-target="#apitch"style="left:-3vh;"></i>
+    </div>
+      <!--MODAL FIRST BAND -->
+<div class="modal fade" id="apitch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content instrucciones elige">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Pitch better have your money! Here you'll structure your idea in a selling way!
+   </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends-->
+      <div class="col-3 interrogation top" style="">
+        <i id="mark2"class="far fa-question-circle" data-toggle="modal" data-target="#stone" style="z-index: 30"></i>
+        </div>
+        <!--MODAL second BAND -->
+  <div class="modal fade" id="stone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content instrucciones elige">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">STONE TEMPLE PILLARS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Turn up the music and get ready to define what would be the pillars of your solution and have it ready to test.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal ends-->
+        <div class="col-3 interrogation top" style="">
+          <i id="mark3"class="far fa-question-circle" data-toggle="modal" data-target="#journey" style="position:relative;left:5vh"></i>
+          </div>
+          <!--MODAL third BAND -->
+  <div class="modal fade" id="journey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content instrucciones elige">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Journey</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This ain't the midnight train going anywhere!<br> Here you'll define what needs to happen when using your solution.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 1@@@@@-->
+  <div class="container-fluid" id="build-band-1" style="">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="build-1-content" >
+      <h1 class="define-head cabeza" style="color:#2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
+      <h5 class="instructions-title">Host</h5>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#apitch-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#apitch-e"></i>
+      <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
+      <h5 class="ideate-title" style="text-decoration:underline;text-align: left;"> IDEA</h5>
+      <p class="define-instructions" id="build-statement-1"></p>
+      </div>
+      <button class="iback" onclick="backBWorkshop()" id="bback-1">Back</button>
+      <button class="inext" onclick="outputBPage1()" id="bnext-1">Next</button>
+      <div class="col-9 align-self-center" id="ideate-1-input" style="padding:58px;">
+      <h3 class="what-question uno">Answer the questions</h3> <br>
+      <p id="fillin" class="fill-paragraph">
+      Who are the users?<input type="text" required class="fill"id="fill-6" type="text" autocomplete="off" maxlength="40" placeholder="Restaurant owners..."><br>
+      What are they struggling with?<input type="text" required class="fill"id="fill-7" type="text" autocomplete="off" maxlength="40" placeholder="planning events..."><br>
+      How is this problem affecting them?<input type="text" required class="fill"id="fill-8" type="text" autocomplete="off" maxlength="40" placeholder="more stress..."><br>
+      What is your solution?<input type="text" required class="fill"id="fill-9" type="text" autocomplete="off" maxlength="40" placeholder="weekly newsletters"><br>
+      What feature will you implement ?<input type="text" required class="fill"id="fill-10" type="text" autocomplete="off" maxlength="40" placeholder="mailchimp services"><br>
+      </p>
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+  <div class="modal fade" id="apitch-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content instrucciones">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>Instructions</strong><br> <br>
+            1. The facilitator asks the questions.<br>
+            2. The group should discuss and agree on one answer.<br>
+            3. The facilitator types the answer you all agreed with.<br>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="apitch-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">APITCHII</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong> <br>
+              <u>Idea: bookers pay as soon as they book an artist</u><br>
+              1.Who are the users?  <br>
+              R/Artists <br>
+              2.What are they struggling with?  <br>
+              R/Not getting fully paid by the bookers <br>
+              3.How is this problem affecting them?  <br>
+              R/Getting their money cut down<br>
+              4.What is your solution?  <br>
+              R/Develop online payment and have fix prices<br>
+              5.What feature will you implement?  <br>
+              R/Secure payment platform<br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 2@@@@@-->
+  <div class="container-fluid" id="build-band-2" style="" >
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="build-2-content" >
+      <h1 class="define-head cabeza" style=" color: #2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
+      <h5 class="instructions-title">Host</h5>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#temple-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#temple-e"></i>
+      <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
+      <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">IDEA</h5>
+      <p class="define-instructions" id="build-statement-2"></p>
+      </div>
+      <button class="iback" onclick="backBWorkshop()" id="bback-2">Back</button>
+      <button class="inext" onclick="outputBPage2()" id="bnext-2">Next</button>
+
+      <div class="col-9 align-self-center" id="ideate-1-input" style="top: 0px;">
+      <h3 class="what-question uno">Choose and explain</h3> <br>
+      <input type="button" class="feature"name="" id="bbinput1" onclick="feature1()" value="Easy">
+      <input type="button" class="feature"name="" id="bbinput2" onclick="feature2()" value="Friendly">
+      <input type="button" class="feature"name="" id="bbinput3" onclick="feature3()" value="Clear">
+      <input type="button" class="feature"name="" id="bbinput4" onclick="feature4()" value="Quick">
+      <input type="button" class="feature"name="" id="bbinput5" onclick="feature5()" value="Beautiful"> <br>
+      <input type="button" class="feature"name="" id="bbinput6" onclick="feature6()" value="Flexible">
+      <input type="button" class="feature"name="" id="bbinput7" onclick="feature7()" value="functional">
+      <input type="button" class="feature"name="" id="bbinput8" onclick="feature8()" value="creative">
+      <input type="button" class="feature"name="" id="bbinput9" onclick="feature9()" value="Colorful">
+      <input type="button" class="feature"name=""id="bbinput10" onclick="feature10()" value="interactive"><br>
+      <p id="fillin" class="fill-paragraph">
+      <textarea name="" id="explain-1" class="fill" cols="3" rows="4" placeholder="Because..."></textarea><br>
+      <span id="bmashup1"></span>
+    </p>
+      <p id="fillin" class="fill-paragraph">
+      <textarea name="" id="explain-2" class="fill" cols="3" rows="4" placeholder="Because..."></textarea><br>
+        <span id="bmashup2"></span>
+      </p>
+      <p id="fillin" class="fill-paragraph" >
+      <textarea name="" id="explain-3" class="fill" cols="3" rows="4" placeholder="Because..."></textarea><br>
+      <span id="bmashup3"></span>
+      </p>
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+
+  <div class="modal fade" id="temple-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content instrucciones">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Stone Temple Pillars</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          <strong>Instructions:</strong><br> <br>
+          1. As a group, pick three pillars for your solution. <br>
+          2. Discuss how each pillar is going to live in your solution.<br>
+          3. Facilitator types the explanations on the text area. <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="temple-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Stone Temple Pillars</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong><br>
+              <u>Idea: Contract builder</u> <br><br>
+              Pillars: Easy - Beautiful - fun <br>
+              R/ It will be easy by implementing a template.<br>
+              R/ It will be beautiful by having animations that show only one part at a time.<br>
+              R/ It will be fun by having animated feedback when you complete each stage.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--  WORKSHOPS Build  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BAND 3@@@@@-->
+  <div class="container-fluid" id="build-band-3" style="">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="build-3-content" >
+      <h1 class="define-head cabeza" style=" color: #2196F3;text-shadow: 0 0 7px #2196F3;">WIND </h1>
+      <h5 class="instructions-title">Host</h5>
+      <i id="mark-band-1"class="far fa-question-circle head-mark instruccion" data-toggle="modal" data-target="#journey-i"></i>
+      <i class="fas fa-exclamation-circle tips" data-toggle="modal" data-target="#journey-e"></i>
+      <div class="col-2" style="border-right: 2px solid white; min-height: 30%;">
+      <h5 class="ideate-title" style="text-decoration:underline;text-align: left;">IDEA</h5>
+      <p class="define-instructions" id="build-statement-3"></p>
+      </div>
+      <button class="iback" onclick="backBWorkshop()" id="bback-3">Back</button>
+      <button class="inext" onclick="outputBPage3()" id="bnext-3">Next</button>
+      <h3 class="what-question uno">Answer the questions...faithfully.</h3>
+      <div class="col-4 align-self-center" class="build-3-input1" style="top:40px;">
+      <p id="fillin" class="fill-paragraph">
+      How would the user access your solution?<textarea name="" id="fill-11" class="fill" cols="4" rows="4" placeholder="They will access the form by clicking in the..."></textarea><br>
+      What is the user's goal?<textarea name="" class="fill"id="fill-13" cols="4" rows="4" placeholder="Their goal is to provide relevant info..."></textarea><br>
+    </p>
+    </div>
+      <div class="col-4 align-self-center" class="build-3-input1" style="top:40px;">
+        <p id="fillin2" class="fill-paragraph">
+      What is the main interaction of your solution?<textarea name="" id="fill-12" cols="4" class="fill" rows="4" placeholder="There they'll answer the questions and align the..."></textarea><br>
+      How would they know that they achieved their goal?<textarea name="" id="fill-14" cols="4" rows="4"class="fill" placeholder="At the end they should have a profile description..."></textarea><br>
+      </p>
+
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+  <div class="modal fade" id="journey-i" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content instrucciones">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">JOURNEY</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <strong>Instructions:</strong><br><br>
+            1. The facilitator will read the questions. <br>
+            2. The group should agree on one answer. <br>
+            3. The facilitator will type the answers on the text area. <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="journey-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content ejemplo">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">JOURNEY</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <strong>Example:</strong> <br>
+              <u>Idea: scheduling events</u>.<br><br>
+              1. How would the user access your solution?<br>
+              R/ The user will access the solution by clicking on the calendar icon that is in their profile page.<br>
+              2. What is the main interaction of your solution?<br>
+              R/ The user will select a date, a location and a time for the event.<br>
+              3. What is the user's goal?<br>
+              R/ With this the user will be able to keep track of when, what and where things are happening.<br>
+              4. How would they know that they achieved their goal?<br>
+              R/ By the end of the interaction the user should get a confirmation email.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--  WORKSHOPS Output  @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  BUILD@@@@@-->
+  <div class="container-fluid" id="main-build-output" style="background-color:#000;">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="main-build-content" >
+      <div class="col-8">
+      <h1 class="output-head" id="build-head">Sweeet! Now you have everything you need to go out and tell your story!</h1>
+      </div>
+      <div class="col-10" id="build-output">
+      <p class="output" id="build-band-1-output"></p>
+      <p class="output" id="build-band-2-output"><span class="explain" id="feat-explain-1"></span> <span class="explain" id="feat-explain-2"> </span><span class="explain" id="feat-explain-3"></span></p>
+      <p class="output" id="build-band-3-output"></p>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-2 even" id="start" style="border-left: none;">
+        <span style="position: absolute; left:0vw; bottom: -5vh;"> START </span>
+        <p class="journey" id="j-1"></p>
+      </div>
+      <div class="col-2 odd" id="act">
+        <span style="position: absolute;top:-5vh; left:8vw;"> INTERACT </span>
+        <p class="journey" id="j-2"></p>
+      </div>
+      <div class="col-2 even" id="achieve">
+        <span style="position: absolute; bottom:-5vh;"> ACHIEVE </span>
+        <p class="journey" id="j-3"></p>
+      </div>
+      <div class="col-2 odd" id="finish">
+        <span style="position: absolute;top:-5vh; left:12vw;"> FINISH </span>
+        <p class="journey" id="j-4"></p>
+      </div>
+      <div class="col-10">
+
+      <p id="courage-text3">You are almost done!</p>
+      <button class="iback" onclick="backBinput1()" id="obback-1">Back</button>
+      <button class="iback" onclick="backBinput2()" id="obback-2">Back</button>
+      <button class="iback" onclick="backBinput3()" id="obback-3">Back</button>
+      <button class="inext" onclick="resume1()" id="obnext-1">Next</button>
+      <button class="inext" onclick="resume1()" id="obnext-2">Next</button>
+      <button class="inext" onclick="resume1()" id="obnext-3">Next</button>
+
+      </div>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  RESUME FINAL PAGE
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@-->
+  <div class="container-fluid" id="last-one" style="">
+    <button class="openbtn" onclick="defopenNav()" id="burger"></button>
+    <div class="row align-items-center justify-content-center" id="last" >
+
+    <div class="col-10">
+    <h1 class="output-head" style="font-size: 2rem;margin-bottom:5%;">Maybe it's the insights talking but... WOW, you did amazing!</h1>
+    <p onclick="myFunction()">Let's not forget about what happened here, shall we?</p>
+    <button class="back-output" onclick="backHome()" id="last-button">Home</button>
+    <form action="mailto:@yourdmainhere.com" method="post" enctype="text/plain" >
+    <input type="text" name="problem" value="" id="out-1"style="display:none;">
+    <input type="text" name="idea" value="" id="out-2"style="display:none;">
+    <input type="text" name="concept" value="gaaa" id="out-3"style="display:none;">
+
+    <input type="submit" class="next" id="email" name="submit" value="Send it to your email">
+    </form>
+      </div>
+    <p class="footer" id="qgroup">made with ❤ by Q group</p>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="build.js"></script>
+</body>
+</html>
