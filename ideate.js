@@ -770,6 +770,7 @@ function startTime(){
          if (minutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(timer);
       }
     }, 1000);
@@ -817,6 +818,7 @@ var oneminutes = 3;
 var stop;
 function oneStartTime(){
   console.log('start');
+  var nextbutton = document.getElementById('inext-1');
   var secdisplay = document.getElementById('clock-converge-1');
     oneminutes = oneminutes-1;
       stop = setInterval(function(){
@@ -836,6 +838,7 @@ function oneStartTime(){
          if (oneminutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(stop);
       }
     }, 1000);
@@ -884,6 +887,7 @@ var alto;
 function twoStartTime(){
   console.log('start');
   var secdisplay = document.getElementById('clock-converge-2');
+  var nextbutton = document.getElementById('inext-2');
     twominutes = twominutes-1;
       alto = setInterval(function(){
       twoseconds = twoseconds-1;
@@ -902,6 +906,7 @@ function twoStartTime(){
          if (twominutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(alto);
       }
     }, 1000);

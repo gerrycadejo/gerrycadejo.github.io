@@ -1036,6 +1036,7 @@ function startTime(){
          if (minutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(timer);
       }
     }, 1000);
@@ -1084,6 +1085,7 @@ var stop;
 function oneStartTime(){
   console.log('start');
   var secdisplay = document.getElementById('clock-converge-1');
+  var nextbutton = document.getElementById('inext-1');
     oneminutes = oneminutes-1;
       stop = setInterval(function(){
       oneseconds = oneseconds-1;
@@ -1102,6 +1104,7 @@ function oneStartTime(){
          if (oneminutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(stop);
       }
     }, 1000);
@@ -1150,6 +1153,7 @@ var alto;
 function twoStartTime(){
   console.log('start');
   var secdisplay = document.getElementById('clock-converge-2');
+  var nextbutton = document.getElementById('inext-2');
     twominutes = twominutes-1;
       alto = setInterval(function(){
       twoseconds = twoseconds-1;
@@ -1168,6 +1172,7 @@ function twoStartTime(){
          if (twominutes < 0){
         console.log('hola');
         secdisplay.innerHTML = "00:00";
+        nextbutton.style.display ="initial";
         clearInterval(alto);
       }
     }, 1000);
@@ -1220,6 +1225,7 @@ var touch = 0;
 function lastStartTime(){
   console.log('start');
   var secdisplay = document.getElementById('clock-converge-3');
+  var nextbutton = document.getElementById('inext-3');
     lastminutes = lastminutes-1;
       detente = setInterval(function(){
       lastseconds = lastseconds-1;

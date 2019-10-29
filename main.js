@@ -91,7 +91,7 @@ function switchOff2(){
     box2.style.opacity = '0';
   }, 1800);
   setTimeout(function(){
-    window.location.href = "define.html";
+    window.location.href = "ideate.html";
   }, 2050)
 }
 
@@ -103,7 +103,7 @@ function switchOff3(){
     box3.style.opacity = '0';
   }, 1800);
   setTimeout(function(){
-    window.location.href = "define.html";
+    window.location.href = "build.html";
   }, 2500)
 }
 
